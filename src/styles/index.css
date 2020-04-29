@@ -1,0 +1,28 @@
+.content a .red {
+  color: red;
+}
+/* media queries start */
+@media only screen and (max-width: 1279px) {
+  .index {
+    width: 980px;
+  }
+  .cases_header_wrap .nav_ul_wrap{
+  }
+}
+@media only screen and (min-width: 1279px) and (max-width: 1900px){
+  .index {
+    width: 1200px;
+  }
+  .cases_header_wrap .nav_ul_wrap{
+
+  }
+}
+@media only screen and (min-width: 1900px){
+  .index {
+    width: 1592px;
+  }
+  .cases_header_wrap .nav_ul_wrap{
+
+  }
+}
+/* media queries end */
