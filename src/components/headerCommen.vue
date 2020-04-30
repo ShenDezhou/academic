@@ -13,15 +13,15 @@
 			@select="handleSelect"
 			id="fb_el_menu">
 				<el-menu-item index="acdemic">
-					<a :href="pubseg">
+					<a :href="acdemic">
 						<span slot="title">Acdemic</span>
 					</a>
 				</el-menu-item>
-<!--        <el-menu-item index="pubwsent">-->
-<!--          <a :href="pubwsent">-->
-<!--            <span slot="title">pubwsent情感分类</span>-->
-<!--          </a>-->
-<!--        </el-menu-item>-->
+        <el-menu-item index="Coca">
+          <a :href="coca">
+            <span slot="title">Coca</span>
+          </a>
+        </el-menu-item>
 <!--				<el-menu-item index="lawsNew">-->
 <!--					<a :href="lawsNew">-->
 <!--						<span slot="title">法律法规</span>-->
@@ -47,8 +47,8 @@
 		name: "headercommon",
 		data() {
 			return {
-        pubseg:'#/acdemic',
-        pubwsent:'#/pubwsent',
+        acdemic:'#/acdemic',
+        coca:'#/coca/study',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',

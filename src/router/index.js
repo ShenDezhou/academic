@@ -13,16 +13,16 @@ export default new Router({
       }
     },
     {
-      path: '/acdemic',//一站式
+      path: '/acdemic',//Acdemic
       name: 'acdemic',
-      meta:{title:'Acdemic'},
+      meta:{title:'acdemic'},
       component: ()=>import('@/view/acdemic')
     },
     {
-      path: '/pubwsent',//一站式
-      name: 'pubwsent',
-      meta:{title:'情感分类示例'},
-      component: ()=>import('@/view/pubwsent')
+      path: '/coca/:keyword',//Coca words
+      name: 'Corpus of Contemporary American English',
+      meta:{title:'coca'},
+      component: ()=>import('@/view/coca')
     },
 		{
 		  path: '/oneStopSearch',//一站式

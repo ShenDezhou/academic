@@ -186,7 +186,7 @@
               </span>
             </div>
             <div class="jians_conditions_wrap" v-if="searchKeywordArr.length > 0 || queryWord.filterList.length > 0">
-              <div class="jians_conditions">  
+              <div class="jians_conditions">
                 <div class="conditions_left">检索条件：</div>
                 <div class="conditions_right">
                   <ul>
@@ -206,7 +206,7 @@
                     </template>
                     <template v-if="select == 'DocumentNO'">
                       <span @click="searchHistoryItem($event)">发文字号 : {{item}}</span>
-                    </template>  
+                    </template>
                       <i class="el-icon-error error_item" @click="clearHistoryItem(item,index)"></i>
                     </li>
                     <li
@@ -226,7 +226,7 @@
                         <span>时效性：{{item.name}}</span>
                       </template>
                       <template v-if="item.field == 'Category'">
-                        
+
                         <span v-if="tab_nav_select == 'legislation'">类别：{{item.name}}</span>
                         <span v-else-if="tab_nav_select == 'eagn'">条约分类：{{item.name}}</span>
                         <span v-else-if="tab_nav_select == 'iel'">条约分类：{{item.name}}</span>
@@ -241,7 +241,7 @@
                       <template v-if="item.field == 'LevelGrade'">
                         <span>级别：{{item.name}}</span>
                       </template>
-                    
+
                       <template v-if="item.field == 'Kind'">
                         <span>条约种类：{{item.name}}</span>
                       </template>
@@ -254,7 +254,7 @@
                       <template v-if="item.field == 'ValidState'">
                         <span>有效状态：{{item.name}}</span>
                       </template>
-                      
+
                       <i class="el-icon-error error_item" @click="clearHistoryItem02(item,index)"></i>
                     </li>
                   </ul>
@@ -3801,7 +3801,7 @@ export default {
       // console.log(this.type);
       this.selectStatus =true;
       console.log("进入查找用户搜索历史------------------------",this.type);
-      
+
       if(this.keyword == null ||this.keyword==undefined || this.keyword == '' ){
         showKeyWordHistory("law").then(res=>{
           console.log(res,"-----------------搜索历史返回结果---搜索--------------------");
@@ -4861,7 +4861,7 @@ console.log(fieldname)
         // this.resData = res.data;
         // this.navbarVal = res.data.navbar;
         // // this.resData.sidebar = res.data.sidebar;
-        // }); 
+        // });
        /* if (
           sessionStorage.getItem("searchKeyword") != "" &&
           sessionStorage.getItem("searchKeyword") != null &&
@@ -4959,8 +4959,8 @@ console.log(fieldname)
                  this.totalNum = 0;
                 this.navbarVal = res.data.navbar;
                 this.resData = res.data;
-              } 
-              
+              }
+
 
 
             }

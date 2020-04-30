@@ -11,7 +11,56 @@
       <div class="content_main">
         <div class="header_search_wrap">
           <el-row class="search_inpu_one">
+            <el-col :span="16" id="lawsNewCol" class="lawsNewCol_operation_wrap">
+              <!-- @change="searchMethod"
+                @blur="searchMethod"
+                @clear="searchMethod"
+                @keyup.enter.native="searchMethod"
+              @change="(item)=>titleChange(item,'input')"-->
+              <el-input
+                :placeholder="select == '1'? '默认在标题和发文字号中检索':'请输入检索内容'"
+                clearable
+                v-model="keyword"
+                class="input-with-select search_input_wrap"
+                prefix-icon="el-icon-search"
+                @keyup.enter.native="getList"
+                @clear="getList"
 
+              >
+                <!-- @focus="findHistory" -->
+<!--                <el-select-->
+<!--                  v-model="select"-->
+<!--                  slot="prepend"-->
+<!--                  class="search_select_wrap"-->
+<!--                  @change="(item)=>titleChange(item,'select')"-->
+<!--                >-->
+<!--                  <el-option label="默认" value="1" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
+<!--                  <el-option label="标题" value="title"></el-option>-->
+<!--                  <el-option label="全文" value="fulltext"></el-option>-->
+<!--                  <el-option label="发文字号" value="DocumentNO" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
+<!--                </el-select>-->
+              </el-input>
+              <!--下拉选框子-->
+<!--              <div class="lawslishiorothertips_main_wrap" >-->
+<!--                <template v-for=" (key,index) in keywordsDrop">-->
+<!--                  <div :key="index" class="lawslishiorothertips_item">-->
+<!--                    <div @click="getKeywords(key,$event) ">-->
+<!--                      <span v-html="key.keyword"></span>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </template>-->
+<!--              </div>-->
+
+            </el-col>
+            <el-col :span="8" id="advancedRetrieval_wrap_one" class="advancedRetrieval_btn_link_wrap">
+              <el-button type="primary" class="primary-btn-main" @click="getList">
+                <span>开始检索</span>
+              </el-button>
+
+              <!-- <span class="fagui_bian_wrap_lin">
+                <a href="#/lawsChange">法规变迁</a>
+              </span> -->
+            </el-col>
           </el-row>
           <el-row>
             <el-col class="radio_main_wrap">
@@ -30,7 +79,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/acdemic">学术成果</a>
+                            <a href="#/coca/study">当代美国英文语料</a>
                         </span>
             </div>
           </el-row>
@@ -63,7 +112,7 @@
                     全部
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    学术成果
+                    当代美国英文语料
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -170,7 +219,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[News]</div>
+                    <div id="textExample">[Coca]</div>
                     <div class="nerong_wrap">
                       <!--                      <el-row class="tab_nav_wrap">-->
                       <!--                        <el-menu-->
@@ -223,13 +272,13 @@
                             <p class="two">建议您修改相关查询条件重新查询</p>
                           </div>
                         </template>
-                          <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                          <div class="content_mian_wrap_one" v-for="(item,index) in cocafamilies" :key="index">
                             <div class="circle"></div>
                             <div class="contentTitle_onestop">
-                              {{item.title}}
+                              {{item.family}}
                             </div>
                             <div class="contentCon">
-                              {{item.content}}
+                              {{item}}
                             </div>
                           </div>
 
@@ -269,6 +318,7 @@
     import Publichead from "@/components/headerCommen";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
+    import {cocaFamily} from "../coca";
 
     export default {
         name: "pubseg",
@@ -299,6 +349,7 @@
                 originList: [],
                 segsList: [],
                 newslist: [],
+                cocafamilies: [],
                 exampleList: [],
                 journalList: [],
                 journalNavbar: {},
@@ -403,54 +454,57 @@
         created: function () {
             document.title = this.$route.meta.title;
             this.keyword = this.$route.params.keyword;
-
-            //360 搜索传词
-            // 获取页面url
-            var curUrl = window.location.href
-            var curIndex = curUrl.lastIndexOf("?");
-            if (curIndex != -1) {
-                // 获取问号后面参数
-                var targetData = curUrl.substring(curIndex + 1, curUrl.length)
-                // 将问号后面参数转换成json
-                var objJson = {}
-                targetData.split("&").forEach((item) => {
-                    objJson[item.split("=")[0]] = item.split("=")[1]
-                })
-                console.log('--------------搜索传参-----------------', objJson);
-                for (let curItem in objJson) {
-                    // console.log(curItem)
-                }
-                let curKeyword_360 = decodeURIComponent(objJson.q) == undefined ? "" : decodeURIComponent(objJson.q);
-                this.keyword = curKeyword_360;
-                sessionStorage.setItem("curKeyword_360", curKeyword_360);
-                // localStorage.setItem("curKeyword_360", curKeyword_360);
-
-                // maybe
-                // // base64加密的数据
-                // var Base64 = require('js-base64').Base64;
-                // if (objJson.yhxx != undefined) {
-                //     // 用户信息
-                //     var token = objJson.yhxx;
-                //     // console.log(token)
-                //     if(token.lastIndexOf('/') == token.length - 1){
-                //         token=token.substring(0,token.lastIndexOf('/'));
-                //     }
-                //     // console.log(token)
-                //     var userInfo = JSON.parse(decodeURIComponent(Base64.decode(decodeURIComponent(token))));
-                //     // 部门受案号
-                //     var bmsah = decodeURIComponent(Base64.decode(decodeURIComponent(objJson.bmsah)));
-                //     let tandu = {
-                //         token: userInfo.dlrdwbm,//登录人单位编码
-                //         userId: userInfo.rybm,//人员编码
-                //         ryxm:userInfo.ryxm,//人员姓名
-                //         dlrbmbm:userInfo.dlrbmbm,//登录人员部门编码
-                //         bmsah:bmsah//案件部门受案号
-                //     };
-                //     sessionStorage.setItem("tandu", JSON.stringify(tandu));
-                //     sessionStorage.setItem("obj", JSON.stringify(objJson));
-                // }
-            }
-            this.newslist.push({title:'2020', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix ProduLcts in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
+            //
+            // //360 搜索传词
+            // // 获取页面url
+            // var curUrl = window.location.href
+            // var curIndex = curUrl.lastIndexOf("?");
+            // if (curIndex != -1) {
+            //     // 获取问号后面参数
+            //     var targetData = curUrl.substring(curIndex + 1, curUrl.length)
+            //     // 将问号后面参数转换成json
+            //     var objJson = {}
+            //     targetData.split("&").forEach((item) => {
+            //         objJson[item.split("=")[0]] = item.split("=")[1]
+            //     })
+            //     console.log('--------------搜索传参-----------------', objJson);
+            //     for (let curItem in objJson) {
+            //         // console.log(curItem)
+            //     }
+            //     let curKeyword_360 = decodeURIComponent(objJson.q) == undefined ? "" : decodeURIComponent(objJson.q);
+            //     this.keyword = curKeyword_360;
+            //     sessionStorage.setItem("curKeyword_360", curKeyword_360);
+            //     // localStorage.setItem("curKeyword_360", curKeyword_360);
+            //
+            //     // maybe
+            //     // // base64加密的数据
+            //     // var Base64 = require('js-base64').Base64;
+            //     // if (objJson.yhxx != undefined) {
+            //     //     // 用户信息
+            //     //     var token = objJson.yhxx;
+            //     //     // console.log(token)
+            //     //     if(token.lastIndexOf('/') == token.length - 1){
+            //     //         token=token.substring(0,token.lastIndexOf('/'));
+            //     //     }
+            //     //     // console.log(token)
+            //     //     var userInfo = JSON.parse(decodeURIComponent(Base64.decode(decodeURIComponent(token))));
+            //     //     // 部门受案号
+            //     //     var bmsah = decodeURIComponent(Base64.decode(decodeURIComponent(objJson.bmsah)));
+            //     //     let tandu = {
+            //     //         token: userInfo.dlrdwbm,//登录人单位编码
+            //     //         userId: userInfo.rybm,//人员编码
+            //     //         ryxm:userInfo.ryxm,//人员姓名
+            //     //         dlrbmbm:userInfo.dlrbmbm,//登录人员部门编码
+            //     //         bmsah:bmsah//案件部门受案号
+            //     //     };
+            //     //     sessionStorage.setItem("tandu", JSON.stringify(tandu));
+            //     //     sessionStorage.setItem("obj", JSON.stringify(objJson));
+            //     // }
+            // }
+            console.log(this.keyword)
+            this.cocafamilies = cocaFamily(this.keyword)
+            console.log(this.cocafamilies);
+            // this.newslist.push({title:'2020', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix ProduLcts in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;
@@ -474,7 +528,8 @@
                 // this.lawsForm.keyword=this.keyword;
                 // this.exampleForm.keyword=this.keyword;
                 // this.qikanForm.keyword=this.keyword;
-                this.searchGetSegments(this.keyword);
+                // this.searchGetSegments(this.keyword);
+                this.cocafamilies = cocaFamily(this.keyword)
                 // this.searchMethod_exp(this.exampleForm);
                 // this.searchMethod_jou(this.qikanForm);
             },
