@@ -10,67 +10,67 @@
       </div>
       <div class="content_main">
         <div class="header_search_wrap">
-          <el-row class="search_inpu_one">
-            <el-col :span="16" id="lawsNewCol" class="lawsNewCol_operation_wrap">
-              <!-- @change="searchMethod"
-                @blur="searchMethod"
-                @clear="searchMethod"
-                @keyup.enter.native="searchMethod"
-              @change="(item)=>titleChange(item,'input')"-->
-              <el-input
-                :placeholder="select == '1'? '默认在标题和发文字号中检索':'请输入检索内容'"
-                clearable
-                v-model="keyword"
-                class="input-with-select search_input_wrap"
-                prefix-icon="el-icon-search"
-                @keyup.enter.native="getList"
-                @clear="getList"
-              >
-                <!-- @focus="findHistory" -->
-<!--                <el-select-->
-<!--                  v-model="select"-->
-<!--                  slot="prepend"-->
-<!--                  class="search_select_wrap"-->
-<!--                  @change="(item)=>titleChange(item,'select')"-->
-<!--                >-->
-<!--                  <el-option label="默认" value="1" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
-<!--                  <el-option label="标题" value="title"></el-option>-->
-<!--                  <el-option label="全文" value="fulltext"></el-option>-->
-<!--                  <el-option label="发文字号" value="DocumentNO" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
-<!--                </el-select>-->
-              </el-input>
-              <!--下拉选框子-->
-              <div class="lawslishiorothertips_main_wrap" >
-                <template v-for=" (key,index) in keywordsDrop">
-                  <div :key="index" class="lawslishiorothertips_item">
-                    <div @click="getKeywords(key,$event) ">
-                      <span v-html="key.keyword"></span>
-                    </div>
-                  </div>
-                </template>
-              </div>
+<!--          <el-row class="search_inpu_one">-->
+<!--            <el-col :span="16" id="lawsNewCol" class="lawsNewCol_operation_wrap">-->
+<!--              &lt;!&ndash; @change="searchMethod"-->
+<!--                @blur="searchMethod"-->
+<!--                @clear="searchMethod"-->
+<!--                @keyup.enter.native="searchMethod"-->
+<!--              @change="(item)=>titleChange(item,'input')"&ndash;&gt;-->
+<!--              <el-input-->
+<!--                :placeholder="select == '1'? '默认在标题和发文字号中检索':'请输入检索内容'"-->
+<!--                clearable-->
+<!--                v-model="keyword"-->
+<!--                class="input-with-select search_input_wrap"-->
+<!--                prefix-icon="el-icon-search"-->
+<!--                @keyup.enter.native="getList"-->
+<!--                @clear="getList"-->
+<!--              >-->
+<!--                &lt;!&ndash; @focus="findHistory" &ndash;&gt;-->
+<!--&lt;!&ndash;                <el-select&ndash;&gt;-->
+<!--&lt;!&ndash;                  v-model="select"&ndash;&gt;-->
+<!--&lt;!&ndash;                  slot="prepend"&ndash;&gt;-->
+<!--&lt;!&ndash;                  class="search_select_wrap"&ndash;&gt;-->
+<!--&lt;!&ndash;                  @change="(item)=>titleChange(item,'select')"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-option label="默认" value="1" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-option label="标题" value="title"></el-option>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-option label="全文" value="fulltext"></el-option>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-option label="发文字号" value="DocumentNO" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>&ndash;&gt;-->
+<!--&lt;!&ndash;                </el-select>&ndash;&gt;-->
+<!--              </el-input>-->
+<!--              &lt;!&ndash;下拉选框子&ndash;&gt;-->
+<!--              <div class="lawslishiorothertips_main_wrap" >-->
+<!--                <template v-for=" (key,index) in keywordsDrop">-->
+<!--                  <div :key="index" class="lawslishiorothertips_item">-->
+<!--                    <div @click="getKeywords(key,$event) ">-->
+<!--                      <span v-html="key.keyword"></span>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </template>-->
+<!--              </div>-->
 
-            </el-col>
-            <el-col :span="4" id="advancedRetrieval_wrap_one" class="advancedRetrieval_btn_link_wrap">
-              <el-button type="primary" class="primary-btn-main" @click="getList">
-                <span>开始检索</span>
-              </el-button>
+<!--            </el-col>-->
+<!--            <el-col :span="4" id="advancedRetrieval_wrap_one" class="advancedRetrieval_btn_link_wrap">-->
+<!--              <el-button type="primary" class="primary-btn-main" @click="getList">-->
+<!--                <span>开始检索</span>-->
+<!--              </el-button>-->
 
-              <!-- <span class="fagui_bian_wrap_lin">
-                <a href="#/lawsChange">法规变迁</a>
-              </span> -->
-            </el-col>
-          </el-row>
-          <el-row>
-            <el-col class="radio_main_wrap">
-              <ul>
-                <!-- <li class="radio_qing_mo">
-                    <el-radio v-model="radio_fuzzy" label="1">精确</el-radio>
-                    <el-radio v-model="radio_fuzzy" label="2">模糊</el-radio>
-                </li> -->
-              </ul>
-            </el-col>
-          </el-row>
+<!--              &lt;!&ndash; <span class="fagui_bian_wrap_lin">-->
+<!--                <a href="#/lawsChange">法规变迁</a>-->
+<!--              </span> &ndash;&gt;-->
+<!--            </el-col>-->
+<!--          </el-row>-->
+<!--          <el-row>-->
+<!--            <el-col class="radio_main_wrap">-->
+<!--              <ul>-->
+<!--                &lt;!&ndash; <li class="radio_qing_mo">-->
+<!--                    <el-radio v-model="radio_fuzzy" label="1">精确</el-radio>-->
+<!--                    <el-radio v-model="radio_fuzzy" label="2">模糊</el-radio>-->
+<!--                </li> &ndash;&gt;-->
+<!--              </ul>-->
+<!--            </el-col>-->
+<!--          </el-row>-->
           <el-row>
             <div class="breadcrumb">
                         <span>
@@ -78,7 +78,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/coca/study">当代美国英文语料</a>
+                            <a href="#/books">阅读历史</a>
                         </span>
             </div>
           </el-row>
@@ -111,7 +111,7 @@
                     全部
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    当代美国英文语料
+                    阅读书目
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -184,17 +184,7 @@
                            Biography
                           </div>
                           <div class="contentCon">
-                            3,000 most frequent "core academic" words (lemmas) in 120 million words of the COCA Academic texts.To be considered a "core academic word", it must:
-                                                                                                                               1)  Occur at least 50% more frequently in the academic portion of COCA than would otherwise be expected (per million words). In other words, 1.50 or higher in the [ratio] column.
-                                                                                                                               2)  Have a good "dispersion" [disp column] across the nine domains of academic (a Juilland "d" measure of at least 0.80, for those who know what that means)
-                                                                                                                               3) Have at least 20% of the "expected" frequency in at least seven of the nine domains
-                                                                                                                               4)  Not occur more than three times as much as "expected" in any of the nine domains
-                            [PoS]: Part of speech: noun, verb, adjective, adverb
-                            [COCA-All]: The overall frequency in COCA (when COCA was 425 million words; it's now 450 million words)
-                            [COCA-Acad]: The frequency in the 120 million words of COCA Academic
-                            [ratio]: How much more frequent the word is in COCA-Academic than the "expected" frequency. For example, if a word occur 425 times overall in COCA (which is 425 million words in size), then it should occur about 120 times in the 120 million words of COCA-Academic. If it occurred 180 times, then it occurs at 1.50 times the expected frequency.
-                            [disp]ersion: The Juilland "d" measure of how "evenly" the word is spread across COCA-Academic
-                            range: In how many of the nine domains does the word occur with at least 20% of the expected frequency
+                            <span>Tsinghuaboy</span> is a master's student in the Department of Computer Science and Technology of Tsinghua University, majoring in computer technology, since 2015. His tutor is Professor Sun Lifeng @THU CS MEDIA LAB. His interests are deep learning, machine learning, graph computing and social network and natural language processing. He works as a natural language processing scientist in a China Legal Database Corporation since 2019.
                           </div>
                         </div>
 
@@ -228,7 +218,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Coca]</div>
+                    <div id="textExample">[Books]</div>
                     <div class="nerong_wrap">
                       <!--                      <el-row class="tab_nav_wrap">-->
                       <!--                        <el-menu-->
@@ -281,10 +271,10 @@
                             <p class="two">建议您修改相关查询条件重新查询</p>
                           </div>
                         </template>
-                          <div class="content_mian_wrap_one" v-for="(item,index) in cocafamilies" :key="index">
+                          <div class="content_mian_wrap_one" v-for="(item,index) in booklist" :key="index">
                             <div class="circle"></div>
                             <div class="contentTitle_onestop">
-                              {{item.family}}
+                              {{item.title}}
                             </div>
                             <div class="contentCon">
                               {{item}}
@@ -327,7 +317,7 @@
     import Publichead from "@/components/headerCommen";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
-    import {cocaFamily} from "../coca";
+    // import {cocaFamily} from "../coca";
 
     export default {
         name: "pubseg",
@@ -358,7 +348,7 @@
                 originList: [],
                 segsList: [],
                 newslist: [],
-                cocafamilies: [],
+                booklist: [],
                 exampleList: [],
                 journalList: [],
                 journalNavbar: {},
@@ -511,9 +501,11 @@
             //     // }
             // }
             console.log(this.keyword)
-            this.cocafamilies = cocaFamily(this.keyword)
-            console.log(this.cocafamilies);
-            // this.newslist.push({title:'2020', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix ProduLcts in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
+            // this.booklist = cocaFamily(this.keyword)
+            console.log(this.booklist);
+            this.booklist.push({title:'Applied multivariate statistical analysis', author:'Härdle, Wolfgang Karl; Simar, Léopold', year:'2013', pages:516, publisher:'Springer Berlin Heidelberg',
+              category:'Mathematics and Statistics',
+              content:'Statistics; Statistics for Business/Economics/Mathematical Finance/Insurance; Quantitative Finance; Economic Theory/Quantitative Economics/Mathematical Methods; Statistical Theory and Methods'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;
@@ -538,7 +530,7 @@
                 // this.exampleForm.keyword=this.keyword;
                 // this.qikanForm.keyword=this.keyword;
                 // this.searchGetSegments(this.keyword);
-                this.cocafamilies = cocaFamily(this.keyword)
+                // this.booklist = cocaFamily(this.keyword)
                 // this.searchMethod_exp(this.exampleForm);
                 // this.searchMethod_jou(this.qikanForm);
             },

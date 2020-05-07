@@ -10,19 +10,19 @@
       </div>
       <div class="content_main">
         <div class="header_search_wrap">
-          <el-row class="search_inpu_one">
+<!--          <el-row class="search_inpu_one">-->
 
-          </el-row>
-          <el-row>
-            <el-col class="radio_main_wrap">
-              <ul>
-                <!-- <li class="radio_qing_mo">
-                    <el-radio v-model="radio_fuzzy" label="1">精确</el-radio>
-                    <el-radio v-model="radio_fuzzy" label="2">模糊</el-radio>
-                </li> -->
-              </ul>
-            </el-col>
-          </el-row>
+<!--          </el-row>-->
+<!--          <el-row>-->
+<!--            <el-col class="radio_main_wrap">-->
+<!--              <ul>-->
+<!--                &lt;!&ndash; <li class="radio_qing_mo">-->
+<!--                    <el-radio v-model="radio_fuzzy" label="1">精确</el-radio>-->
+<!--                    <el-radio v-model="radio_fuzzy" label="2">模糊</el-radio>-->
+<!--                </li> &ndash;&gt;-->
+<!--              </ul>-->
+<!--            </el-col>-->
+<!--          </el-row>-->
           <el-row>
             <div class="breadcrumb">
                         <span>
@@ -450,7 +450,9 @@
                 //     sessionStorage.setItem("obj", JSON.stringify(objJson));
                 // }
             }
-            this.newslist.push({title:'2020', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix ProduLcts in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
+          this.newslist.push({title:'2020c', content:'2020年5月，本人独立完成的论文Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
+          this.newslist.push({title:'2020b', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
+          this.newslist.push({title:'2020a', content:'2020年4月，本人与其他人合作完成的专利，基于提前收敛重复平方的限定域矩阵乘法距离积计算方法，在国家知识产权局2020年4月28日36卷1801期登记公布。'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;

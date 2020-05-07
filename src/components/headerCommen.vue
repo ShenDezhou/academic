@@ -17,9 +17,14 @@
 						<span slot="title">Acdemic</span>
 					</a>
 				</el-menu-item>
-        <el-menu-item index="Coca">
+        <el-menu-item index="coca">
           <a :href="coca">
             <span slot="title">Coca</span>
+          </a>
+        </el-menu-item>
+        <el-menu-item index="books">
+          <a :href="books">
+            <span slot="title">Books</span>
           </a>
         </el-menu-item>
 <!--				<el-menu-item index="lawsNew">-->
@@ -49,6 +54,7 @@
 			return {
         acdemic:'#/acdemic',
         coca:'#/coca/study',
+        books:'#/books',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',

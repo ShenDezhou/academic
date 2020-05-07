@@ -24,6 +24,12 @@ export default new Router({
       meta:{title:'coca'},
       component: ()=>import('@/view/coca')
     },
+    {
+      path: '/books',//Acdemic
+      name: 'books',
+      meta:{title:'books'},
+      component: ()=>import('@/view/books')
+    },
 		{
 		  path: '/oneStopSearch',//一站式
 		  name: 'oneStopSearch',
