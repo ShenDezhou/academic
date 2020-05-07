@@ -30,6 +30,12 @@ export default new Router({
       meta:{title:'books'},
       component: ()=>import('@/view/books')
     },
+    {
+      path: '/works',//
+      name: 'works',
+      meta:{title:'Wroks'},
+      component: ()=>import('@/view/works')
+    },
 		{
 		  path: '/oneStopSearch',//一站式
 		  name: 'oneStopSearch',

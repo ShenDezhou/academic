@@ -27,6 +27,11 @@
             <span slot="title">Books</span>
           </a>
         </el-menu-item>
+        <el-menu-item index="works">
+          <a :href="works">
+            <span slot="title">Works</span>
+          </a>
+        </el-menu-item>
 <!--				<el-menu-item index="lawsNew">-->
 <!--					<a :href="lawsNew">-->
 <!--						<span slot="title">法律法规</span>-->
@@ -55,6 +60,7 @@
         acdemic:'#/acdemic',
         coca:'#/coca/study',
         books:'#/books',
+        works:'#/works',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',
