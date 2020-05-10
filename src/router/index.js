@@ -33,7 +33,7 @@ export default new Router({
     {
       path: '/works',//
       name: 'works',
-      meta:{title:'Wroks'},
+      meta:{title:'works'},
       component: ()=>import('@/view/works')
     },
 		{

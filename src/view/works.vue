@@ -184,7 +184,7 @@
                            Biography
                           </div>
                           <div class="contentCon">
-                            <span>Tsinghuaboy</span> is a master's student in the Department of Computer Science and Technology of Tsinghua University, majoring in computer technology, since 2015. His tutor is Professor Sun Lifeng @THU CS MEDIA LAB. His interests are deep learning, machine learning, graph computing and social network and natural language processing. He works as a natural language processing scientist in a China Legal Database Corporation since 2019.
+                            <span>Tsinghuaboy</span> is a master student in the Department of Computer Science and Technology of Tsinghua University, majoring in computer technology, since 2015. His tutor is Professor Sun Lifeng @THU CS MEDIA LAB. His interests are deep learning, machine learning, graph computing and social network and natural language processing. He works as a natural language processing scientist in a China Legal Database Corporation since 2019.
                           </div>
                         </div>
 
