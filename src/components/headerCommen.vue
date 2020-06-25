@@ -17,9 +17,9 @@
 						<span slot="title">Acdemic</span>
 					</a>
 				</el-menu-item>
-        <el-menu-item index="coca">
-          <a :href="coca">
-            <span slot="title">Coca</span>
+        <el-menu-item index="competetion">
+          <a :href="competetion">
+            <span slot="title">Competetion</span>
           </a>
         </el-menu-item>
         <el-menu-item index="books">
@@ -58,7 +58,7 @@
 		data() {
 			return {
         acdemic:'#/acdemic',
-        coca:'#/coca/study',
+        competetion:'#/competetion',
         books:'#/books',
         works:'#/works',
 				onestopUrl:'#/oneStopSearch',

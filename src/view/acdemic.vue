@@ -136,7 +136,7 @@
                            Biography
                           </div>
                           <div class="contentCon">
-                            <span>Tsinghuaboy</span> is a master student in the Department of Computer Science and Technology of Tsinghua University, majoring in computer technology, since 2015. His tutor is Professor Sun Lifeng @THU CS MEDIA LAB. His interests are deep learning, machine learning, graph computing and social network and natural language processing. He works as a natural language processing scientist in a China Legal Database Corporation since 2019.
+                            <span>Tsinghuaboy</span> is a graduated student in the Department of Computer Science and Technology of Tsinghua University, majors in social network science and technology since 2015. His tutor is Professor Sun Lifeng of Institute for Human-Computer Interaction and Media Integration@THU-CS. He is interest in social network computation, graph computation and natural language processing.
                           </div>
                         </div>
 
@@ -230,6 +230,8 @@
                             </div>
                             <div class="contentCon">
                               {{item.content}}
+                              <br/>
+                              <a :href=item.href>{{item.cite}}</a>
                             </div>
                           </div>
 
@@ -450,9 +452,10 @@
                 //     sessionStorage.setItem("obj", JSON.stringify(objJson));
                 // }
             }
-          this.newslist.push({title:'2020c', content:'2020年5月，本人独立完成的论文Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
-          this.newslist.push({title:'2020b', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
-          this.newslist.push({title:'2020a', content:'2020年4月，本人与其他人合作完成的专利，基于提前收敛重复平方的限定域矩阵乘法距离积计算方法，在国家知识产权局2020年4月28日36卷1801期登记公布。'})
+          this.newslist.push({title:'2020γ', content:'2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。', href:'https://arxiv.org/abs/2006.13417', cite:'Dezhou Shen. Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment[J]. arXiv preprint arXiv:2006.13417, 2020.'})
+          this.newslist.push({title:'2020β', content:'2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。', href:'https://arxiv.org/abs/2006.13412', cite:'Dezhou Shen. Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network[J]. arXiv preprint arXiv:2006.13412, 2020.'})
+          this.newslist.push({title:'2020α', content:'2020年4月28日，本人的图计算发明专利，《基于提前收敛重复平方的限定域矩阵乘法距离积计算方法》，在中国国家知识产权局2020年4月28日36卷1801期登记公布。'})
+          this.newslist.push({title:'2019',  content:'2019年6月，本人完成的《用于移动终端的图形用户界面外观专利》，在国家知识产权局登记公布。'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;

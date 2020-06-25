@@ -19,10 +19,10 @@ export default new Router({
       component: ()=>import('@/view/acdemic')
     },
     {
-      path: '/coca/:keyword',//Coca words
-      name: 'Corpus of Contemporary American English',
-      meta:{title:'coca'},
-      component: ()=>import('@/view/coca')
+      path: '/competetion',//Coca words
+      name: 'competetion',
+      meta:{title:'competetion'},
+      component: ()=>import('@/view/competetion')
     },
     {
       path: '/books',//Acdemic

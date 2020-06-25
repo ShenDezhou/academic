@@ -184,7 +184,7 @@
                            Biography
                           </div>
                           <div class="contentCon">
-                            <span>Tsinghuaboy</span> is a master student in the Department of Computer Science and Technology of Tsinghua University, majoring in computer technology, since 2015. His tutor is Professor Sun Lifeng @THU CS MEDIA LAB. His interests are deep learning, machine learning, graph computing and social network and natural language processing. He works as a natural language processing scientist in a China Legal Database Corporation since 2019.
+                             <span>Tsinghuaboy</span> is a graduated student in the Department of Computer Science and Technology of Tsinghua University, majors in social network science and technology since 2015. His tutor is Professor Sun Lifeng of Institute for Human-Computer Interaction and Media Integration@THU-CS. He is interest in social network computation, graph computation and natural language processing.
                           </div>
                         </div>
 
@@ -501,8 +501,10 @@
             //     // }
             // }
             // this.booklist = cocaFamily(this.keyword)
-            this.worklist.push({title:'202005b意图识别', content:'基于tfidf的意图识别模型'})
-            this.worklist.push({title:'202005a中文分词', content:'基于MSR语料的BILSTM中文分词模型'})
+            this.worklist.push({title:'2020δ阅读理解', content:'基于bert的司法阅读理解模型'})
+            this.worklist.push({title:'2020γ司法考试', content:'基于bert的司法考试模型'})
+            this.worklist.push({title:'2020β论辩挖掘', content:'基于bert的论辩挖掘模型'})
+            this.worklist.push({title:'2020α中文分词', content:'基于LSTM中文分词模型'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;
