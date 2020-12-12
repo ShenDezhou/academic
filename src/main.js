@@ -12,7 +12,7 @@ import axios from 'axios'
 Vue.prototype.axios = axios
 //生产环境的打包的方式
 if(process.env.NODE_ENV == "production"){
-  axios.defaults.baseURL="http://143.3.119.224:8081/search/csb-broker/fb";
+  axios.defaults.baseURL = "";
 }else{
   axios.defaults.baseURL = '';
 }

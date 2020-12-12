@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import argparse
 import logging
 import sys
@@ -7,7 +8,9 @@ from falcon_cors import CORS
 import json
 import waitress
 
-if sys.hexversion < 0x03070000:
+if sys.hexversion < 0x02080000:
+    ft = time.time
+elif sys.hexversion < 0x03070000:
     ft = time.process_time
 else:
     ft = time.process_time_ns
