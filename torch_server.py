@@ -30,7 +30,7 @@ parser.add_argument(
     help='falcon server port')
 args = parser.parse_args()
 
-bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生（201503-202010）。他的导师是人机交互与媒体与媒体研究所的孙立峰教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University (201503-202010). His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
+bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生（201503-202010）。他的导师是人机交互与媒体与媒体研究所的SUNLIFENG教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University (201503-202010). His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
 acdemic_news = [
   {"title": "2014", "content": "2014年，本人与Hu、Liu等人合作完成的《Security research of state cryptographic authentication security chip in smart grid（智能电网中的国密安全芯片研究）》，在CICED2014发布。"},
   {"title": "2015", "content": "2015年，本人与李、黄等人合作完成的《基于微信大数据的股票市场预测研究》，在ICOC2015发布。"},

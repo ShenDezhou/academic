@@ -78,7 +78,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/books">阅读历史</a>
+                            <a href="#/books">准学术文章</a>
                         </span>
             </div>
           </el-row>
@@ -111,7 +111,7 @@
                     全部
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    阅读书目
+                    准学术文章
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -223,7 +223,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Books]</div>
+                    <div id="textExample">[Non-Acdemic Articles]</div>
                     <div class="nerong_wrap">
                       <!--                      <el-row class="tab_nav_wrap">-->
                       <!--                        <el-menu-->
