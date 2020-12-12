@@ -57,7 +57,7 @@
                           <template v-for="(item,index) in NavCatalog">
                             <dt :key="index"   v-if="(item.tier =='2' || item.tier == '4') && NavCatalog[0].tier == '1'" :class="item.tier =='2' ? 'expand zhang_expand' : openAll == true ? 'expand tiao_expand': 'expand tiao_expand expand_hidden'">
                               <a href="javascript:void(0);" @click="toTegional(item.name)">{{item.title}}</a>
-                            </dt> 
+                            </dt>
                           </template>
                           <template v-for="(item,index) in NavCatalog" >
                             <dt :key="index" v-if="item.tier == '4.0'">
@@ -71,8 +71,8 @@
 
                   <!-- <el-button slot="reference" icon="el-icon-tickets">目录</el-button> -->
                 </el-popover>
-              </li> 
-              <li class="item" style="line-height: inherit;" 
+              </li>
+              <li class="item" style="line-height: inherit;"
               v-if="type != 'qikan' && type != 'protocol' && type != 'legislation' && type != 'eagn' && type != 'iel'
               && type != 'hkd' && type != 'aom' && type != 'payz'  && type != 'twd' && type != 'atr' && type != 'workreport'
               && type != 'bankruptcy' && type != 'pal' && type != 'whitebook' && type != 'lawexplanation'">
@@ -160,7 +160,7 @@
                           <template v-for="(item,index) in NavCatalog">
                             <dt :key="index"   v-if="(item.tier =='2' || item.tier == '4') && NavCatalog[0].tier == '1'" :class="item.tier =='2' ? 'expand zhang_expand' : openAll == true ? 'expand tiao_expand': 'expand tiao_expand expand_hidden'">
                               <a href="javascript:void(0);" @click="toTegional(item.name)">{{item.title}}</a>
-                            </dt> 
+                            </dt>
                           </template>
                           <template v-for="(item,index) in NavCatalog" >
                             <dt :key="index" v-if="item.tier == '4.0'">
@@ -175,7 +175,7 @@
                   <!-- <el-button slot="reference" icon="el-icon-tickets">目录</el-button> -->
                 </el-popover>
               </li>
-              <li class="item" style="line-height: inherit;" 
+              <li class="item" style="line-height: inherit;"
               v-if="type != 'qikan' && type != 'protocol' && type != 'legislation' && type != 'eagn' && type != 'iel'
               && type != 'hkd' && type != 'aom' && type != 'payz'  && type != 'twd' && type != 'atr' && type != 'workreport'
               && type != 'bankruptcy' && type != 'pal' && type != 'whitebook' && type != 'lawexplanation'">
@@ -291,7 +291,7 @@
                         <li class="item" v-if="datapfnl.LastInstanceDate">
                           <span class="fansi_span_sb">审结日期：</span>
                           <span class="item_txt">{{datapfnl.LastInstanceDate}}</span>
-                        </li> 
+                        </li>
                         <li class="item" v-if="datapfnl.LastInstanceCourt">
                           <span class="fansi_span_sb">审理法院：</span>
                           <span class="item_txt">
@@ -609,8 +609,8 @@
                       <template v-if="datachl.DocumentNO">
                         <li class="item"><span class="fansi_span_sb" style="display:block;">发文字号：</span><span style="float: left;margin-left: 80px;margin-top: -20px;">{{datachl.DocumentNO}}</span></li>
                       </template>
-                      
-                     
+
+
                       <template v-if="datachl.RatifyDate">
                         <li class="item"  v-if="type == 'lar'"><span class="fansi_span_sb">批准日期：</span><span >{{datachl.RatifyDate}}</span></li>
                       </template>
@@ -631,7 +631,7 @@
                       <li class="item" v-if="datachl.Category != ''"><span class="fansi_span_sb">法规类别：</span><span v-for="(item,index) in datachl.Category">
                         {{datachl.Category.length == 1 ? item  : item }} &nbsp;&nbsp;
                       </span></li>
-                      
+
                     </ul>
                   </div>
                 </div>
@@ -663,7 +663,7 @@
                         <span class="fansi_span_sb">期&nbsp;&nbsp;号：</span><span>{{dataqikan.JournalIssue}}</span></li>
                         <li class="item" v-if="dataqikan.InfoPage != '' && dataqikan.InfoPage != null">
                         <span class="fansi_span_sb">页&nbsp;&nbsp;码：</span><span>{{dataqikan.InfoPage}}</span></li>
-                      
+
                     </ul>
                   </div>
                 </div>
@@ -752,7 +752,7 @@
 
             </div>
             </template>
-            
+
 
             <el-dialog
               title="法宝之窗"
@@ -835,7 +835,7 @@
                       </ul>
                     </div>
                   </template>
-                  
+
                 </div>
                 <div class="ul-list" v-if="magicWeaponLenovo.ReferenceArticleGidTiaoNum && magicWeaponLenovo.ReferenceFlag">
                   <p class="lian_header">本篇引用的法规</p>
@@ -892,7 +892,7 @@
                     </div>
                   </template>
                 </div>
-                
+
                 <div class="ul-list" v-if="magicWeaponLenovo.BeReferenceArticleGidTiaoNum && magicWeaponLenovo.BeReferenceFlag">
                   <p class="lian_header">引用本篇的法规 案例 论文</p>
                   <template v-for="(item03,key03,index03) in magicWeaponLenovo.BeReferenceArticleGidTiaoNum" >
@@ -1435,7 +1435,7 @@
                     </div>
                   </template>
                 </div>
-                
+
                 <div class="ul-list" v-if="magicWeaponLenovo.ReferenceArticleGidTiaoNum && magicWeaponLenovo.ReferenceFlag">
                   <p class="lian_header">引用法规</p>
                   <template v-for="(item02,key02,index02) in magicWeaponLenovo.ReferenceArticleGidTiaoNum" >
@@ -1640,7 +1640,7 @@
 <script>
   import {  showfbThink,getCollectCategory, addCollectValue, getNoteCategory, addNoteVal ,showfbWindow} from "../api.js"
   import {Download } from "../select_api.js"
-  import Publichead from "@/components/headerCommen";
+  import Publichead from "@/components/headerCommon";
   import $ from 'jquery';
   export default {
     components: {
@@ -2078,7 +2078,7 @@
       showfbThink(this.$route.params.gid,this.type ).then(res =>{
         console.log(res,"法宝联想返回的数据-----------------------------------");
         if(res.data.success){
-          
+
           if(!$.isEmptyObject(res.data.data)){
             console.log('非空-----------------------')
             // BeReferenceArticleGidTiaoNum
@@ -2113,7 +2113,7 @@
             this.magicWeaponLenovo.hasLenovo = false;
           }
         }
-        
+
 
       });
 
@@ -2136,7 +2136,7 @@
       window.onscroll = () => {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
       }
-     
+
    },
     mounted() {
       window.addEventListener('scroll', this.menu);
@@ -3307,7 +3307,7 @@
     padding: 0;
     margin-bottom: -5px;
   }
-  .fb_lian_wrap .lian_list_ul_wrap .lian_list_ul_header span{ 
+  .fb_lian_wrap .lian_list_ul_wrap .lian_list_ul_header span{
     cursor: pointer;
   }
 

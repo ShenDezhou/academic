@@ -14,7 +14,7 @@ Vue.prototype.axios = axios
 if(process.env.NODE_ENV == "production"){
   axios.defaults.baseURL="http://143.3.119.224:8081/search/csb-broker/fb";
 }else{
-  axios.defaults.baseURL = 'apis';
+  axios.defaults.baseURL = '';
 }
 
 Vue.use(vueCookies)

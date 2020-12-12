@@ -218,7 +218,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Works]</div>
+                    <div id="textExample">[Call for Cooperation]</div>
                     <div class="nerong_wrap">
                       <!--                      <el-row class="tab_nav_wrap">-->
                       <!--                        <el-menu-->
@@ -314,7 +314,7 @@
 </template>
 
 <script>
-    import Publichead from "@/components/headerCommen";
+    import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
     // import {cocaFamily} from "../coca";
@@ -501,10 +501,19 @@
             //     // }
             // }
             // this.booklist = cocaFamily(this.keyword)
-            this.worklist.push({title:'2020δ阅读理解', content:'基于bert的司法阅读理解模型'})
-            this.worklist.push({title:'2020γ司法考试', content:'基于bert的司法考试模型'})
-            this.worklist.push({title:'2020β论辩挖掘', content:'基于bert的论辩挖掘模型'})
-            this.worklist.push({title:'2020α中文分词', content:'基于LSTM中文分词模型'})
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:3}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.worklist = res.data
+
+                    return this.worklist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;

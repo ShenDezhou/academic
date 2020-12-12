@@ -268,7 +268,7 @@
 </template>
 
 <script>
-    import Publichead from "@/components/headerCommen";
+    import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
 
@@ -452,10 +452,20 @@
                 //     sessionStorage.setItem("obj", JSON.stringify(objJson));
                 // }
             }
-          this.newslist.push({title:'2020γ', content:'2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。', href:'https://arxiv.org/abs/2006.13417', cite:'Dezhou Shen. Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment[J]. arXiv preprint arXiv:2006.13417, 2020.'})
-          this.newslist.push({title:'2020β', content:'2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。', href:'https://arxiv.org/abs/2006.13412', cite:'Dezhou Shen. Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network[J]. arXiv preprint arXiv:2006.13412, 2020.'})
-          this.newslist.push({title:'2020α', content:'2020年4月28日，本人的图计算发明专利，《基于提前收敛重复平方的限定域矩阵乘法距离积计算方法》，在中国国家知识产权局2020年4月28日36卷1801期登记公布。'})
-          this.newslist.push({title:'2019',  content:'2019年6月，本人完成的《用于移动终端的图形用户界面外观专利》，在国家知识产权局登记公布。'})
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:1}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.newslist = res.data
+
+                    return this.newslist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
+
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;

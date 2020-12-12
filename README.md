@@ -1,5 +1,29 @@
 # Acdemic
-A site of self introduction in acdemic.
+Α	Alpha	&Alpha;	&#913;
+Β	Beta	&Beta;	&#914;
+Γ	Gamma	&Gamma;	&#915;
+Δ	Delta	&Delta;	&#916;
+Ε	Epsilon	&Epsilon;	&#917;
+Ζ	Zeta	&Zeta;	&#918;
+Η	Eta	&Eta;	&#919;
+Θ	Theta	&Theta;	&#920;
+Ι	Iota	&Iota;	&#921;
+Κ	Kappa	&Kappa;	&#922;
+Λ	Lambda	&Lambda;	&#923;
+Μ	Mu	&Mu;	&#924;
+Ν	Nu	&Nu;	&#925;
+Ξ	Xi	&Xi;	&#926;
+Ο	Omicron	&Omicron;	&#927;
+Π	Pi	&Pi;	&#928;
+Ρ	Rho	&Rho;	&#929;
+ 	Sigmaf	 	undefined
+Σ	Sigma	&Sigma;	&#931;
+Τ	Tau	&Tau;	&#932;
+Υ	Upsilon	&Upsilon;	&#933;
+Φ	Phi	&Phi;	&#934;
+Χ	Chi	&Chi;	&#935;
+Ψ	Psi	&Psi;	&#936;
+Ω	Omega	&Omega;	&#937;
 
 α	alpha	&alpha;	&#945;
 β	beta	&beta;	&#946;
@@ -26,10 +50,7 @@ A site of self introduction in acdemic.
 χ	chi	&chi;	&#967;
 ψ	psi	&psi;	&#968;
 ω	omega	&omega;	&#969;
- 	 	 	 
+
 ϑ	theta symbol	&thetasym;	&#977;
 ϒ	upsilon symbol	&upsih;	&#978;
 ϖ	pi symbol	&piv;	&#982;
-————————————————
-版权声明：本文为CSDN博主「Aiotol」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/sinat_34719507/java/article/details/53693418

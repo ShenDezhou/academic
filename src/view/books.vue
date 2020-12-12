@@ -314,7 +314,7 @@
 </template>
 
 <script>
-    import Publichead from "@/components/headerCommen";
+    import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
     // import {cocaFamily} from "../coca";

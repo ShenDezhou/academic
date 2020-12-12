@@ -1270,7 +1270,7 @@ import siderBar from "@/components/siderBar.vue";
 import cricaseSiderbar from "@/components/cricaseSiderBar.vue";
 import lawContent from "@/components/lawContent.vue";
 import lawNogroup from "@/components/lawNogroup.vue";
-import Publichead from "@/components/headerCommen";
+import Publichead from "@/components/headerCommon";
 import { getZYLawSelect ,Download} from "../select_api";
 import { showKeyWordHistory,showLikeQuery ,hotKeywordQuery,addKeyWordHistory,getAggs, getCases, addSearch, getJSON, getCollectList } from "../api";
 export default {

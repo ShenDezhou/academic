@@ -266,7 +266,7 @@
 </template>
 
 <script>
-    import Publichead from "@/components/headerCommen";
+    import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
 
@@ -450,9 +450,20 @@
                 //     sessionStorage.setItem("obj", JSON.stringify(objJson));
                 // }
             }
-          this.newslist.push({title:'2020β', content:'2020年5月15日-2020年9月7日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法论辩挖掘赛道，初赛第十七名进入复赛。'})
-          this.newslist.push({title:'2020α', content:'2020年5月15日-2020年9月7日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法阅读理解赛道，初赛第三名进入复赛。'})
-            // this.lawsForm.keyword=this.keyword;
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:2}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.newslist = res.data
+
+                    return this.newslist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
+             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;
             // this.searchMethod_law(this.lawsForm);

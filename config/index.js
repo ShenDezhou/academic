@@ -11,7 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/apis': {    //将www.exaple.com印射为/apis
+      '/api1': {    //将www.exaple.com印射为/apis
 				// target: 'http://192.168.12.58:60080',  // 接口域名
         // target: 'http://192.168.12.68:8090',  // 接口域名
         // target: 'http://192.168.12.68:8080',  // 接口域名二院
@@ -19,21 +19,19 @@ module.exports = {
         // target: 'http://192.168.43.170:8080',  // 接口域名总线
         // target: 'http://localhost:8080',  // 接口域名
         // target: 'http://170.192.106.5:8080/csb-broker/fb',//代理接口 暂时不全改 因为会报错 目前改了搜索 下拉
-        target: 'http://143.3.119.224:8081/search/csb-broker/fb',
-        // target:'http://csb-broker.tyyw.gj.jcy:8086',
-        // target: 'http://localhost:8081/search/csb-broker/fb',//线上环境
-        // secure: false,  // 如果是https接口，需要配置这个参数
+        target: 'http://localhost:58080/',
+        secure: false,  // 如果是https接口，需要配置这个参数
+        ws:true,
         changeOrigin: true,  //是否跨域
         pathRewrite: {
-            '^/apis': '/'   //需要rewrite的,
+            '/api1': ''   //需要rewrite的,
         }
       }
     },
-
     // Various Dev Server settings
     // host: '192.168.2.164', // can be overwritten by process.env.HOST
 		host: '0.0.0.0',
-    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

@@ -119,7 +119,7 @@
 											</template>
 											<template v-if="select == 'JournalId'">
 												<span @click="searchHistoryItem($event)">期刊 : {{item}}</span>
-											</template> 
+											</template>
 											<template v-if="select == 'InfoAuthor'">
 												<span @click="searchHistoryItem($event)">作者 : {{item}}</span>
 											</template>
@@ -204,27 +204,27 @@
 										</div>
 										<div style="color: #879bba;">
 											<div class="contentCon contentCon_display" v-if="item2.JournalId">
-												《{{item2.JournalId}}》/ 
+												《{{item2.JournalId}}》/
 											</div>
 											<!-- <template v-if="item2.InfoKind && item2.NameType || item2.JournalId">
 												/
 											</template> -->
 											<div class="contentCon contentCon_display" v-if="item2.NameType">
-												{{item2.JournalYear}} / 
+												{{item2.JournalYear}} /
 											</div>
 											<div class="contentCon contentCon_display" v-if="item2.JournalIssue">
 												<!-- <template v-if="item2.JournalId">/ </template> -->
-												{{item2.JournalIssue}}期 / 
+												{{item2.JournalIssue}}期 /
 											</div>
 
 											<div class="contentCon contentCon_display" v-if="item2.InfoPage">
 												<!-- <template v-if="item2.JournalIssue">/ </template> -->
-												共{{item2.InfoPage}}页 / 
+												共{{item2.InfoPage}}页 /
 											</div>
 
 											<div class="contentCon contentCon_display" v-if="item2.InfoAuthorUnAnalyzed">
 												<!-- <template v-if="item2.InfoPage">/ </template> -->
-												<span v-for="(item201, index201) in item2.InfoAuthorUnAnalyzed" :key="index201">{{item201}}  </span> / 
+												<span v-for="(item201, index201) in item2.InfoAuthorUnAnalyzed" :key="index201">{{item201}}  </span> /
 											</div>
 
 											<div class="contentCon contentCon_display" v-if="item2.InfoAuthorUnitUnAnalyzed">
@@ -370,7 +370,7 @@
 	import cricaseSiderbar from "@/components/cricaseSiderBar.vue";
 	import lawContent from "@/components/lawContent.vue";
 	import lawNogroup from "@/components/lawNogroup.vue";
-	import Publichead from "@/components/headerCommen";
+	import Publichead from "@/components/headerCommon";
 	import { getZYLawSelect ,Download} from "../../select_api";
 	import { addKeyWordHistory,getAggs, getCases, addSearch, getJSON, getCollectList,showKeyWordHistory,showLikeQuery } from "../../api";
 
@@ -1161,7 +1161,7 @@
 								this.totalNum = 0;
 								this.listAside = res.data.sidebar;
 							}
-							
+
 						}
 						this.packUp();
 					});

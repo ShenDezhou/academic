@@ -64,7 +64,7 @@
 							</div>
 						</div>
 				  	</template>
-                
+
               </div>
 						</el-col>
 						<el-col :span="7" id="advancedRetrieval_wrap_one">
@@ -576,7 +576,7 @@
 												<template v-if="item2.TrialStep">
 													<template v-for="(item, index) in item2.TrialStep">
 														<div class="contentCon contentCon_display" :key="index" v-if="item">
-															<span v-html="item"></span> 
+															<span v-html="item"></span>
 														</div>
 													</template>
 												</template>
@@ -584,14 +584,14 @@
 												<!-- <template v-if="item2.DocumentAttr">
 													<template v-for="(item, index) in item2.DocumentAttr">
 														<div class="contentCon contentCon_display" :key="index" v-if="item">
-															<span v-html="item"></span> / 
+															<span v-html="item"></span> /
 														</div>
 													</template>
 												</template> -->
 												<template v-if="item2.DocumentAttr">
 													<template >
 														<div class="contentCon contentCon_display">
-															<span v-html="item2.DocumentAttr"></span>/ 
+															<span v-html="item2.DocumentAttr"></span>/
 														</div>
 													</template>
 												</template>
@@ -599,21 +599,21 @@
 												<template v-if="item2.LastInstanceCourt">
 													<template v-for="(item, index) in item2.LastInstanceCourt">
 														<div class="contentCon contentCon_display" :key="index" v-if="item && (item2.LastInstanceCourt.length-1) == index">
-															<span v-html="item"></span> / 
+															<span v-html="item"></span> /
 														</div>
 													</template>
 												</template>
 												<!-- <template v-if="item2.Court">
 													<template>
 														<div class="contentCon contentCon_display">
-															<span v-html="item2.Court"></span>/ 
+															<span v-html="item2.Court"></span>/
 														</div>
 													</template>
 												</template> -->
 												<template v-if="item2.CaseFlag">
 													<template>
 														<div class="contentCon contentCon_display">
-															<span v-html="item2.CaseFlag"></span> / 
+															<span v-html="item2.CaseFlag"></span> /
 														</div>
 													</template>
 												</template>
@@ -623,9 +623,9 @@
 															<span v-html="item2.LastInstanceDate"></span>
 														</div>
 													</template>
-												</template>	
+												</template>
 											</template>
-																				
+
 
 											<div class="highlightFullText_wrap" v-if="item2.hitTimes != '0'&& searchType=='fulltext'">
 												<div class="highlightFullText_wrap_hidden">
@@ -1127,7 +1127,7 @@
 	import qs from "qs";
 	import {addKeyWordHistory, hotKeywordQuery,getAggs, getCases, addSearch, getJSON, getCollectList ,showKeyWordHistory,showLikeQuery} from "../../api";
 	import { getZYLawSelect,Download } from "../../select_api"
-	import Publichead from "@/components/headerCommen";
+	import Publichead from "@/components/headerCommon";
 
 	export default {
 		index: "0",
@@ -1489,7 +1489,7 @@
 			// });
 		},
     watch :{
-			
+
       keyWord: function(key){
 
         if(key){
@@ -1522,14 +1522,14 @@
     } ,
 		methods: {
 			changeRangeType(i){
-	
+
 				if(i=='1'){
 					this.rangeType = "";
 					this.searchType2= true
 				}else{
 					this.searchType2= false
 				}
-				
+
 			},
       updateKey(key){
         console.log("gengxin信息情况!");
@@ -1755,7 +1755,7 @@
 					this.searchType = "title";
 					this.queryForm.scope = this.searchType;
 				}
-				
+
 
 
 				this.queryForm.inquiryMode = this.inquiryMode ? parseInt(this.inquiryMode) : "";
@@ -2635,9 +2635,9 @@
 			// titleChange(item2){
 			//  let html=((item2.TrialStep?item2.TrialStep[0]:'')+
 			//  (item2.DocumentAttr!=undefined?item2.DocumentAttr[0] + '/' : (
-			// 	 item2.TrialStep?'/':'') )+  
-			// 									(this.nowScope == 'Court'? (+ 
-			// 										item2.Court!=undefined?item2.Court:(+ 
+			// 	 item2.TrialStep?'/':'') )+
+			// 									(this.nowScope == 'Court'? (+
+			// 										item2.Court!=undefined?item2.Court:(+
 			// 											item2.LastInstanceCourt!=undefined?item2.LastInstanceCourt:'')
 			// 										) : (
 			// 											this.nowScope == 'AgentLawOffice'?(+

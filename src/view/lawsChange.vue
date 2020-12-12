@@ -150,7 +150,7 @@
   import cricaseSiderbar from "@/components/cricaseSiderBar.vue";
   import lawContent from "@/components/lawContent.vue";
   import lawNogroup from "@/components/lawNogroup.vue";
-  import Publichead from "@/components/headerCommen";
+  import Publichead from "@/components/headerCommon";
   import { getZYLawSelect } from "../select_api";
   export default {
     name: "lawsChange",
@@ -191,7 +191,7 @@
           orderByIndex:0,//排序规则 0:发布日期倒序; 1:发布日期正序; 2:实施日期正序; 3:实施日期倒叙; 4:引用量倒叙(中央和地方可用)
           title: "", //右下侧结果中检索字段值
           filterList: [],
-          tagJson:[],   
+          tagJson:[],
           modules: [
             //需要返回数据模块
             1, //左侧聚类数据
@@ -279,9 +279,9 @@
       // 查看法规变迁图示
       showChangeFigure(item,index){
         console.log('图示接口参数---------------',item,index)
-        
+
         this.axios.get(`/form?groupId=`+item.GroupId, {
-          headers: { 
+          headers: {
             "Content-Type":"application/x-www-form-urlencoded",
             _api_name: "fb_xsfb_criminal_changeFigure",
              _api_version: "1.0.0"
@@ -294,7 +294,7 @@
             // changeHistoryList
             // relatedLawsGidDicList
             // res.data.data.changeHistoryList.concat(res.data.data.relatedLawsGidDicList)
-            
+
             // res.data.data.changeHistoryList.forEach((ele,index) => {
               let indexHistory = 0,indexFigueRe = 0;
 
@@ -316,7 +316,7 @@
         this.showChangeFigureVisible = true;
       },
 
-     
+
       //二级菜单分类
       secondMenu: function(jueryData) {
         let filterList = this.filterList || [];
@@ -363,7 +363,7 @@
     .showChangeFigure_dialog_wrap{
       .el-dialog{
         width: 780px;
-      } 
+      }
       .el-dialog__body{
         overflow: scroll;
       }
@@ -429,7 +429,7 @@
                 float: right;
                 margin-right: -5px;
               }
-              
+
             }
           }
           .item.bottom{
@@ -488,7 +488,7 @@
     margin-bottom: 20px;
     /* max-width: 1460px; */
   }
- 
+
   #textExample_faguiq {
     border-top: 2px solid #a8bdce;
     background-color: #daedfb;
@@ -518,7 +518,7 @@
   }
   .content_item_wrap{
     border-bottom: 1px dashed #a9c4df;
-    padding: 10px;  
+    padding: 10px;
   }
   .change_ul_list{
     padding: 0;

@@ -84,14 +84,14 @@
                                     </el-timeline-item>
                                     <el-timeline-item color="#4084f0" id="1">
                                         法律法规
-                                      ({{navbarVal.chl ? navbarVal.chl + navbarVal.lar + navbarVal.protocol 
-                                      + navbarVal.lawexplanation + navbarVal.whitebook + navbarVal.workreport 
+                                      ({{navbarVal.chl ? navbarVal.chl + navbarVal.lar + navbarVal.protocol
+                                      + navbarVal.lawexplanation + navbarVal.whitebook + navbarVal.workreport
                                        + navbarVal.legislation + navbarVal.eagn + navbarVal.iel + navbarVal.hkd
                                        + navbarVal.aom + navbarVal.twd : 0}})
                                     </el-timeline-item>
                                     <el-timeline-item color="#4084f0" id="2">
                                         司法案例
-                                      ({{navbarVal.pfnl ? navbarVal.pfnl + navbarVal.payz + exampleNavbar.gac 
+                                      ({{navbarVal.pfnl ? navbarVal.pfnl + navbarVal.payz + exampleNavbar.gac
                                       + navbarVal.bankruptcy + navbarVal.pal + navbarVal.atr : 0}})
                                     </el-timeline-item>
                                     <el-timeline-item color="#4084f0" id="3">
@@ -173,17 +173,17 @@
                                                         <div class="contentCon">
                                                             <!-- {{item}} -->
                                                             <template v-if="item.TimelinessDic">
-                                                                <span v-html="item.TimelinessDic"></span> / 
+                                                                <span v-html="item.TimelinessDic"></span> /
                                                             </template>
                                                             <template v-if="item.DocumentNO">
                                                                 <span v-html="item.DocumentNO"></span> /
                                                             </template>
                                                             <template v-if="item.IssueDate">
-                                                                <span v-html="item.IssueDate"></span>发布 
+                                                                <span v-html="item.IssueDate"></span>发布
                                                                 <template v-if="item.ImplementDate"> / </template>
                                                             </template>
                                                             <template v-if="item.ImplementDate">
-                                                                <span v-html="item.ImplementDate"></span>实施  
+                                                                <span v-html="item.ImplementDate"></span>实施
                                                             </template>
                                                             <!-- <span v-if="item.DocumentNO && choseType_law != 'twd'">{{item.DocumentNO}} / </span>
                                                             <span v-if="item.DocumentNO && choseType_law == 'twd'">{{item.DocumentNO}} </span>
@@ -272,39 +272,39 @@
                                                             <template v-if="item.TrialStep">
                                                                 <template v-for="(item, index) in item.TrialStep">
                                                                     <div class="contentCon contentCon_display" :key="index" v-if="item">
-                                                                        <span v-html="item"></span> 
+                                                                        <span v-html="item"></span>
                                                                     </div>
                                                                 </template>
                                                             </template>
                                                             <!-- <template v-if="item.DocumentAttr">
                                                                 <template v-for="(item02, index02) in item.DocumentAttr">
                                                                     <div class="contentCon_display" :key="index02" v-if="item02">
-                                                                        <span v-html="item02"></span> / 
+                                                                        <span v-html="item02"></span> /
                                                                     </div>
                                                                 </template>
                                                             </template> -->
                                                             <template v-if="item.DocumentAttr">
                                                                  <template>
-                                                                    <span v-html="item.DocumentAttr"></span>/ 
+                                                                    <span v-html="item.DocumentAttr"></span>/
                                                                 </template>
                                                             </template>
 
                                                             <!-- <template v-if="item.LastInstanceCourt">
                                                                 <template v-for="(item02, index02) in item.LastInstanceCourt">
                                                                     <div class="contentCon_display" :key="index02" v-if="item02">
-                                                                        <span v-html="item02"></span> / 
+                                                                        <span v-html="item02"></span> /
                                                                     </div>
                                                                 </template>
                                                             </template> -->
                                                             <template v-if="item.Court">
                                                                 <template>
-                                                                    <span v-html="item.Court"></span>/ 
+                                                                    <span v-html="item.Court"></span>/
                                                                 </template>
                                                             </template>
                                                             <template v-if="item.CaseFlag">
                                                                 <template>
                                                                     <div class="contentCon_display">
-                                                                        <span v-html="item.CaseFlag"></span> / 
+                                                                        <span v-html="item.CaseFlag"></span> /
                                                                     </div>
                                                                 </template>
                                                             </template>
@@ -314,7 +314,7 @@
                                                                         <span v-html="item.LastInstanceDate"></span>
                                                                     </div>
                                                                 </template>
-                                                            </template>		
+                                                            </template>
                                                             <!-- <span v-for="(item2,index2) in item.Category">
                                                                 {{ item.Category.length == 1 ? item2  : item.Category.length-1 == index2 ? item2 : item2 + ' /'}}
                                                             </span> -->
@@ -368,7 +368,7 @@
                                                         <p class="two">建议您修改相关查询条件重新查询</p>
                                                     </div>
                                                 </template>
-                                                <template v-if="total_jou > 0"> 
+                                                <template v-if="total_jou > 0">
                                                     <div class="content_mian_wrap_one" v-for="(item,index) in journalList.data" :key="index">
                                                         <div class="circle"></div>
                                                         <div class="contentTitle_onestop">
@@ -378,27 +378,27 @@
                                                         </div>
                                                         <div class="contentCon">
                                                             <div class="contentCon_display" v-if="item.JournalId">
-                                                                《{{item.JournalId}}》/ 
+                                                                《{{item.JournalId}}》/
                                                             </div>
                                                             <!-- <template v-if="item2.InfoKind && item2.NameType || item2.JournalId">
                                                                 /
                                                             </template> -->
                                                             <div class="contentCon_display" v-if="item.NameType">
-                                                                {{item.JournalYear}} / 
+                                                                {{item.JournalYear}} /
                                                             </div>
                                                             <div class="contentCon_display" v-if="item.JournalIssue">
                                                                 <!-- <template v-if="item2.JournalId">/ </template> -->
-                                                                {{item.JournalIssue}}期 / 
+                                                                {{item.JournalIssue}}期 /
                                                             </div>
 
                                                             <div class="contentCon_display" v-if="item.InfoPage">
                                                                 <!-- <template v-if="item2.JournalIssue">/ </template> -->
-                                                                共{{item.InfoPage}}页 / 
+                                                                共{{item.InfoPage}}页 /
                                                             </div>
 
                                                             <div class="contentCon_display" v-if="item.InfoAuthorUnAnalyzed">
                                                                 <!-- <template v-if="item2.InfoPage">/ </template> -->
-                                                                <span v-for="(item201, index201) in item.InfoAuthorUnAnalyzed" :key="index201">{{item201}}  </span> / 
+                                                                <span v-for="(item201, index201) in item.InfoAuthorUnAnalyzed" :key="index201">{{item201}}  </span> /
                                                             </div>
 
                                                             <div class="contentCon_display" v-if="item.InfoAuthorUnitUnAnalyzed">
@@ -441,7 +441,7 @@
 </template>
 
 <script>
-    import Publichead from "@/components/headerCommen";
+    import Publichead from "@/components/headerCommon";
     import { getZYLawSelect } from "../select_api";
     import { getAggs, getCases, addSearch,getJSON,getCollectList } from "../api";
     export default {
@@ -456,7 +456,7 @@
                     exampleTotal:0,
                     journalTotal:0
                 },
-                scroll:'',// 是否滚动 
+                scroll:'',// 是否滚动
                 navBarFixed:false,
                 keyword:"", //搜索框
                 select:'1',//搜索范围选中
@@ -720,7 +720,7 @@
                     }
                     this.navbarVal = res.data.navbar;
                     this.journalNavbar = res.data.navbar;
-                    
+
                 });
             },
 
@@ -737,7 +737,7 @@
                 this.searchMethod_exp(this.exampleForm);
             },
             selectIndex_jou(index){
-            console.log(111111111111111111),            	
+            console.log(111111111111111111),
                 this.choseType_jou=index;
                 this.qikanForm.index=index;
                 this.qikanForm.page=1;
@@ -782,7 +782,7 @@
             clickMoreMethod(){
                 //点击查看更多
                 this.lawsShow=true;
-            },          
+            },
             clickMoreMethod_exp(){
                 this.exampleShow=true;
             },
@@ -838,8 +838,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-    
-    
+
+
     .onstopSearch_left_nav{
         border: 1px solid #a9c4df;
         width: 208px;
@@ -872,8 +872,8 @@
     .nav_left_wrap.onstopSearch_left_nav .el-timeline{
         margin: 20px 0;
     }
- 
- 
+
+
 
     #label_daohang {
         border-top: 2px solid #a8bdce;
@@ -1234,8 +1234,8 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     }
-    
-   
+
+
     .filerSelect_ul {
     overflow: hidden;
     }
