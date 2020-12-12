@@ -184,7 +184,12 @@
                            Biography
                           </div>
                           <div class="contentCon">
+                            <template v-if="keyword">
+                               {{keyword}}
+                            </template>
+                            <template v-else>
                             <span>Tsinghuaboy</span> is a graduated student in the Department of Computer Science and Technology of Tsinghua University, majors in social network science and technology since 2015. His tutor is Professor Sun Lifeng of Institute for Human-Computer Interaction and Media Integration@THU-CS. He is interest in social network computation, graph computation and natural language processing.
+                            </template>
                           </div>
                         </div>
 
@@ -277,7 +282,9 @@
                               {{item.title}}
                             </div>
                             <div class="contentCon">
+                              <a :href=item.href target="_blank">
                               {{item.content}}
+                              </a>
                             </div>
                           </div>
 
@@ -502,12 +509,33 @@
             // }
             console.log(this.keyword)
             // this.booklist = cocaFamily(this.keyword)
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:0}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.keyword = res.data
+
+                    return this.keyword;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
             console.log(this.booklist);
-            this.booklist.push({title:'202005', content:'Online Social Network Analysis 电子工业出版社'})
-            this.booklist.push({title:'202004', content:'自然语言处理综论 第二版 人民邮电出版社'})
-            this.booklist.push({title:'202003', content:'强化学习 机械工业出版社'})
-            this.booklist.push({title:'202002', content:'深度学习 人民邮电出版社'})
-            this.booklist.push({title:'202001', content:'矩阵计算 第四版 人民邮电出版社'})
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:3}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.booklist = res.data
+
+                    return this.booklist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;

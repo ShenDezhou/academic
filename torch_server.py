@@ -30,8 +30,12 @@ parser.add_argument(
     help='falcon server port')
 args = parser.parse_args()
 
+bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生（201503-202010）。他的导师是人机交互与媒体与媒体研究所的孙立峰教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University (201503-202010). His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
 acdemic_news = [
-  {"title": "2019", "content": "2019年6月，本人完成的《用于移动终端的图形用户界面外观专利》，在国家知识产权局登记公布。"},
+  {"title": "2014", "content": "2014年，本人与Hu、Liu等人合作完成的《Security research of state cryptographic authentication security chip in smart grid（智能电网中的国密安全芯片研究）》，在CICED2014发布。"},
+  {"title": "2015", "content": "2015年，本人与李、黄等人合作完成的《基于微信大数据的股票市场预测研究》，在ICOC2015发布。"},
+  {"title": "2016", "content": "2016年12月，本人参与完成的国家标准《GB/T 33242-2016：数字城市智能卡应用技术要求》，由全国智能建筑及居住区数字化标准化技术委员会发布。"},
+  {"title": "2019", "content": "2019年6月，本人与谢、冯等人合作完成的《用于移动终端的图形用户界面外观专利》，在国家知识产权局登记公布。"},
   {"title": "2020", "content": "2020年4月28日，本人的图计算发明专利，《基于提前收敛重复平方的限定域矩阵乘法距离积计算方法》，在中国国家知识产权局2020年4月28日36卷1801期登记公布。"},
   {"title": "2020", "content": "2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。",
 "ref":"https://arxiv.org/abs/2006.13412","cite":"Shen, D. (2020). Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network. arXiv preprint arXiv:2006.13412."},
@@ -50,6 +54,18 @@ competetional_news = [
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法论辩挖掘赛道，最终成绩第十八名。'}
 ]
 
+zhihu="一种中英文本摘要算法,lawrouge中英文文本摘要评价器,基于命名实体识别的文本金额识别模型,基于融合全网语料的文本分词工具（lawa）,lawrouge中英文文本摘要测评工具-python,lawaplugin基于法律语料的文本分词Elasticsearch插件工具（法阿-elastic）,lawa基于法律语料的文本分词工具（法阿-python）,基于法律问答知识的RoBERTa微调语言模型,CAIL2020司法摘要赛道总结,CAIL2020论辩挖掘赛道总结,人工智能架构漫谈,基于TPU的合同分类模型训练,CAIL2020论辩挖掘ATTENTION模型,CAIL2020司法考试新基线,CAIL2020司法考试模型中BERT预训练语言模型的作用分析,个人发展与组织发展,两篇NIPS2020会议论文arxiv公布,BAAI2020会议参加总结,CAIL2020阅读理解新基线,CAIL2020论辩挖掘总结,基于BERT+CNN及GRU语言模型的司法考试问答模型,基于BERT+CNN语言模型的司法考试问答模型,基于BERT语言模型的司法考试问答模型,表示学习：社交网络最短路径表征,社交网络所有对最短路径矩阵距离积收敛率下限,基于Bigram的（1987-2019）NeurIPS录取论文标题的上下文联想模型,SERS:基于稀疏矩阵乘法(SpMM)的ERS社交网络测量/图最短路径计算方法,JERS：基于OpenBLAS/CuBLAS社交网络测量/图最短路径计算方法,ESR：社交网络测量/图最短路径计算方法,天授Tianshou在Windows10+CPU下的尝试,Pubseg:一种单双字串的BiLSTM中文分词工具,斯坦福Stanza分词在ICWS2005PKU数据集上的测评,基于预训练字Unigram和Bigram字向量的BiLSTM情感分类模型,基于CNN和BiLSTM的文档二分类模型,计图Jittor在Centos上的安装尝试,BiLSTM中文分词模型的多维特征分析,预训练词向量和Ngram对BiLSTM中文分词模型的影响,基于Pretrained-UnigramBigram的中文分词模型,基于预训练字模型的BiLSTM中文分词模型,LSTM中文分词模型中神经网络层分析,基于LSTM的中文分词模型,基于自定义词典和Viterbi解码的中文分词方法,基于马尔可夫链的MBA联考2020年国家分数线预测,Conditional Random Field迁移学习,HMM、CRF、JIEBA以及IK的在ICWS2005-PKU训练集上中文分词效果的评价对比,Conditional Random Field中文分词,隐马尔可夫模型中文分词测试结果"
+zhihuurl='https://www.zhihu.com/zvideo/1318971493880004608,https://zhuanlan.zhihu.com/p/332251719,https://zhuanlan.zhihu.com/p/269429576,https://zhuanlan.zhihu.com/p/268779443,https://zhuanlan.zhihu.com/p/257939614,https://zhuanlan.zhihu.com/p/257029909,https://zhuanlan.zhihu.com/p/242778463,https://zhuanlan.zhihu.com/p/222344456,https://zhuanlan.zhihu.com/p/199195813,https://zhuanlan.zhihu.com/p/183720882,https://zhuanlan.zhihu.com/p/183078658,https://zhuanlan.zhihu.com/p/163706734,https://zhuanlan.zhihu.com/p/159735923,https://zhuanlan.zhihu.com/p/154116994,https://zhuanlan.zhihu.com/p/151210221,https://zhuanlan.zhihu.com/p/151008799,https://zhuanlan.zhihu.com/p/150657041,https://zhuanlan.zhihu.com/p/150553110,https://zhuanlan.zhihu.com/p/150518933,https://zhuanlan.zhihu.com/p/150048263,https://zhuanlan.zhihu.com/p/147157462,https://zhuanlan.zhihu.com/p/146845331,https://zhuanlan.zhihu.com/p/146574544,https://zhuanlan.zhihu.com/p/141446301,https://zhuanlan.zhihu.com/p/139051161,https://zhuanlan.zhihu.com/p/133468295,https://zhuanlan.zhihu.com/p/132453830,https://zhuanlan.zhihu.com/p/126637444,https://zhuanlan.zhihu.com/p/125450644,https://zhuanlan.zhihu.com/p/121701700,https://zhuanlan.zhihu.com/p/117377082,https://zhuanlan.zhihu.com/p/115844694,https://zhuanlan.zhihu.com/p/115491853,https://zhuanlan.zhihu.com/p/115335759,https://zhuanlan.zhihu.com/p/115011521,https://zhuanlan.zhihu.com/p/112243414,https://zhuanlan.zhihu.com/p/112023014,https://zhuanlan.zhihu.com/p/111681404,https://zhuanlan.zhihu.com/p/111102569,https://zhuanlan.zhihu.com/p/110756802,https://zhuanlan.zhihu.com/p/110182149,https://zhuanlan.zhihu.com/p/108908389,https://zhuanlan.zhihu.com/p/108513845,https://zhuanlan.zhihu.com/p/108198690,https://zhuanlan.zhihu.com/p/107964523,https://zhuanlan.zhihu.com/p/107593308,https://zhuanlan.zhihu.com/p/106562090'
+non_acdemic_news = []
+zhihu = zhihu.split(',')
+zhihuurl = zhihuurl.split(',')
+for i in range(len(zhihu)):
+    non_acdemic_news.append({
+      "title":'2020',
+      "content":zhihu[i],
+      "href":zhihuurl[i]
+    })
+
 word_ads = [
   {
     'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com"
@@ -66,6 +82,9 @@ class TorchResource:
         logger.info("###")
 
     def getData(self, type):
+        if type == "0":
+            lines = bio
+
         if type == '1':
             lines = acdemic_news
 
@@ -73,6 +92,9 @@ class TorchResource:
             lines = competetional_news
 
         if type == '3':
+            lines = non_acdemic_news
+
+        if type == '4':
             lines = word_ads
 
         return lines

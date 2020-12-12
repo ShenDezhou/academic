@@ -136,7 +136,12 @@
                            Biography
                           </div>
                           <div class="contentCon">
+                            <template v-if="keyword">
+                               {{keyword}}
+                            </template>
+                             <template v-else>
                             <span>Tsinghuaboy</span> is a graduated student in the Department of Computer Science and Technology of Tsinghua University, majors in social network science and technology since 2015. His tutor is Professor Sun Lifeng of Institute for Human-Computer Interaction and Media Integration@THU-CS. He is interest in social network computation, graph computation and natural language processing.
+                            </template>
                           </div>
                         </div>
 
@@ -452,6 +457,19 @@
                 //     sessionStorage.setItem("obj", JSON.stringify(objJson));
                 // }
             }
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:0}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.keyword = res.data
+
+                    return this.keyword;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
             this.axios({
                       method:'GET',
                       url:'/api1/z',

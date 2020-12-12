@@ -24,12 +24,12 @@ export default new Router({
       meta:{title:'competetion'},
       component: ()=>import('@/view/competetion')
     },
-    // {
-    //   path: '/books',//Acdemic
-    //   name: 'books',
-    //   meta:{title:'books'},
-    //   component: ()=>import('@/view/books')
-    // },
+    {
+      path: '/books',//Acdemic
+      name: 'books',
+      meta:{title:'non-acdemic'},
+      component: ()=>import('@/view/books')
+    },
     {
       path: '/works',//
       name: 'works',

@@ -22,11 +22,11 @@
             <span slot="title">Competetion</span>
           </a>
         </el-menu-item>
-<!--        <el-menu-item index="books">-->
-<!--          <a :href="books">-->
-<!--            <span slot="title">Books</span>-->
-<!--          </a>-->
-<!--        </el-menu-item>-->
+        <el-menu-item index="books">
+          <a :href="books">
+            <span slot="title">Non-Acdemic</span>
+          </a>
+        </el-menu-item>
         <el-menu-item index="works">
           <a :href="works">
             <span slot="title">Cooperation Call</span>
