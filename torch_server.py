@@ -70,9 +70,9 @@ for i in range(len(zhihu)):
 # 4
 code_news = [
   {"title": '2020', "content": '2020年，发布了中文词法分析模块lawa。',
-  'ref':'https://pypi.org/project/lawa/', 'cite':'lawa: Massive vocabulary based Chinese word segmentation module for Law and Internet domain.'},
+  'href':'https://pypi.org/project/lawa/', 'cite':'lawa: Massive vocabulary based Chinese word segmentation module for Law and Internet domain.'},
   {"title": '2020', "content": '2020年，发布了中英文字面匹配方法lawrouge，可用于中英文的摘要、问答评价。',
-  'ref':'https://pypi.org/project/lawrouge/', 'cite':'lawrouge: A Multilingual Literal match method used on evaluation summary and question answering, et al.'}
+  'href':'https://pypi.org/project/lawrouge/', 'cite':'lawrouge: A Multilingual Literal match method used on evaluation summary and question answering, et al.'}
 
 ]
 

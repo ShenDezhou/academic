@@ -236,7 +236,7 @@
                             <div class="contentCon">
                               {{item.content}}
                               <br/>
-                              <a :href=item.href>{{item.cite}}</a>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
                             </div>
                           </div>
 
