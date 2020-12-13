@@ -31,6 +31,12 @@ export default new Router({
       component: ()=>import('@/view/books')
     },
     {
+      path: '/codes',//
+      name: 'codes',
+      meta:{title:'codes'},
+      component: ()=>import('@/view/codes')
+    },
+    {
       path: '/works',//
       name: 'works',
       meta:{title:'works'},

@@ -11,55 +11,7 @@
       <div class="content_main">
         <div class="header_search_wrap">
 <!--          <el-row class="search_inpu_one">-->
-<!--            <el-col :span="16" id="lawsNewCol" class="lawsNewCol_operation_wrap">-->
-<!--              &lt;!&ndash; @change="searchMethod"-->
-<!--                @blur="searchMethod"-->
-<!--                @clear="searchMethod"-->
-<!--                @keyup.enter.native="searchMethod"-->
-<!--              @change="(item)=>titleChange(item,'input')"&ndash;&gt;-->
-<!--              <el-input-->
-<!--                :placeholder="select == '1'? '默认在标题和发文字号中检索':'请输入检索内容'"-->
-<!--                clearable-->
-<!--                v-model="keyword"-->
-<!--                class="input-with-select search_input_wrap"-->
-<!--                prefix-icon="el-icon-search"-->
-<!--                @keyup.enter.native="getList"-->
-<!--                @clear="getList"-->
-<!--              >-->
-<!--                &lt;!&ndash; @focus="findHistory" &ndash;&gt;-->
-<!--&lt;!&ndash;                <el-select&ndash;&gt;-->
-<!--&lt;!&ndash;                  v-model="select"&ndash;&gt;-->
-<!--&lt;!&ndash;                  slot="prepend"&ndash;&gt;-->
-<!--&lt;!&ndash;                  class="search_select_wrap"&ndash;&gt;-->
-<!--&lt;!&ndash;                  @change="(item)=>titleChange(item,'select')"&ndash;&gt;-->
-<!--&lt;!&ndash;                >&ndash;&gt;-->
-<!--&lt;!&ndash;                  <el-option label="默认" value="1" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <el-option label="标题" value="title"></el-option>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <el-option label="全文" value="fulltext"></el-option>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <el-option label="发文字号" value="DocumentNO" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>&ndash;&gt;-->
-<!--&lt;!&ndash;                </el-select>&ndash;&gt;-->
-<!--              </el-input>-->
-<!--              &lt;!&ndash;下拉选框子&ndash;&gt;-->
-<!--              <div class="lawslishiorothertips_main_wrap" >-->
-<!--                <template v-for=" (key,index) in keywordsDrop">-->
-<!--                  <div :key="index" class="lawslishiorothertips_item">-->
-<!--                    <div @click="getKeywords(key,$event) ">-->
-<!--                      <span v-html="key.keyword"></span>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </template>-->
-<!--              </div>-->
 
-<!--            </el-col>-->
-<!--            <el-col :span="4" id="advancedRetrieval_wrap_one" class="advancedRetrieval_btn_link_wrap">-->
-<!--              <el-button type="primary" class="primary-btn-main" @click="getList">-->
-<!--                <span>开始检索</span>-->
-<!--              </el-button>-->
-
-<!--              &lt;!&ndash; <span class="fagui_bian_wrap_lin">-->
-<!--                <a href="#/lawsChange">法规变迁</a>-->
-<!--              </span> &ndash;&gt;-->
-<!--            </el-col>-->
 <!--          </el-row>-->
 <!--          <el-row>-->
 <!--            <el-col class="radio_main_wrap">-->
@@ -78,7 +30,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/works">工作</a>
+                            <a href="#/code">代码成果</a>
                         </span>
             </div>
           </el-row>
@@ -111,7 +63,7 @@
                     全部
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    进行工作
+                    计算机代码成果
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -184,12 +136,13 @@
                            Biography
                           </div>
                           <div class="contentCon">
-                             <template v-if="keyword">
+                            <template v-if="keyword">
                                {{keyword}}
                             </template>
                              <template v-else>
                             <span>Tsinghuaboy</span> is a graduated student in the Department of Computer Science and Technology of Tsinghua University, majors in social network science and technology since 2015. His tutor is Professor Sun Lifeng of Institute for Human-Computer Interaction and Media Integration@THU-CS. He is interest in social network computation, graph computation and natural language processing.
-                            </template>                          </div>
+                            </template>
+                          </div>
                         </div>
 
                         <template v-if="total_law > 0 && !lawsShow">
@@ -222,7 +175,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Call for Cooperation]</div>
+                    <div id="textExample">[News]</div>
                     <div class="nerong_wrap">
                       <!--                      <el-row class="tab_nav_wrap">-->
                       <!--                        <el-menu-->
@@ -275,13 +228,15 @@
                             <p class="two">建议您修改相关查询条件重新查询</p>
                           </div>
                         </template>
-                          <div class="content_mian_wrap_one" v-for="(item,index) in worklist" :key="index">
+                          <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
                             <div class="circle"></div>
                             <div class="contentTitle_onestop">
                               {{item.title}}
                             </div>
                             <div class="contentCon">
                               {{item.content}}
+                              <br/>
+                              <a :href=item.href>{{item.cite}}</a>
                             </div>
                           </div>
 
@@ -321,7 +276,6 @@
     import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
-    // import {cocaFamily} from "../coca";
 
     export default {
         name: "pubseg",
@@ -352,7 +306,6 @@
                 originList: [],
                 segsList: [],
                 newslist: [],
-                worklist: [],
                 exampleList: [],
                 journalList: [],
                 journalNavbar: {},
@@ -457,55 +410,53 @@
         created: function () {
             document.title = this.$route.meta.title;
             this.keyword = this.$route.params.keyword;
-            //
-            // //360 搜索传词
-            // // 获取页面url
-            // var curUrl = window.location.href
-            // var curIndex = curUrl.lastIndexOf("?");
-            // if (curIndex != -1) {
-            //     // 获取问号后面参数
-            //     var targetData = curUrl.substring(curIndex + 1, curUrl.length)
-            //     // 将问号后面参数转换成json
-            //     var objJson = {}
-            //     targetData.split("&").forEach((item) => {
-            //         objJson[item.split("=")[0]] = item.split("=")[1]
-            //     })
-            //     console.log('--------------搜索传参-----------------', objJson);
-            //     for (let curItem in objJson) {
-            //         // console.log(curItem)
-            //     }
-            //     let curKeyword_360 = decodeURIComponent(objJson.q) == undefined ? "" : decodeURIComponent(objJson.q);
-            //     this.keyword = curKeyword_360;
-            //     sessionStorage.setItem("curKeyword_360", curKeyword_360);
-            //     // localStorage.setItem("curKeyword_360", curKeyword_360);
-            //
-            //     // maybe
-            //     // // base64加密的数据
-            //     // var Base64 = require('js-base64').Base64;
-            //     // if (objJson.yhxx != undefined) {
-            //     //     // 用户信息
-            //     //     var token = objJson.yhxx;
-            //     //     // console.log(token)
-            //     //     if(token.lastIndexOf('/') == token.length - 1){
-            //     //         token=token.substring(0,token.lastIndexOf('/'));
-            //     //     }
-            //     //     // console.log(token)
-            //     //     var userInfo = JSON.parse(decodeURIComponent(Base64.decode(decodeURIComponent(token))));
-            //     //     // 部门受案号
-            //     //     var bmsah = decodeURIComponent(Base64.decode(decodeURIComponent(objJson.bmsah)));
-            //     //     let tandu = {
-            //     //         token: userInfo.dlrdwbm,//登录人单位编码
-            //     //         userId: userInfo.rybm,//人员编码
-            //     //         ryxm:userInfo.ryxm,//人员姓名
-            //     //         dlrbmbm:userInfo.dlrbmbm,//登录人员部门编码
-            //     //         bmsah:bmsah//案件部门受案号
-            //     //     };
-            //     //     sessionStorage.setItem("tandu", JSON.stringify(tandu));
-            //     //     sessionStorage.setItem("obj", JSON.stringify(objJson));
-            //     // }
-            // }
-            // this.booklist = cocaFamily(this.keyword)
 
+            //360 搜索传词
+            // 获取页面url
+            var curUrl = window.location.href
+            var curIndex = curUrl.lastIndexOf("?");
+            if (curIndex != -1) {
+                // 获取问号后面参数
+                var targetData = curUrl.substring(curIndex + 1, curUrl.length)
+                // 将问号后面参数转换成json
+                var objJson = {}
+                targetData.split("&").forEach((item) => {
+                    objJson[item.split("=")[0]] = item.split("=")[1]
+                })
+                console.log('--------------搜索传参-----------------', objJson);
+                for (let curItem in objJson) {
+                    // console.log(curItem)
+                }
+                let curKeyword_360 = decodeURIComponent(objJson.q) == undefined ? "" : decodeURIComponent(objJson.q);
+                this.keyword = curKeyword_360;
+                sessionStorage.setItem("curKeyword_360", curKeyword_360);
+                // localStorage.setItem("curKeyword_360", curKeyword_360);
+
+                // maybe
+                // // base64加密的数据
+                // var Base64 = require('js-base64').Base64;
+                // if (objJson.yhxx != undefined) {
+                //     // 用户信息
+                //     var token = objJson.yhxx;
+                //     // console.log(token)
+                //     if(token.lastIndexOf('/') == token.length - 1){
+                //         token=token.substring(0,token.lastIndexOf('/'));
+                //     }
+                //     // console.log(token)
+                //     var userInfo = JSON.parse(decodeURIComponent(Base64.decode(decodeURIComponent(token))));
+                //     // 部门受案号
+                //     var bmsah = decodeURIComponent(Base64.decode(decodeURIComponent(objJson.bmsah)));
+                //     let tandu = {
+                //         token: userInfo.dlrdwbm,//登录人单位编码
+                //         userId: userInfo.rybm,//人员编码
+                //         ryxm:userInfo.ryxm,//人员姓名
+                //         dlrbmbm:userInfo.dlrbmbm,//登录人员部门编码
+                //         bmsah:bmsah//案件部门受案号
+                //     };
+                //     sessionStorage.setItem("tandu", JSON.stringify(tandu));
+                //     sessionStorage.setItem("obj", JSON.stringify(objJson));
+                // }
+            }
             this.axios({
                       method:'GET',
                       url:'/api1/z',
@@ -522,16 +473,17 @@
             this.axios({
                       method:'GET',
                       url:'/api1/z',
-                      params:{text:5}
+                      params:{text:4}
                 }).then(res => {
                     console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
                     this.lawsShowLoad=false;
-                    this.worklist = res.data
+                    this.newslist = res.data
 
-                    return this.worklist;
+                    return this.newslist;
                     // this.navbarVal = res.data.navbar;
                     // this.lawsNavbar = res.data.navbar;
                 });
+
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
             // this.qikanForm.keyword=this.keyword;
@@ -555,8 +507,7 @@
                 // this.lawsForm.keyword=this.keyword;
                 // this.exampleForm.keyword=this.keyword;
                 // this.qikanForm.keyword=this.keyword;
-                // this.searchGetSegments(this.keyword);
-                // this.booklist = cocaFamily(this.keyword)
+                this.searchGetSegments(this.keyword);
                 // this.searchMethod_exp(this.exampleForm);
                 // this.searchMethod_jou(this.qikanForm);
             },

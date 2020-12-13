@@ -27,6 +27,11 @@
             <span slot="title">Non-Acdemic</span>
           </a>
         </el-menu-item>
+        <el-menu-item index="codes">
+          <a :href="codes">
+            <span slot="title">ComputerCode</span>
+          </a>
+        </el-menu-item>
         <el-menu-item index="works">
           <a :href="works">
             <span slot="title">Cooperation Call</span>
@@ -60,6 +65,7 @@
         acdemic:'#/acdemic',
         competetion:'#/competetion',
         books:'#/books',
+        codes:'#/codes',
         works:'#/works',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
