@@ -1,9 +1,11 @@
 # -*- coding: UTF-8 -*-
 import argparse
 import logging
+import os
 import sys
 import time
 import falcon
+import pandas
 from falcon_cors import CORS
 import json
 import waitress
@@ -112,6 +114,7 @@ class TorchResource:
             lines = cooperation_inviting
 
         return lines
+
     def on_get(self, req, resp):
         logger.info("...")
         resp.set_header('Access-Control-Allow-Origin', '*')
@@ -138,9 +141,35 @@ class TorchResource:
         logger.info("tot:{}ns".format(ft() - start))
         logger.info("###")
 
+statefile='state.csv'
+class StateResource:
+
+    def __init__(self):
+        logger.info("...")
+        logger.info("###")
+        if os.path.isfile(statefile):
+            self.df = pandas.read_csv(statefile)
+        else:
+            self.df = pandas.DataFrame()
+
+
+    def on_get(self, req, resp):
+        logger.info("...")
+        resp.set_header('Access-Control-Allow-Origin', '*')
+        resp.set_header('Access-Control-Allow-Methods', '*')
+        resp.set_header('Access-Control-Allow-Headers', '*')
+        resp.set_header('Access-Control-Allow-Credentials', 'true')
+        now = time.time()
+        self.df = self.df.append({'time':now},ignore_index=True)
+        if len(self.df) % 10:
+            self.df.to_csv('state.csv',index=False)
+        resp.media = len(self.df)
+        logger.info("###")
+
 
 if __name__ == "__main__":
     api = falcon.API(middleware=[cors_allow_all.middleware])
     api.req_options.auto_parse_form_urlencoded = True
     api.add_route('/z', TorchResource())
+    api.add_route('/a', StateResource())
     waitress.serve(api, port=args.port, threads=48, url_scheme='http')

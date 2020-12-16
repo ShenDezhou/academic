@@ -261,6 +261,11 @@
                         </template>
                       </div>
                     </div>
+                    <div id="textExample" >
+                       <template v-if="total_pv>0">
+                        {{total_pv}}
+                       </template>
+                     </div>
                   </div>
                 </div>
               </template>
@@ -405,6 +410,7 @@
                 total_bankruptcy: 0,
                 total_pal: 0,
                 total_atr: 0,
+                total_pv: 0
             }
         },
         created: function () {
@@ -480,6 +486,17 @@
                     this.newslist = res.data
 
                     return this.newslist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
+            this.axios({
+                      method:'GET',
+                      url:'/api1/a'
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.total_pv = res.data
+
+                    return this.total_pv;
                     // this.navbarVal = res.data.navbar;
                     // this.lawsNavbar = res.data.navbar;
                 });
@@ -1357,6 +1374,25 @@
 
   .contentCon_display {
     display: inline-block;
+  }
+  .state {
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    /* font-size: 120%; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 </style>
 <style scoped>
