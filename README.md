@@ -1,56 +1,23 @@
-# Acdemic
-Α	Alpha	&Alpha;	&#913;
-Β	Beta	&Beta;	&#914;
-Γ	Gamma	&Gamma;	&#915;
-Δ	Delta	&Delta;	&#916;
-Ε	Epsilon	&Epsilon;	&#917;
-Ζ	Zeta	&Zeta;	&#918;
-Η	Eta	&Eta;	&#919;
-Θ	Theta	&Theta;	&#920;
-Ι	Iota	&Iota;	&#921;
-Κ	Kappa	&Kappa;	&#922;
-Λ	Lambda	&Lambda;	&#923;
-Μ	Mu	&Mu;	&#924;
-Ν	Nu	&Nu;	&#925;
-Ξ	Xi	&Xi;	&#926;
-Ο	Omicron	&Omicron;	&#927;
-Π	Pi	&Pi;	&#928;
-Ρ	Rho	&Rho;	&#929;
- 	Sigmaf	 	undefined
-Σ	Sigma	&Sigma;	&#931;
-Τ	Tau	&Tau;	&#932;
-Υ	Upsilon	&Upsilon;	&#933;
-Φ	Phi	&Phi;	&#934;
-Χ	Chi	&Chi;	&#935;
-Ψ	Psi	&Psi;	&#936;
-Ω	Omega	&Omega;	&#937;
+# 1. My Academic Footprints
 
-α	alpha	&alpha;	&#945;
-β	beta	&beta;	&#946;
-γ	gamma	&gamma;	&#947;
-δ	delta	&delta;	&#948;
-ε	epsilon	&epsilon;	&#949;
-ζ	zeta	&zeta;	&#950;
-η	eta	&eta;	&#951;
-θ	theta	&theta;	&#952;
-ι	iota	&iota;	&#953;
-κ	kappa	&kappa;	&#954;
-λ	lambda	&lambda;	&#923;
-μ	mu	&mu;	&#956;
-ν	nu	&nu;	&#925;
-ξ	xi	&xi;	&#958;
-ο	omicron	&omicron;	&#959;
-π	pi	&pi;	&#960;
-ρ	rho	&rho;	&#961;
-ς	sigmaf	&sigmaf;	&#962;
-σ	sigma	&sigma;	&#963;
-τ	tau	&tau;	&#964;
-υ	upsilon	&upsilon;	&#965;
-φ	phi	&phi;	&#966;
-χ	chi	&chi;	&#967;
-ψ	psi	&psi;	&#968;
-ω	omega	&omega;	&#969;
+* 2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。
+Shen, D. (2020). Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network. arXiv preprint arXiv:2006.13412.
+2020
+* 2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。
+Shen, D. (2020). Movie Box office Prediction via Joint Actor Representations and Social Media Sentiment. arXiv preprint arXiv:2006.13417.
+2020
+* 2020年，本人的图像分类论文《Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models》在researchsquare.com发布
+Shen, D. (2020). Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models.
+2020
+* 2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。
+Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach.
+2020
+* 2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021.
 
-ϑ	theta symbol	&thetasym;	&#977;
-ϒ	upsilon symbol	&upsih;	&#978;
-ϖ	pi symbol	&piv;	&#982;
+# 2. Call For Cooperation
+
+
+* 2020-2021: 科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com
+
+* 2020-2021: Scientific research cooperation invitation: sincerely invite all experts and scholars to cooperate with me in scientific research and project cooperation in computer vision and text processing. Email: tsinghua9boy@sina.com
+
