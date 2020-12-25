@@ -129,7 +129,19 @@
                     <div id="textExample">[通用平台]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                         <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='COM'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -144,7 +156,19 @@
                     <div id="textExample">[数据标注]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                        <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='TAG'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -159,7 +183,19 @@
                     <div id="textExample">[文档智能]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                        <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='DOC'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -174,7 +210,19 @@
                     <div id="textExample">[自然语言]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                          <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='NLP'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -189,7 +237,19 @@
                     <div id="textExample">[推荐系统]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                        <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='REC'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -204,7 +264,19 @@
                     <div id="textExample">[关系系统]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                        <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='ER'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -219,7 +291,19 @@
                     <div id="textExample">[语言翻译]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                          <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='MT'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -234,7 +318,19 @@
                     <div id="textExample">[计算机视觉]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
-
+                        <div class="content_mian_wrap_one" v-for="(item,index) in newslist" :key="index">
+                            <template v-if="item.type=='CV'">
+                            <div class="circle"></div>
+                            <div class="contentTitle_onestop">
+                              {{item.title}}
+                            </div>
+                            <div class="contentCon">
+                              {{item.content}}
+                              <br/>
+                              <a :href=item.href target="_blank">{{item.cite}}</a>
+                            </div>
+                            </template>
+                          </div>
 
                       </div>
                     </div>
@@ -435,9 +531,19 @@
             //     //     sessionStorage.setItem("obj", JSON.stringify(objJson));
             //     // }
             // }
-            console.log(this.keyword)
-            this.cocafamilies = cocaFamily(this.keyword)
-            console.log(this.cocafamilies);
+            this.axios({
+                      method:'GET',
+                      url:'/api1/z',
+                      params:{text:5}
+                }).then(res => {
+                    console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
+                    this.lawsShowLoad=false;
+                    this.newslist = res.data
+
+                    return this.newslist;
+                    // this.navbarVal = res.data.navbar;
+                    // this.lawsNavbar = res.data.navbar;
+                });
             // this.newslist.push({title:'2020', content:'2020年5月，本人独立完成的论文Lower Bounds on Rate of Convergence of Matrix ProduLcts in All Pairs Shortest Path of Social Network向NeurIPS 2020提交，NeurIPS是人工智能与机器学习顶级会议。'})
             // this.lawsForm.keyword=this.keyword;
             // this.exampleForm.keyword=this.keyword;
@@ -463,7 +569,7 @@
                 // this.exampleForm.keyword=this.keyword;
                 // this.qikanForm.keyword=this.keyword;
                 // this.searchGetSegments(this.keyword);
-                this.cocafamilies = cocaFamily(this.keyword)
+                // this.cocafamilies = cocaFamily(this.keyword)
                 // this.searchMethod_exp(this.exampleForm);
                 // this.searchMethod_jou(this.qikanForm);
             },

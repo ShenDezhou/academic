@@ -78,6 +78,15 @@ code_news = [
 
 ]
 
+# 5
+model_pretrained = [
+  {"type":"NLP", "title": '2020', "content": '2020年，发布了中文词法分析模块lawa。',
+   'href': 'https://pypi.org/project/lawa/',
+   'cite': 'lawa: Massive vocabulary based Chinese word segmentation module for Law and Internet domain.'},
+
+]
+
+
 # 4
 cooperation_inviting = [
   {
@@ -87,6 +96,8 @@ cooperation_inviting = [
     'title': '2020-2021', 'content':"Scientific research cooperation invitation: sincerely invite all experts and scholars to cooperate with me in scientific research and project cooperation in computer vision and text processing. Email: tsinghua9boy@sina.com"
   }
 ]
+
+
 
 class TorchResource:
 
@@ -111,6 +122,9 @@ class TorchResource:
             lines = code_news
 
         if type == '5':
+            lines = model_pretrained
+
+        if type == '6':
             lines = cooperation_inviting
 
         return lines

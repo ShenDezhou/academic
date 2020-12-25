@@ -522,7 +522,7 @@
             this.axios({
                       method:'GET',
                       url:'/api1/z',
-                      params:{text:5}
+                      params:{text:6}
                 }).then(res => {
                     console.log('-----------------01返回数据-------------------',JSON.stringify(res.data));
                     this.lawsShowLoad=false;
