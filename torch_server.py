@@ -80,14 +80,24 @@ code_news = [
 
 # 5
 model_pretrained = [
-  {"type":"NLP", "title": '2020', "content": '2020年，发布了中文词法分析模块lawa。',
-   'href': 'https://pypi.org/project/lawa/',
-   'cite': 'lawa: Massive vocabulary based Chinese word segmentation module for Law and Internet domain.'},
+  {"type": "COM", "title": '2020', "content": '2020年，发布了中文SKIPGRAM预训练词向量语言模型：word2vec_skipgram_qa。',
+   'href': 'https://drive.google.com/drive/folders/1bWtkwvUucT9ZtEvjjds08Oc8TGe6Iw11?usp=sharing',
+   'cite': 'skipgram-qa-512dim-147935words'},
+
+  {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练语言模型：robert_wwm_ext_qa。',
+   'href': 'https://drive.google.com/drive/folders/1-wnz-EC9znkZz-DW40Mhisr4PaejtctC?usp=sharing',
+   'cite': 'qabert-12layers'},
+  {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练大型语言模型：robert_wwm_large_ext_qa第一版。',
+   'href': 'https://drive.google.com/drive/folders/1-2U4oaOpbb5nlUOUBMdurxyoO7qMBBxf?usp=sharing',
+   'cite': 'qabert-24layers-v1'},
+  {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练大型语言模型：robert_wwm_large_ext_qa第二版。',
+   'href': 'https://drive.google.com/drive/folders/11Pd5sy2jRePz5AVlOdImRYNDSbCtwtAS?usp=sharing',
+   'cite': 'qabert-24layers-v2'}
 
 ]
 
 
-# 4
+# 6
 cooperation_inviting = [
   {
     'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com"
