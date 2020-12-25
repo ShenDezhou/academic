@@ -32,6 +32,11 @@
             <span slot="title">ComputerCode</span>
           </a>
         </el-menu-item>
+         <el-menu-item index="models">
+          <a :href="models">
+            <span slot="title">Models</span>
+          </a>
+        </el-menu-item>
         <el-menu-item index="works">
           <a :href="works">
             <span slot="title">Cooperation Call</span>
@@ -67,6 +72,7 @@
         books:'#/books',
         codes:'#/codes',
         works:'#/works',
+        models:'#/models',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',

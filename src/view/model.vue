@@ -10,67 +10,7 @@
       </div>
       <div class="content_main">
         <div class="header_search_wrap">
-          <el-row class="search_inpu_one">
-            <el-col :span="16" id="lawsNewCol" class="lawsNewCol_operation_wrap">
-              <!-- @change="searchMethod"
-                @blur="searchMethod"
-                @clear="searchMethod"
-                @keyup.enter.native="searchMethod"
-              @change="(item)=>titleChange(item,'input')"-->
-              <el-input
-                :placeholder="select == '1'? '默认在标题和发文字号中检索':'请输入检索内容'"
-                clearable
-                v-model="keyword"
-                class="input-with-select search_input_wrap"
-                prefix-icon="el-icon-search"
-                @keyup.enter.native="getList"
-                @clear="getList"
-              >
-                <!-- @focus="findHistory" -->
-<!--                <el-select-->
-<!--                  v-model="select"-->
-<!--                  slot="prepend"-->
-<!--                  class="search_select_wrap"-->
-<!--                  @change="(item)=>titleChange(item,'select')"-->
-<!--                >-->
-<!--                  <el-option label="默认" value="1" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
-<!--                  <el-option label="标题" value="title"></el-option>-->
-<!--                  <el-option label="全文" value="fulltext"></el-option>-->
-<!--                  <el-option label="发文字号" value="DocumentNO" v-if="tab_nav_select == 'chl' || tab_nav_select == 'lar'"></el-option>-->
-<!--                </el-select>-->
-              </el-input>
-              <!--下拉选框子-->
-              <div class="lawslishiorothertips_main_wrap" >
-                <template v-for=" (key,index) in keywordsDrop">
-                  <div :key="index" class="lawslishiorothertips_item">
-                    <div @click="getKeywords(key,$event) ">
-                      <span v-html="key.keyword"></span>
-                    </div>
-                  </div>
-                </template>
-              </div>
 
-            </el-col>
-            <el-col :span="4" id="advancedRetrieval_wrap_one" class="advancedRetrieval_btn_link_wrap">
-              <el-button type="primary" class="primary-btn-main" @click="getList">
-                <span>开始检索</span>
-              </el-button>
-
-              <!-- <span class="fagui_bian_wrap_lin">
-                <a href="#/lawsChange">法规变迁</a>
-              </span> -->
-            </el-col>
-          </el-row>
-          <el-row>
-            <el-col class="radio_main_wrap">
-              <ul>
-                <!-- <li class="radio_qing_mo">
-                    <el-radio v-model="radio_fuzzy" label="1">精确</el-radio>
-                    <el-radio v-model="radio_fuzzy" label="2">模糊</el-radio>
-                </li> -->
-              </ul>
-            </el-col>
-          </el-row>
           <el-row>
             <div class="breadcrumb">
                         <span>
@@ -78,7 +18,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/coca/study">当代美国英文语料</a>
+                            <a href="#/models">AI体系</a>
                         </span>
             </div>
           </el-row>
@@ -90,28 +30,30 @@
                    :style="navBarFixed ? 'position: fixed;top: 150px;z-index: 666;' : ''"
                    @click="goToAim($event)">
                 <div data-v-21e53028 id="label_daohang">导航</div>
-                <!-- <div class="searchWhole">
-                    <div class="searchWholeTitle">
-                        全部
-                    </div>
-                    <ul class="catagoryWhole">
-                        <li>
-                            法律法规（{{total_law}}）
-                        </li>
-                        <li>
-                            司法案例（{{total_exp}}）
-                        </li>
-                        <li>
-                            法学期刊（{{total_jou}}）
-                        </li>
-                    </ul>
-                </div> -->
                 <el-timeline>
                   <el-timeline-item color="#4084f0" id="0">
-                    全部
+                    通用平台
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    当代美国英文语料
+                    数据标注
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    文档智能
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    自然语言
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    推荐系统
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    关系系统
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    语言翻译
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="1">
+                    计算机视觉
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -124,52 +66,28 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Introduction]</div>
+                    <div id="textExample">[Legal Declaration]</div>
                     <div class="nerong_wrap">
-                      <!--                      <el-row class="tab_nav_wrap">-->
-                      <!--                        <el-menu-->
-                      <!--                          default-active="chl"-->
-                      <!--                          class="el-menu-vertical-demo"-->
-                      <!--                          background-color="#fff"-->
-                      <!--                          text-color="#666"-->
-                      <!--                          active-text-color="#065d9d"-->
-                      <!--                          mode="horizontal"-->
-                      <!--                          @select="selectIndex"-->
-                      <!--                        >-->
-                      <!--                          <el-menu-item index="chl">-->
-                      <!--                            <span slot="title">中央法规({{navbarVal.chl}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="lar">-->
-                      <!--                            <span slot="title">地方法规({{navbarVal.lar}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-submenu index="protocol">-->
-                      <!--                            <template slot="title">立法资料</template>-->
-                      <!--                            <el-menu-item index="protocol" style="color:#5c79b0;">草案({{navbarVal.protocol}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="lawexplanation" style="color:#5c79b0;">法规解读({{navbarVal.lawexplanation}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="whitebook" style="color:#5c79b0;">白皮书({{navbarVal.whitebook}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="workreport" style="color:#5c79b0;">工作报告({{navbarVal.workreport}})</el-menu-item>-->
-                      <!--                          </el-submenu>-->
-                      <!--                          <el-menu-item index="legislation">-->
-                      <!--                            <span slot="title">立法计划({{navbarVal.legislation}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="eagn">-->
-                      <!--                            <span slot="title">中外条约({{navbarVal.eagn}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="iel">-->
-                      <!--                            <span slot="title">外国法规({{navbarVal.iel}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="hkd">-->
-                      <!--                            <span slot="title">香港法规({{navbarVal.hkd}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="aom">-->
-                      <!--                            <span slot="title">澳门法规({{navbarVal.aom}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="twd">-->
-                      <!--                            <span slot="title">台湾法规({{navbarVal.twd}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                        </el-menu>-->
-                      <!--                      </el-row>-->
                       <div class="list_wrap_main">
+                        <div class="content_mian_wrap_one" >
+                          <div class="circle"></div>
+                          <div class="contentTitle_onestop">
+                           此页面所列内容全部权利由 tsinghuaboy 所有，网络用户在本页面的操作视为用户同意作为被许可人与权利许可人签订软件许可协议的承诺。
+                          </div>
+                          <div class="contentCon">
+                               1.操作软件许可：许可人特此授予被许可人使用操作软件的非排他性的权利，但是只能用于被许可产品且须遵守规定。
+                      许可人及其每一份第三方软件的各提供商（各第三方软件提供商）保留被许可产品中所使用的操作软件的所有权利。
+                      许可人特此授权被许可人根据制作的书面协议（软件分许可）的规定向被许可产品的买方授予使用操作软件的分许可。
+                      被许可人不得拥有或者向被许可产品的买方或其他任何人许可或试图许可操作软件中或与之相关的任何权利。<br/>
+                          </div>
+                          <dic class="contentCon">
+                            2.软件分发许可：被许可人应对各软件分许可进行管理和监督，以确保各买方／分被许可人遵守有关规定。
+                      如果买方／分被许可人违反了软件分许可的规定，被许可人应立即书面通知许可人（或其指定关联机构）并采取许可人不时要求采取的所有措施协助许可人（或者指定关联机构）行使作为分许可人的权利并采取救济措施，或者由许可人行使有关权利和采取救济措施。
+                          </dic>
+                        </div>
+
+                         <br/>
+
                         <template v-if="total_law == 0">
                           <div class="no_data_wrap">
                             <img :src="no_data_logo" alt="未查询到相关数据">
@@ -177,26 +95,6 @@
                             <p class="two">建议您修改相关查询条件重新查询</p>
                           </div>
                         </template>
-
-                        <div class="content_mian_wrap_one" >
-                          <div class="circle"></div>
-                          <div class="contentTitle_onestop">
-                           Biography
-                          </div>
-                          <div class="contentCon">
-                            3,000 most frequent "core academic" words (lemmas) in 120 million words of the COCA Academic texts.To be considered a "core academic word", it must:
-                                                                                                                               1)  Occur at least 50% more frequently in the academic portion of COCA than would otherwise be expected (per million words). In other words, 1.50 or higher in the [ratio] column.
-                                                                                                                               2)  Have a good "dispersion" [disp column] across the nine domains of academic (a Juilland "d" measure of at least 0.80, for those who know what that means)
-                                                                                                                               3) Have at least 20% of the "expected" frequency in at least seven of the nine domains
-                                                                                                                               4)  Not occur more than three times as much as "expected" in any of the nine domains
-                            [PoS]: Part of speech: noun, verb, adjective, adverb
-                            [COCA-All]: The overall frequency in COCA (when COCA was 425 million words; it's now 450 million words)
-                            [COCA-Acad]: The frequency in the 120 million words of COCA Academic
-                            [ratio]: How much more frequent the word is in COCA-Academic than the "expected" frequency. For example, if a word occur 425 times overall in COCA (which is 425 million words in size), then it should occur about 120 times in the 120 million words of COCA-Academic. If it occurred 180 times, then it occurs at 1.50 times the expected frequency.
-                            [disp]ersion: The Juilland "d" measure of how "evenly" the word is spread across COCA-Academic
-                            range: In how many of the nine domains does the word occur with at least 20% of the expected frequency
-                          </div>
-                        </div>
 
                         <template v-if="total_law > 0 && !lawsShow">
                           <div class="clickMore">
@@ -228,88 +126,116 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Coca]</div>
+                    <div id="textExample">[通用平台]</div>
                     <div class="nerong_wrap">
-                      <!--                      <el-row class="tab_nav_wrap">-->
-                      <!--                        <el-menu-->
-                      <!--                          default-active="chl"-->
-                      <!--                          class="el-menu-vertical-demo"-->
-                      <!--                          background-color="#fff"-->
-                      <!--                          text-color="#666"-->
-                      <!--                          active-text-color="#065d9d"-->
-                      <!--                          mode="horizontal"-->
-                      <!--                          @select="selectIndex"-->
-                      <!--                        >-->
-                      <!--                          <el-menu-item index="chl">-->
-                      <!--                            <span slot="title">中央法规({{navbarVal.chl}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="lar">-->
-                      <!--                            <span slot="title">地方法规({{navbarVal.lar}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-submenu index="protocol">-->
-                      <!--                            <template slot="title">立法资料</template>-->
-                      <!--                            <el-menu-item index="protocol" style="color:#5c79b0;">草案({{navbarVal.protocol}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="lawexplanation" style="color:#5c79b0;">法规解读({{navbarVal.lawexplanation}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="whitebook" style="color:#5c79b0;">白皮书({{navbarVal.whitebook}})</el-menu-item>-->
-                      <!--                            <el-menu-item index="workreport" style="color:#5c79b0;">工作报告({{navbarVal.workreport}})</el-menu-item>-->
-                      <!--                          </el-submenu>-->
-                      <!--                          <el-menu-item index="legislation">-->
-                      <!--                            <span slot="title">立法计划({{navbarVal.legislation}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="eagn">-->
-                      <!--                            <span slot="title">中外条约({{navbarVal.eagn}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="iel">-->
-                      <!--                            <span slot="title">外国法规({{navbarVal.iel}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="hkd">-->
-                      <!--                            <span slot="title">香港法规({{navbarVal.hkd}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="aom">-->
-                      <!--                            <span slot="title">澳门法规({{navbarVal.aom}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                          <el-menu-item index="twd">-->
-                      <!--                            <span slot="title">台湾法规({{navbarVal.twd}})</span>-->
-                      <!--                          </el-menu-item>-->
-                      <!--                        </el-menu>-->
-                      <!--                      </el-row>-->
                       <div class="list_wrap_main">
-                        <template v-if="total_law == 0">
-                          <div class="no_data_wrap">
-                            <img :src="no_data_logo" alt="未查询到相关数据">
-                            <p class="one">未查询到相关数据</p>
-                            <p class="two">建议您修改相关查询条件重新查询</p>
-                          </div>
-                        </template>
-                          <div class="content_mian_wrap_one" v-for="(item,index) in cocafamilies" :key="index">
-                            <div class="circle"></div>
-                            <div class="contentTitle_onestop">
-                              {{item.family}}
-                            </div>
-                            <div class="contentCon">
-                              {{item}}
-                            </div>
-                          </div>
 
-                        <template v-if="total_law > 0 && !lawsShow">
-                          <div class="clickMore">
-                            <el-button type="primary" plain @click="clickMoreMethod">点击查看更多</el-button>
-                          </div>
-                        </template>
-                        <template v-if="total_law > 0 && lawsShow">
-                          <div class="pagination_onestop">
-                            <el-pagination
-                              @size-change="handleSizeChange"
-                              @current-change="handleCurrentChange"
-                              :current-page="lawsForm.page"
-                              :page-sizes="[10, 50, 100, 200,400]"
-                              :page-size="lawsForm.size"
-                              layout="prev, pager, next,sizes,jumper,->,total,slot"
-                              background
-                              :total="lawsList.total"
-                            ></el-pagination>
-                          </div>
-                        </template>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[数据标注]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[文档智能]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[自然语言]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[推荐系统]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[关系系统]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[语言翻译]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content_main_wrap">
+                  <div class="lawsNew_wrap" id="lawsNew_wrap_main"
+                       v-loading="lawsShowLoad"
+                       element-loading-text="拼命加载中"
+                       element-loading-spinner="el-icon-loading"
+                       element-loading-background="rgba(0, 0, 0, 0)">
+                    <div id="textExample">[计算机视觉]</div>
+                    <div class="nerong_wrap">
+                      <div class="list_wrap_main">
+
+
                       </div>
                     </div>
                   </div>
@@ -327,10 +253,9 @@
     import Publichead from "@/components/headerCommon";
     import {getZYLawSelect} from "../select_api";
     import {getAggs, getCases, addSearch, getJSON, getCollectList} from "../api";
-    import {cocaFamily} from "../../flush/coca";
 
     export default {
-        name: "pubseg",
+        name: "models",
         components: {
             Publichead
         },
