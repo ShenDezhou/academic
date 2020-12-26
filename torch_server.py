@@ -83,6 +83,9 @@ model_pretrained = [
   {"type": "COM", "title": '2020', "content": '2020年，发布了中文SKIPGRAM预训练词向量语言模型：word2vec_skipgram_qa。',
    'href': 'https://drive.google.com/drive/folders/1bWtkwvUucT9ZtEvjjds08Oc8TGe6Iw11?usp=sharing',
    'cite': 'skipgram-qa-512dim-147935words'},
+  {"type": "COM", "title": '2020', "content": '2020年，发布了海量中文统计词向量语言模型：tf_df_case_40m。',
+   'href': 'https://drive.google.com/drive/folders/1BBVe45K7X0ku4doGJSoV8oSbBNigP3_U?usp=sharing',
+   'cite': 'tfdf-case-40427722words'},
 
   {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练语言模型：robert_wwm_ext_qa。',
    'href': 'https://drive.google.com/drive/folders/1-wnz-EC9znkZz-DW40Mhisr4PaejtctC?usp=sharing',
