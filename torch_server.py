@@ -33,7 +33,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 # 0
-bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生（201503-202010）。他的导师是人机交互与媒体与媒体研究所的SUNLIFENG教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University (201503-202010). His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
+bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生。他的导师是人机交互与媒体与媒体研究所的SUNLIFENG教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University. His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
 # 1
 acdemic_news = [
   {"title": "2014", "content": "2014年，本人与Hu、Liu等人合作完成的《Security research of state cryptographic authentication security chip in smart grid（智能电网中的国密安全芯片研究）》，在CICED2014发布。"},
@@ -92,8 +92,20 @@ model_pretrained = [
    'cite': 'qabert-24layers-v1'},
   {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练大型语言模型：robert_wwm_large_ext_qa第二版。',
    'href': 'https://drive.google.com/drive/folders/11Pd5sy2jRePz5AVlOdImRYNDSbCtwtAS?usp=sharing',
-   'cite': 'qabert-24layers-v2'}
+   'cite': 'qabert-24layers-v2'},
 
+  {"type": "CV", "title": '2020', "content": '2020年，发布了CIFAR图像预处理及训练测试拆分数据集。',
+   'href': 'https://drive.google.com/drive/folders/1ZVbJPZm2WUBgAFOopo8uQapB18vU7IM5?usp=sharing',
+   'cite': 'cbert-cifar-10和cbert-cifar-100'},
+  {"type": "CV", "title": '2020', "content": '2020年，发布了图像预训练编码模型：roberta3_ext。',
+   'href': 'https://drive.google.com/drive/folders/11Pd5sy2jRePz5AVlOdImRYNDSbCtwtAS?usp=sharing',
+   'cite': 'cbert-3layers'},
+  {"type": "CV", "title": '2020', "content": '2020年，发布了图像预训练大型编码模型：roberta3_large_ext。',
+     'href': 'https://drive.google.com/drive/folders/18RLns--4ATB_lmDm9ByBuqqi6O1QwpPL?usp=sharing',
+     'cite': 'cbert-3layers-1024d'},
+  {"type": "CV", "title": '2020', "content": '2020年，发布了图像预训练巨型编码模型：roberta_wwm_large_ext。',
+     'href': 'https://drive.google.com/drive/folders/1-88yZXu6Wg7_Syk_iykLn8dEE3BFr5Ia?usp=sharing',
+     'cite': 'cbert-24layers-1024d'}
 ]
 
 
