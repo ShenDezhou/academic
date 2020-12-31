@@ -32,6 +32,9 @@
                 <div data-v-21e53028 id="label_daohang">导航</div>
                 <el-timeline>
                   <el-timeline-item color="#4084f0" id="0">
+                    2020年科学技术总结
+                  </el-timeline-item>
+                  <el-timeline-item color="#4084f0" id="0">
                     专利2项
                   </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
