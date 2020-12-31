@@ -42,6 +42,11 @@
             <span slot="title">Cooperation Call</span>
           </a>
         </el-menu-item>
+        <el-menu-item index="summary">
+          <a :href="summary">
+            <span slot="title">2020 Summary</span>
+          </a>
+        </el-menu-item>
 <!--				<el-menu-item index="lawsNew">-->
 <!--					<a :href="lawsNew">-->
 <!--						<span slot="title">法律法规</span>-->
@@ -73,6 +78,7 @@
         codes:'#/codes',
         works:'#/works',
         models:'#/models',
+        summary: '#/2020',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',

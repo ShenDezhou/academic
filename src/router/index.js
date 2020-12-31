@@ -47,6 +47,12 @@ export default new Router({
       name: 'models',
       meta:{title:'models'},
       component: ()=>import('@/view/model')
+    },
+    {
+      path: '/2020',//
+      name: '2020',
+      meta:{title:'2020'},
+      component: ()=>import('@/view/2020')
     }
 		// {
 		//   path: '/oneStopSearch',//一站式
