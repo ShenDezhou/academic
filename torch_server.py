@@ -145,7 +145,7 @@ model_presentation = [
    'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
    'cite': '基于马尔可夫解码的中文分词'},
   {"type": "CV", "title": '2021', "content": '2021年，发布了基于SkipGram的中文词表示系统：skipgram_cn。',
-   'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
+   'href': 'http://tsinghuaboy.com/static/2021/tyctl-skipgram.html',
    'cite': '基于SkipGram的中文词表示'}
 ]
 
