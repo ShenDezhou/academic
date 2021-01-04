@@ -128,7 +128,22 @@ model_presentation = [
    'cite': '基于XLNET的刑事案由分类'},
   {"type": "COM", "title": '2021', "content": '2021年，发布了基于RoBERTa的合同分类系统：roberta_17。',
    'href': 'http://tsinghuaboy.com/static/2021/htfl-17-roberta.html',
-   'cite': '基于RoBERTa的合同分类'}
+   'cite': '基于RoBERTa的合同分类'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于深度学习的司法摘要系统：roberta_129。',
+   'href': 'http://tsinghuaboy.com/static/2021/alzy-129-roberta.html',
+   'cite': '基于深度学习的司法摘要'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于LSTM模型的合同金额识别系统：lstm_1000。',
+   'href': 'http://tsinghuaboy.com/static/2021/jesb-lstm.html',
+   'cite': '基于LSTM模型的合同金额识别'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于RoBERTa的司法论辩挖掘系统：roberta_s。',
+   'href': 'http://tsinghuaboy.com/static/2021/lbwj-roberta.html',
+   'cite': '基于RoBERTa的司法论辩挖掘'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于RoBERTa的司法案由分类系统：roberta_4。',
+   'href': 'http://tsinghuaboy.com/static/2021/alfl-4-roberta.html',
+   'cite': '基于RoBERTa的司法案由分类'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于马尔可夫解码的中文分词系统：markov_words。',
+   'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
+   'cite': '基于马尔可夫解码的中文分词'}
 ]
 
 # 7
