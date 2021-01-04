@@ -124,8 +124,11 @@ model_pretrained = [
 # 6
 model_presentation = [
   {"type": "COM", "title": '2021', "content": '2021年，发布了基于XLNET的刑事案由分类系统：xlnet_202。',
-   'href': '/static/2021/xsfl-202-xlnet.html',
-   'cite': '基于XLNET的刑事案由分类'}
+   'href': 'http://tsinghuaboy.com/static/2021/xsfl-202-xlnet.html',
+   'cite': '基于XLNET的刑事案由分类'},
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于RoBERTa的合同分类系统：roberta_17。',
+   'href': 'http://tsinghuaboy.com/static/2021/htfl-17-roberta.html',
+   'cite': '基于RoBERTa的合同分类'}
 ]
 
 # 7
