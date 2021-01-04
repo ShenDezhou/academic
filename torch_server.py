@@ -143,7 +143,10 @@ model_presentation = [
    'cite': '基于RoBERTa的司法案由分类'},
   {"type": "COM", "title": '2021', "content": '2021年，发布了基于马尔可夫解码的中文分词系统：markov_words。',
    'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
-   'cite': '基于马尔可夫解码的中文分词'}
+   'cite': '基于马尔可夫解码的中文分词'},
+  {"type": "CV", "title": '2021', "content": '2021年，发布了基于SkipGram的中文词表示系统：skipgram_cn。',
+   'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
+   'cite': '基于SkipGram的中文词表示'}
 ]
 
 # 7
