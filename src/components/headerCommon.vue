@@ -37,6 +37,11 @@
             <span slot="title">Models</span>
           </a>
         </el-menu-item>
+        <el-menu-item index="presentation">
+          <a :href="presentation">
+            <span slot="title">Presentation</span>
+          </a>
+        </el-menu-item>
         <el-menu-item index="works">
           <a :href="works">
             <span slot="title">Cooperation Call</span>
@@ -79,6 +84,7 @@
         works:'#/works',
         models:'#/models',
         summary: '#/2020',
+        presentation: '#/presentation',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',
 				example:'#/example',

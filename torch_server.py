@@ -121,8 +121,14 @@ model_pretrained = [
      'cite': 'cvbert-24layers-wide'}
 ]
 
-
 # 6
+model_presentation = [
+  {"type": "COM", "title": '2021', "content": '2021年，发布了基于XLNET的刑事案由分类系统：xlnet_202。',
+   'href': '/static/2021/xsfl-202-xlnet.html',
+   'cite': '基于XLNET的刑事案由分类'}
+]
+
+# 7
 cooperation_inviting = [
   {
     'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com"
@@ -132,7 +138,7 @@ cooperation_inviting = [
   }
 ]
 
-#7
+#8
 xiaoy_data = [
 [{"a":"https://www.zhihu.com/zvideo/1326813218027741184","t":"蜘蛛骷髅海 魔兽争霸xiaoy解说infi chaemiko 1"},{"a":"https://www.zhihu.com/zvideo/1326812221226192896","t":"敏捷加12点 魔兽争霸xiaoy解说fly lyn 2"},{"a":"https://www.zhihu.com/zvideo/1326812907670528000","t":"1600血的英雄带吸血光环 魔兽争霸xiaoy解说fly lawliet 3"},{"a":"https://www.zhihu.com/zvideo/1326470564131794944","t":"这个开局给几分？魔兽争霸xiaoy解说lyn sok 4"},{"a":"https://www.zhihu.com/zvideo/1326471457526800384","t":"兽王大招的位置很秀 魔兽争霸xiaoy解说infi sok 5"},{"a":"https://www.zhihu.com/zvideo/1326469755054379008","t":"生死蓝胖子 魔兽争霸xiaoy解说fly lyn 1"},{"a":"https://www.zhihu.com/zvideo/1326470048622702592","t":"可以算是GG流 魔兽争霸xiaoy解说120 sok 2"},{"a":"https://www.zhihu.com/zvideo/1326096497444929536","t":"战斗到最后一刻 魔兽争霸xiaoy解说彩色 lyn"},{"a":"https://www.zhihu.com/zvideo/1326098183626752000","t":"魔兽矛盾理论 魔兽争霸xiaoy解说infi sok 4"},{"a":"https://www.zhihu.com/zvideo/1326095239312900096","t":"锤杀以后 魔兽争霸xiaoy解说lyn sok 3"},{"a":"https://www.zhihu.com/zvideo/1325743605177769984","t":"宗师级压制 魔兽争霸xiaoy解说infi sok 3"},{"a":"https://www.zhihu.com/zvideo/1325746016411860992","t":"隐身控制真强 魔兽争霸xiaoy解说lyn sok 2"},{"a":"https://www.zhihu.com/zvideo/1325745194885693440","t":"43点敏捷攻速很快 魔兽争霸xiaoy解说fly lawliet 2"},{"a":"https://www.zhihu.com/zvideo/1325384849276764160","t":"中立英雄大集合 魔兽争霸xiaoy解说infi sok 2"},{"a":"https://www.zhihu.com/zvideo/1325383813284491264","t":"英雄RPG转折点 魔兽争霸xiaoy解说120 sok 1"},{"a":"https://www.zhihu.com/zvideo/1325383377176875008","t":"十年前战术掏出来 魔兽争霸xiaoy解说fly 彩色"},{"a":"https://www.zhihu.com/zvideo/1325017481996210176","t":"一个牛逼的步兵 魔兽争霸xiaoy解说lyn sok 1"},{"a":"https://www.zhihu.com/zvideo/1325015804153073664","t":"全是召唤英雄 魔兽争霸xiaoy解说lyn focus 1"},{"a":"https://www.zhihu.com/zvideo/1325020472460120064","t":"二本rush直接打爆基地 魔兽争霸xiaoy解说moon foggy"},{"a":"https://www.zhihu.com/zvideo/1324673763020402688","t":"一个驱散巨大优势 魔兽争霸xiaoy解说浪漫 focus 3"}]
 ,[{"a":"https://www.zhihu.com/zvideo/1324673377135726592","t":"吸血光环敏捷加9点 魔兽争霸xiaoy解说fly lawliet 1"},{"a":"https://www.zhihu.com/zvideo/1324674568150228992","t":"皇冠之守卫雅典娜 魔兽争霸xiaoy解说infi sok 1"},{"a":"https://www.zhihu.com/zvideo/1324276842275143680","t":"最后一波炸裂 魔兽争霸xiaoy解说focus 浪漫 2"},{"a":"https://www.zhihu.com/zvideo/1324275835591680000","t":"强冲主基地 魔兽争霸xiaoy解说fly 彩色"},{"a":"https://www.zhihu.com/zvideo/1324278813643997184","t":"33分钟催眠解说 魔兽争霸xiaoy解说happy foggy"},{"a":"https://www.zhihu.com/zvideo/1323931896066592768","t":"真两线夹击 魔兽争霸xiaoy解说VortiX ThorZaIN"},{"a":"https://www.zhihu.com/zvideo/1323928327925407744","t":"雇佣兵一波流 魔兽争霸xiaoy解说moon foggy 1"},{"a":"https://www.zhihu.com/zvideo/1323931649050959872","t":"富贵险中求 魔兽争霸xiaoy解说focus 浪漫 1"},{"a":"https://www.zhihu.com/zvideo/1323570595914227712","t":"正好撞到了 魔兽争霸xiaoy解说120 lucifer"},{"a":"https://www.zhihu.com/zvideo/1323574320451317760","t":"一波巧妙的飞艇秀 魔兽争霸xiaoy解说wfz soin"},{"a":"https://www.zhihu.com/zvideo/1323575150940241920","t":"皇冠之反复优势 魔兽争霸xiaoy解说fly lawliet"},{"a":"https://www.zhihu.com/zvideo/1323216219265294336","t":"吸血光环外加33点攻击力 魔兽争霸xiaoy解说lyn soin"},{"a":"https://www.zhihu.com/zvideo/1323218480070848512","t":"天鬼很飞龙 魔兽争霸xiaoy解说120 soin"},{"a":"https://www.zhihu.com/zvideo/1323217078993227776","t":"似曾相识 魔兽争霸xiaoy解说黄金联赛infi lawliet5"},{"a":"https://www.zhihu.com/zvideo/1322841723824304128","t":"再次激发斗志 魔兽争霸xiaoy解说lyn 浪漫"},{"a":"https://www.zhihu.com/zvideo/1322842168793128960","t":"极限操作是真的吓人 魔兽争霸xiaoy解说黄金联赛fly 浪漫"},{"a":"https://www.zhihu.com/zvideo/1322844550914867200","t":"皇冠之巫妖骷髅海 魔兽争霸xiaoy解说wan Spiral"},{"a":"https://www.zhihu.com/zvideo/1322479593316659200","t":"全都变成药渣了 魔兽争霸xiaoy解说infi lawliet"},{"a":"https://www.zhihu.com/zvideo/1322476078259757056","t":"开局一个艺人面罩 魔兽争霸xiaoy解说wfz blade"},{"a":"https://www.zhihu.com/zvideo/1322481044646129664","t":"皇冠之十几个奇美拉 魔兽争霸xiaoy解说happy foggy"}]
@@ -210,6 +216,9 @@ class TorchResource:
             lines = model_pretrained
 
         if type == '6':
+            lines = model_presentation
+
+        if type == '7':
             lines = cooperation_inviting
 
         return lines

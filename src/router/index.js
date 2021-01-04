@@ -53,6 +53,12 @@ export default new Router({
       name: '2020',
       meta:{title:'2020'},
       component: ()=>import('@/view/2020')
+    },
+    {
+      path: '/presentation',//
+      name: 'presentation',
+      meta:{title:'presentation'},
+      component: ()=>import('@/view/presentation')
     }
 		// {
 		//   path: '/oneStopSearch',//一站式
