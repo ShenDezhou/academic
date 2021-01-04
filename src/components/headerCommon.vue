@@ -12,24 +12,24 @@
 			mode="horizontal"
 			@select="handleSelect"
 			id="fb_el_menu">
-				<el-menu-item index="acdemic">
-					<a :href="acdemic">
-						<span slot="title">Acdemic</span>
+				<el-menu-item index="academic">
+					<a :href="academic">
+						<span slot="title">Academic</span>
 					</a>
 				</el-menu-item>
-        <el-menu-item index="competetion">
-          <a :href="competetion">
-            <span slot="title">Competetion</span>
+        <el-menu-item index="competition">
+          <a :href="competition">
+            <span slot="title">Competition</span>
           </a>
         </el-menu-item>
-        <el-menu-item index="books">
-          <a :href="books">
-            <span slot="title">Non-Acdemic</span>
+        <el-menu-item index="non-academic">
+          <a :href="nonacademic">
+            <span slot="title">Non-Academic</span>
           </a>
         </el-menu-item>
         <el-menu-item index="codes">
           <a :href="codes">
-            <span slot="title">ComputerCode</span>
+            <span slot="title">Codes</span>
           </a>
         </el-menu-item>
          <el-menu-item index="models">
@@ -44,12 +44,12 @@
         </el-menu-item>
         <el-menu-item index="works">
           <a :href="works">
-            <span slot="title">Cooperation Call</span>
+            <span slot="title">Call</span>
           </a>
         </el-menu-item>
         <el-menu-item index="summary">
           <a :href="summary">
-            <span slot="title">2020 Summary</span>
+            <span slot="title">Summary</span>
           </a>
         </el-menu-item>
 <!--				<el-menu-item index="lawsNew">-->
@@ -77,9 +77,9 @@
 		name: "headercommon",
 		data() {
 			return {
-        acdemic:'#/acdemic',
-        competetion:'#/competetion',
-        books:'#/books',
+        academic:'#/acdemic',
+        competition:'#/competetion',
+        nonacademic:'#/books',
         codes:'#/codes',
         works:'#/works',
         models:'#/models',
