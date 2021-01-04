@@ -77,8 +77,8 @@
 		name: "headercommon",
 		data() {
 			return {
-        academic:'#/acdemic',
-        competition:'#/competetion',
+        academic:'#/academic',
+        competition:'#/competition',
         nonacademic:'#/books',
         codes:'#/codes',
         works:'#/works',

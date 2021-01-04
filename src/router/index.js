@@ -13,21 +13,21 @@ export default new Router({
       }
     },
     {
-      path: '/acdemic',//Acdemic works
-      name: 'acdemic',
-      meta:{title:'acdemic'},
-      component: ()=>import('@/view/acdemic')
+      path: '/academic',//Academic works
+      name: 'academic',
+      meta:{title:'academic'},
+      component: ()=>import('@/view/academic')
     },
     {
-      path: '/competetion',//Competetion works
-      name: 'competetion',
-      meta:{title:'competetion'},
-      component: ()=>import('@/view/competetion')
+      path: '/competition',//Competition works
+      name: 'competition',
+      meta:{title:'competition'},
+      component: ()=>import('@/view/competition')
     },
     {
-      path: '/books',//Acdemic
+      path: '/books',//Academic
       name: 'books',
-      meta:{title:'non-acdemic'},
+      meta:{title:'non-academic'},
       component: ()=>import('@/view/books')
     },
     {
