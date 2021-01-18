@@ -44,10 +44,10 @@ acdemic_news = [
   {"title": "2020", "content": "2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。", "href":"https://arxiv.org/abs/2006.13412", "cite":"Shen, D. (2020). Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network. arXiv preprint arXiv:2006.13412."},
   {"title": "2020", "content": "2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。", "href":"https://arxiv.org/abs/2006.13417", "cite":"Shen, D. (2020). Movie Box office Prediction via Joint Actor Representations and Social Media Sentiment. arXiv preprint arXiv:2006.13417."},
   {"title": "2020", "content": '2020年，本人的图像分类论文《Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models》在researchsquare.com发布', "href":'https://www.researchsquare.com/article/rs-93060/latest.pdf', 'cite':"Shen, D. (2020). Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models."},
-  {"title":"2020", "content":"2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。", "href":"https://europepmc.org/article/ppr/ppr240245", "cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
-  {"title":"2020", "content":"2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021."},
-  {"title":"2020", "content":"2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."},
-  {"title":"2021", "content":"2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》向Nature Computational Science投递."}
+  {"title": "2020", "content": "2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。", "href":"https://europepmc.org/article/ppr/ppr240245", "cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
+  {"title": "2020", "content": "2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021."},
+  {"title": "2020", "content": "2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."},
+  {"title": "2021", "content": "2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》向Nature Computational Science投递."}
 ]
 # 2
 competetional_news = [
