@@ -145,7 +145,10 @@ model_presentation = [
    'cite': '基于马尔可夫解码的中文分词'},
   {"type": "NLP", "title": '2021', "content": '2021年，发布了基于SkipGram的中文词表示系统：skipgram_cn。',
    'href': 'http://tsinghuaboy.com/static/2021/tyctl-skipgram.html',
-   'cite': '基于SkipGram的中文词表示'}
+   'cite': '基于SkipGram的中文词表示'},
+  {"type": "NLP", "title": '2021', "content": '2021年，发布了基于XLNet的中文分词系统：EXLNet_cn_seg。',
+   'href': 'http://tsinghuaboy.com/static/2021/xlnet-znfc.html',
+   'cite': '基于XLNet的中文分词系统'}
 ]
 
 # 7
