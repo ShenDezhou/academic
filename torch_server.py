@@ -41,14 +41,13 @@ acdemic_news = [
   {"title": "2016", "content": "2016年12月，本人参与完成的国家标准《GB/T 33242-2016：数字城市智能卡应用技术要求》，由全国智能建筑及居住区数字化标准化技术委员会发布。"},
   {"title": "2019", "content": "2019年6月，本人与谢、冯等人合作完成的《用于移动终端的图形用户界面外观专利》，在国家知识产权局登记公布。"},
   {"title": "2020", "content": "2020年4月28日，本人的图计算发明专利，《基于提前收敛重复平方的限定域矩阵乘法距离积计算方法》，在中国国家知识产权局2020年4月28日36卷1801期登记公布。"},
-  {"title": "2020", "content": "2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。",
-"ref":"https://arxiv.org/abs/2006.13412","cite":"Shen, D. (2020). Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network. arXiv preprint arXiv:2006.13412."},
-  {"title": "2020", "content": "2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。","ref":"https://arxiv.org/abs/2006.13417", "cite":"Shen, D. (2020). Movie Box office Prediction via Joint Actor Representations and Social Media Sentiment. arXiv preprint arXiv:2006.13417."},
-  {"title": "2020", "content": '2020年，本人的图像分类论文《Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models》在researchsquare.com发布', "ref":'https://www.researchsquare.com/article/rs-93060/latest.pdf'
-   ,'cite':"Shen, D. (2020). Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models."},
-  {"title":"2020", "content":"2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。","ref":"https://europepmc.org/article/ppr/ppr240245","cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
+  {"title": "2020", "content": "2020年6月25日，本人的图计算论文《Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network》在arxiv.org发布。", "href":"https://arxiv.org/abs/2006.13412", "cite":"Shen, D. (2020). Lower Bounds on Rate of Convergence of Matrix Products in All Pairs Shortest Path of Social Network. arXiv preprint arXiv:2006.13412."},
+  {"title": "2020", "content": "2020年6月25日，本人的社交网络计算论文《Movie Box-office Prediction via Joint Actor Representations and Social media Sentiment》在arxiv.org发布。", "href":"https://arxiv.org/abs/2006.13417", "cite":"Shen, D. (2020). Movie Box office Prediction via Joint Actor Representations and Social Media Sentiment. arXiv preprint arXiv:2006.13417."},
+  {"title": "2020", "content": '2020年，本人的图像分类论文《Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models》在researchsquare.com发布', "href":'https://www.researchsquare.com/article/rs-93060/latest.pdf', 'cite':"Shen, D. (2020). Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models."},
+  {"title":"2020", "content":"2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。", "href":"https://europepmc.org/article/ppr/ppr240245", "cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
   {"title":"2020", "content":"2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021."},
-  {"title":"2020", "content":"2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."}
+  {"title":"2020", "content":"2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."},
+  {"title":"2021", "content":"2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》向Nature Computational Science投递."}
 ]
 # 2
 competetional_news = [
