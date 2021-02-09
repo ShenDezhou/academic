@@ -33,7 +33,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 # 0
-bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生。他的导师是人机交互与媒体与媒体研究所的SUNLIFENG教授。他的主要研究方向为社交网络计算、计算机视觉和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University. His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media. His main research areas are social networking computing, computer vision, and natural language processing."
+bio = "他是清华大学计算机科学与技术系，计算机科学与技术专业，工程硕士研究生。他的导师是人机交互与媒体集成研究所的SUNLIFENG教授。他的主要研究方向为社会网络、计算机视觉、图形学和自然语言处理。He gets the Master Degree of Computer Science and Technology, in the Department of Computer Science and Technology, Tsinghua University. His mentor is Professor Sun Lifeng in the Institute of Human-Computer Interaction and Media Integration. His main research areas are social network, computer vision, graphics and natural language processing."
 # 1
 acdemic_news = [
   {"title": "2014", "content": "2014年，本人与Hu、Liu等人合作完成的《Security research of state cryptographic authentication security chip in smart grid（智能电网中的国密安全芯片研究）》，在CICED2014发布。"},
@@ -59,7 +59,8 @@ competetional_news = [
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法阅读理解赛道，最终成绩第三十七名。'},
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法摘要赛道，最终成绩第二十七名。'},
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法考试赛道，最终成绩第十三名。'},
-  {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法论辩挖掘赛道，最终成绩第十八名。'}
+  {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法论辩挖掘赛道，最终成绩第十八名。'},
+  {'title': '2021', 'content': '2020年12月28日-2021年02月02日，本人参加的2021智源-水利知识图谱构建挑战赛抽取水利实体、实体类别比赛，最终成绩第一百一十八名。'}
 ]
 # 3
 zhihu="一种中英文本摘要算法,lawrouge中英文文本摘要评价器,基于命名实体识别的文本金额识别模型,基于融合全网语料的文本分词工具（lawa）,lawrouge中英文文本摘要测评工具-python,lawaplugin基于法律语料的文本分词Elasticsearch插件工具（法阿-elastic）,lawa基于法律语料的文本分词工具（法阿-python）,基于法律问答知识的RoBERTa微调语言模型,CAIL2020司法摘要赛道总结,CAIL2020论辩挖掘赛道总结,人工智能架构漫谈,基于TPU的合同分类模型训练,CAIL2020论辩挖掘ATTENTION模型,CAIL2020司法考试新基线,CAIL2020司法考试模型中BERT预训练语言模型的作用分析,个人发展与组织发展,两篇NIPS2020会议论文arxiv公布,BAAI2020会议参加总结,CAIL2020阅读理解新基线,CAIL2020论辩挖掘总结,基于BERT+CNN及GRU语言模型的司法考试问答模型,基于BERT+CNN语言模型的司法考试问答模型,基于BERT语言模型的司法考试问答模型,表示学习：社交网络最短路径表征,社交网络所有对最短路径矩阵距离积收敛率下限,基于Bigram的（1987-2019）NeurIPS录取论文标题的上下文联想模型,SERS:基于稀疏矩阵乘法(SpMM)的ERS社交网络测量/图最短路径计算方法,JERS：基于OpenBLAS/CuBLAS社交网络测量/图最短路径计算方法,ESR：社交网络测量/图最短路径计算方法,天授Tianshou在Windows10+CPU下的尝试,Pubseg:一种单双字串的BiLSTM中文分词工具,斯坦福Stanza分词在ICWS2005PKU数据集上的测评,基于预训练字Unigram和Bigram字向量的BiLSTM情感分类模型,基于CNN和BiLSTM的文档二分类模型,计图Jittor在Centos上的安装尝试,BiLSTM中文分词模型的多维特征分析,预训练词向量和Ngram对BiLSTM中文分词模型的影响,基于Pretrained-UnigramBigram的中文分词模型,基于预训练字模型的BiLSTM中文分词模型,LSTM中文分词模型中神经网络层分析,基于LSTM的中文分词模型,基于自定义词典和Viterbi解码的中文分词方法,基于马尔可夫链的MBA联考2020年国家分数线预测,Conditional Random Field迁移学习,HMM、CRF、JIEBA以及IK的在ICWS2005-PKU训练集上中文分词效果的评价对比,Conditional Random Field中文分词,隐马尔可夫模型中文分词测试结果"
@@ -73,6 +74,35 @@ for i in range(len(zhihu)):
       "content":zhihu[i],
       "href":zhihuurl[i]
     })
+
+# 3
+githuburls= [
+  ["https://github.com/ShenDezhou/CAIL2021", "https://github.com/ShenDezhou/CAIL", "https://github.com/ShenDezhou/AI_arch", "https://github.com/ShenDezhou/Acdemic", "https://github.com/ShenDezhou/EXLNet", "https://github.com/ShenDezhou/elasticsearchdocker", "https://github.com/ShenDezhou/LSTM", "https://github.com/ShenDezhou/lawrouge", "https://github.com/ShenDezhou/lawa", "https://github.com/ShenDezhou/powerlawapsp", "https://github.com/ShenDezhou/lawaplugin", "https://github.com/ShenDezhou/CVPR_Template", "https://github.com/ShenDezhou/APSP", "https://github.com/ShenDezhou/CBLSTM", "https://github.com/ShenDezhou/INF", "https://github.com/ShenDezhou/TFV", "https://github.com/ShenDezhou/FGC", "https://github.com/ShenDezhou/WISE", "https://github.com/ShenDezhou/LSTM2", "https://github.com/ShenDezhou/ShenDezhou.github.io", "https://github.com/ShenDezhou/CASE", "https://github.com/ShenDezhou/NIPS", "https://github.com/ShenDezhou/CRF", "https://github.com/ShenDezhou/icme2019", "https://github.com/ShenDezhou/GCN", "https://github.com/ShenDezhou/tianshou", "https://github.com/ShenDezhou/HMM", "https://github.com/ShenDezhou/CommonServiceBroker", "https://github.com/ShenDezhou/deploy_shadowsocks", "https://github.com/ShenDezhou/CaseClassification"],
+  ["https://github.com/ShenDezhou/UnigroupAI", "https://github.com/ShenDezhou/PyCRM", "https://github.com/ShenDezhou/deploy_ocr", "https://github.com/ShenDezhou/deploy_gcp", "https://github.com/ShenDezhou/es2csv", "https://github.com/ShenDezhou/supremeProcuratorate", "https://github.com/ShenDezhou/ctrmodel", "https://github.com/ShenDezhou/multi-criteria-cws", "https://github.com/ShenDezhou/pkuseg-python", "https://github.com/ShenDezhou/gStore", "https://github.com/ShenDezhou/modelfactoryentry", "https://github.com/ShenDezhou/DeepCTR", "https://github.com/ShenDezhou/Word2Vector", "https://github.com/ShenDezhou/AutoModel", "https://github.com/ShenDezhou/UnigroupAI_Confluence", "https://github.com/ShenDezhou/LinearSpace", "https://github.com/ShenDezhou/deploy_aliyun", "https://github.com/ShenDezhou/jneuralnetwork", "https://github.com/ShenDezhou/tensorflow-forcast", "https://github.com/ShenDezhou/wordio", "https://github.com/ShenDezhou/pdfio", "https://github.com/ShenDezhou/CudaConcurrentHashmap", "https://github.com/ShenDezhou/WarCastle", "https://github.com/ShenDezhou/TechnicNotes", "https://github.com/ShenDezhou/lda2vec", "https://github.com/ShenDezhou/meteor-notes", "https://github.com/ShenDezhou/leetcode", "https://github.com/ShenDezhou/spring-boot", "https://github.com/ShenDezhou/wolframsearch", "https://github.com/ShenDezhou/Apriori"],
+  ["https://github.com/ShenDezhou/LevelDBInRedisProtocol", "https://github.com/ShenDezhou/jobmarket", "https://github.com/ShenDezhou/arch", "https://github.com/ShenDezhou/kmeans", "https://github.com/ShenDezhou/gsearch", "https://github.com/ShenDezhou/teomasearch", "https://github.com/ShenDezhou/mbaidusearch", "https://github.com/ShenDezhou/msogosearch", "https://github.com/ShenDezhou/daumsearch", "https://github.com/ShenDezhou/naversearch", "https://github.com/ShenDezhou/yahoosearch", "https://github.com/ShenDezhou/yandexsearch", "https://github.com/ShenDezhou/bingsearch", "https://github.com/ShenDezhou/smsearch", "https://github.com/ShenDezhou/baidusearch", "https://github.com/ShenDezhou/360search", "https://github.com/ShenDezhou/googlesearch", "https://github.com/ShenDezhou/algorithm", "https://github.com/ShenDezhou/uproxy", "https://github.com/ShenDezhou/dezhoukv-cpp", "https://github.com/ShenDezhou/sogou-qdb-redis", "https://github.com/ShenDezhou/Lanton", "https://github.com/ShenDezhou/hyperloglog", "https://github.com/ShenDezhou/boost-bloom-filters", "https://github.com/ShenDezhou/dezhoukv", "https://github.com/ShenDezhou/instantlz4", "https://github.com/ShenDezhou/trading_okcoin", "https://github.com/ShenDezhou/gscholar-citations-crawler", "https://github.com/ShenDezhou/gluster", "https://github.com/ShenDezhou/lifeservice"],
+  ["https://github.com/ShenDezhou/CPP", "https://github.com/ShenDezhou/iOS", "https://github.com/ShenDezhou/distribute", "https://github.com/ShenDezhou/courtpy", "https://github.com/ShenDezhou/DuoHero", "https://github.com/ShenDezhou/android"]
+]
+githubtext = [
+  ["↵          Some competitions↵        ", "↵          中国法研杯-司法人工智能挑战赛(CAIL2018-2020)↵        ", "↵          papers and code.↵        ", "↵          A site of self introduction in acdemic.↵        ", "↵          Extra Large Sequence Transformer Model for Chinese Word Segment↵        ", "↵          Start the elasticsearch in a docker↵        ", "↵          A LSTM based Chinese Segment Project.↵        ", "↵          “法摘”中英文摘要评价：做最好的 Python 中英文摘要评价组件↵        ", "↵          “法阿”中文分词：做最好的 Python 法律中文分词组件↵        ", "↵          A novel model for all pairs shortest pa…ork and computation precision limtation.↵        ", "↵          lawa-plugin是Elasticsearch的中文分词插件，后端模型是由法律法规、案例、期刊语料统计而成，并具有新词发现功能。↵        ", "↵          An algorithm to calculate All Paires Shortest Path efficiently.↵        ", "↵          A comparision of C-LSTM and BiLSTM on sentiment classification task in Chinese.↵        ", "↵          Network Influence↵        ", "↵           lucene index reader↵        ", "↵          A novel movie box-office prediction model, FC-GRU-CNN.↵        ", "↵          A search engine: document, term index, query, and beyond.↵        ", "↵          MSRA based Chinese Word Segment model.↵        ", "↵          我的网站↵        ", "↵          A bigram of Chinese Case Documents↵        ", "↵          A bigram model of titles of NIPS papers from 1987 to 2019.↵        ", "↵          A Conditional Random Field Model based Chinese Word Segmentation Project.↵        ", "↵          短视频内容理解与推荐竞赛↵        ", "↵          Graph Embedding and Models beyond.↵        ", "↵          An elegant, flexible, and superfast PyT…ch deep Reinforcement Learning platform.↵        ", "↵          A Simple Hidden Markov Model based Chinese Word Segmentation Project.↵        ", "↵          CSB↵        ",  "↵          Linear, Deep Learning and Beyond↵        "],
+  ["↵          Unigroup AI Search Project↵        ", "↵          CRM system.↵        ", "↵          一万美元的教训↵        ", "↵          Export from an Elasticsearch into a CSV file↵        ", "↵          Supreme Procuratorate↵        ", "↵          Simple Solution for Multi-Criteria Chinese Word Segmentation↵        ", "↵          pkuseg多领域中文分词工具; The pkuseg toolkit for multi-domain Chinese word segmentation↵        ", "↵          gStore - a graph based RDF triple store.↵        ", "↵          Entry for model factory↵        ", "↵          Easy-to-use,Modular and Extendible pack…hine(AFM),Neural Factorization Machine(…↵        ", "↵          A SOTA of representation learning↵        ", "↵          DNN made simple: a practical approach t…d a State of The Art model for your data↵        ", "↵          Unigroup AI Product Project↵        ", "↵          Linear Space: Solve x Vector, Given A M…s, solve Ax=b and calculate tolerance e.↵        ", "↵          A simple java↵        ", "↵          A simple code for Machine Learning and Deep Neural Network↵        ", "↵          A simple tool to extract content from word↵        ", "↵          A simple tool make use of PDFBox.↵        ", "↵          A device based storage model.↵        ", "↵          GameBackup↵        ", "↵          Unigroup AI Technical Project↵        ", "↵          leetcode↵        ", "↵          Spring Boot↵        ", "↵          C implentation of Apriori association mining algorithm↵        "],
+  ["↵          Atom Package↵        ", "↵          a （µs）microsecond proxy↵        ", "↵          DezhouKV的C++版本实现(C++ implementation of DezhouKV database)↵        ", "↵          An Implement of Redis API for sogou qdb.↵        ", "↵          A C implementation of Google's consiste… system(https://github.com/kkdai/maglev)↵        ", "↵          A HyperLogLog implementation↵        ", "↵          A collection of generic, C++ Bloom Filt…s developed for the Boost C++ Libraries.↵        ", "↵          一个普适性、可扩展、高性能、高可用的KV集群，可以同时架设在数十到数千台集群服务器上，存储几百TB数据。↵        ", "↵          lz4 compress/decompress algorithm.↵        ", "↵          www.okcoin.cn↵        ", "↵          Crawl all your citations from Google Scholar↵        ", "↵          生活服务项目↵        "],
+  ["↵          Graph Computation↵        ", "↵          some iOS porject↵        ", "↵          学堂在线作业↵        ", "↵          scrapy the court.↵        ", "↵          水墨风的Unity战斗游戏。↵        ", "↵          projects of demo↵        "]
+]
+
+for i in range(len(githuburls)):
+    for j in range(len(githuburls[i])):
+        if j < len(githubtext[i]):
+            non_acdemic_news.append({
+              "title" : '2021',
+              "content" : githubtext[i][j]+":"+githuburls[i][j],
+              "href" : githuburls[i][j]
+            })
+        else:
+            non_acdemic_news.append({
+              "title": '2021',
+              "content": githuburls[i][j],
+              "href": githuburls[i][j]
+            })
 
 # 4
 code_news = [
@@ -148,12 +178,19 @@ model_presentation = [
   {"type": "NLP", "title": '2021', "content": '2021年，发布了基于马尔可夫解码的中文分词系统：markov_words。',
    'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm.html',
    'cite': '基于马尔可夫解码的中文分词'},
+  {"type": "NLP", "title": '2021', "content": '2021年，发布了基于马尔可夫解码的中文分词系统：markov_words_search。',
+   'href': 'http://tsinghuaboy.com/static/2021/cbfc-hmm-search.html',
+   'cite': '基于马尔可夫解码的检索系统中文分词工具'},
   {"type": "NLP", "title": '2021', "content": '2021年，发布了基于SkipGram的中文词表示系统：skipgram_cn。',
    'href': 'http://tsinghuaboy.com/static/2021/tyctl-skipgram.html',
    'cite': '基于SkipGram的中文词表示'},
   {"type": "NLP", "title": '2021', "content": '2021年，发布了基于XLNet的中文分词系统：EXLNet_cn_seg。',
    'href': 'http://tsinghuaboy.com/static/2021/xlnet-znfc.html',
-   'cite': '基于XLNet的中文分词系统'}
+   'cite': '基于XLNet的中文分词系统'},
+  {"type": "NLP", "title": '2021', "content": '2021年，发布了基于XLNet的阅读理解系统：EXLNet_cn_mrc。',
+   'href': 'http://tsinghuaboy.com/static/2021/ydlj-xlnet.html',
+   'cite': '基于XLNet的中文阅读理解系统'}
+
 ]
 
 # 7
@@ -161,7 +198,7 @@ cooperation_inviting = [
   {
     'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com"
   },
- {
+  {
     'title': '2020-2021', 'content':"Scientific research cooperation invitation: sincerely invite all experts and scholars to cooperate with me in scientific research and project cooperation in computer vision and text processing. Email: tsinghua9boy@sina.com"
   }
 ]
