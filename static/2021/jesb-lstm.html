@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AI Power Presentation</title>
     <!--<script src="js/jquery.min.js"></script>-->
-    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -134,7 +134,7 @@ C、乙方收款账户信息
 
         var input = $('#input').val();
         // debugger
-        input = input.replaceAll('\n', '\\n');
+        input = input.replace(/\n/g, '\\n');
 
         var mydata = {
             '1': input

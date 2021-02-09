@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AI Power Presentation</title>
     <!--<script src="js/jquery.min.js"></script>-->
-    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -69,7 +69,7 @@
         var inputsc = $('#inputsc').val();
         var inputbc = $('#inputbc').val();
 
-        inputsc = inputsc.replaceAll('\r', '');
+        inputsc = inputsc.replace(/\n/g, '');
         var bcarray = inputbc.split('\n');
         bcarray = bcarray.slice(0,5)
         var mydata = {
