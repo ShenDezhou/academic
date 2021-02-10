@@ -47,11 +47,12 @@ acdemic_news = [
   {"title": "2020", "content": "2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。", "href":"https://europepmc.org/article/ppr/ppr240245", "cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
   {"title": "2020", "content": "2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021."},
   {"title": "2020", "content": "2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."},
-  {"title": "2021", "content": "2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》向Nature Computational Science投递."},
   {"title": "2021",
    "content": "2021年，本人的自然语言处理论文《A Transformer-based Pretrained Language Model for Automatic Document Summarization》向ACL2021投递."},
   {"title": "2021",
-   "content": "2021年，本人的自然语言处理论文《Transformer based Reading Comprehension model for China Court Cases》向ACL2021投递."}
+   "content": "2021年，本人的自然语言处理论文《Transformer based Reading Comprehension model for China Court Cases》向ACL2021投递."},
+  {"title": "2021",
+   "content": "2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》在researchsquare.com发布.", "href":'https://www.researchsquare.com/article/rs-149338/v1.pdf', 'cite':"Shen, D. (2021). Extra Large Sequence Transformer Model for Chinese Word Segment."},
 
 ]
 # 2
@@ -63,16 +64,26 @@ competetional_news = [
   {'title': '2021', 'content': '2020年12月28日-2021年02月02日，本人参加的2021智源-水利知识图谱构建挑战赛抽取水利实体、实体类别比赛，最终成绩第一百一十八名。'}
 ]
 # 3
-zhihu="一种中英文本摘要算法,lawrouge中英文文本摘要评价器,基于命名实体识别的文本金额识别模型,基于融合全网语料的文本分词工具（lawa）,lawrouge中英文文本摘要测评工具-python,lawaplugin基于法律语料的文本分词Elasticsearch插件工具（法阿-elastic）,lawa基于法律语料的文本分词工具（法阿-python）,基于法律问答知识的RoBERTa微调语言模型,CAIL2020司法摘要赛道总结,CAIL2020论辩挖掘赛道总结,人工智能架构漫谈,基于TPU的合同分类模型训练,CAIL2020论辩挖掘ATTENTION模型,CAIL2020司法考试新基线,CAIL2020司法考试模型中BERT预训练语言模型的作用分析,个人发展与组织发展,两篇NIPS2020会议论文arxiv公布,BAAI2020会议参加总结,CAIL2020阅读理解新基线,CAIL2020论辩挖掘总结,基于BERT+CNN及GRU语言模型的司法考试问答模型,基于BERT+CNN语言模型的司法考试问答模型,基于BERT语言模型的司法考试问答模型,表示学习：社交网络最短路径表征,社交网络所有对最短路径矩阵距离积收敛率下限,基于Bigram的（1987-2019）NeurIPS录取论文标题的上下文联想模型,SERS:基于稀疏矩阵乘法(SpMM)的ERS社交网络测量/图最短路径计算方法,JERS：基于OpenBLAS/CuBLAS社交网络测量/图最短路径计算方法,ESR：社交网络测量/图最短路径计算方法,天授Tianshou在Windows10+CPU下的尝试,Pubseg:一种单双字串的BiLSTM中文分词工具,斯坦福Stanza分词在ICWS2005PKU数据集上的测评,基于预训练字Unigram和Bigram字向量的BiLSTM情感分类模型,基于CNN和BiLSTM的文档二分类模型,计图Jittor在Centos上的安装尝试,BiLSTM中文分词模型的多维特征分析,预训练词向量和Ngram对BiLSTM中文分词模型的影响,基于Pretrained-UnigramBigram的中文分词模型,基于预训练字模型的BiLSTM中文分词模型,LSTM中文分词模型中神经网络层分析,基于LSTM的中文分词模型,基于自定义词典和Viterbi解码的中文分词方法,基于马尔可夫链的MBA联考2020年国家分数线预测,Conditional Random Field迁移学习,HMM、CRF、JIEBA以及IK的在ICWS2005-PKU训练集上中文分词效果的评价对比,Conditional Random Field中文分词,隐马尔可夫模型中文分词测试结果"
-zhihuurl='https://www.zhihu.com/zvideo/1318971493880004608,https://zhuanlan.zhihu.com/p/332251719,https://zhuanlan.zhihu.com/p/269429576,https://zhuanlan.zhihu.com/p/268779443,https://zhuanlan.zhihu.com/p/257939614,https://zhuanlan.zhihu.com/p/257029909,https://zhuanlan.zhihu.com/p/242778463,https://zhuanlan.zhihu.com/p/222344456,https://zhuanlan.zhihu.com/p/199195813,https://zhuanlan.zhihu.com/p/183720882,https://zhuanlan.zhihu.com/p/183078658,https://zhuanlan.zhihu.com/p/163706734,https://zhuanlan.zhihu.com/p/159735923,https://zhuanlan.zhihu.com/p/154116994,https://zhuanlan.zhihu.com/p/151210221,https://zhuanlan.zhihu.com/p/151008799,https://zhuanlan.zhihu.com/p/150657041,https://zhuanlan.zhihu.com/p/150553110,https://zhuanlan.zhihu.com/p/150518933,https://zhuanlan.zhihu.com/p/150048263,https://zhuanlan.zhihu.com/p/147157462,https://zhuanlan.zhihu.com/p/146845331,https://zhuanlan.zhihu.com/p/146574544,https://zhuanlan.zhihu.com/p/141446301,https://zhuanlan.zhihu.com/p/139051161,https://zhuanlan.zhihu.com/p/133468295,https://zhuanlan.zhihu.com/p/132453830,https://zhuanlan.zhihu.com/p/126637444,https://zhuanlan.zhihu.com/p/125450644,https://zhuanlan.zhihu.com/p/121701700,https://zhuanlan.zhihu.com/p/117377082,https://zhuanlan.zhihu.com/p/115844694,https://zhuanlan.zhihu.com/p/115491853,https://zhuanlan.zhihu.com/p/115335759,https://zhuanlan.zhihu.com/p/115011521,https://zhuanlan.zhihu.com/p/112243414,https://zhuanlan.zhihu.com/p/112023014,https://zhuanlan.zhihu.com/p/111681404,https://zhuanlan.zhihu.com/p/111102569,https://zhuanlan.zhihu.com/p/110756802,https://zhuanlan.zhihu.com/p/110182149,https://zhuanlan.zhihu.com/p/108908389,https://zhuanlan.zhihu.com/p/108513845,https://zhuanlan.zhihu.com/p/108198690,https://zhuanlan.zhihu.com/p/107964523,https://zhuanlan.zhihu.com/p/107593308,https://zhuanlan.zhihu.com/p/106562090'
+zhihu=["面向中文的BERT预训练模型", "基于中文XLNET-tiny语言模型", "面向中文的XLNet预训练模型", "深度学习回顾", "基于Transformer的开源语言预训练模型应用展示系统", "谷歌AI体系组织建设方法"]
+zhuhuurl = ["https://zhuanlan.zhihu.com/p/349732075", "https://www.zhihu.com/zvideo/1341116894649319424", "https://zhuanlan.zhihu.com/p/349487817", "https://zhuanlan.zhihu.com/p/342940302", "https://zhuanlan.zhihu.com/p/341753799", "https://zhuanlan.zhihu.com/p/338354426"]
+
 non_acdemic_news = []
-zhihu = zhihu.split(',')
-zhihuurl = zhihuurl.split(',')
+for i in range(len(zhihu)):
+    non_acdemic_news.append({
+      "title":'2021',
+      "content":zhihu[i],
+      "href":zhuhuurl[i]
+    })
+
+zhihustr="一种中英文本摘要算法,lawrouge中英文文本摘要评价器,基于命名实体识别的文本金额识别模型,基于融合全网语料的文本分词工具（lawa）,lawrouge中英文文本摘要测评工具-python,lawaplugin基于法律语料的文本分词Elasticsearch插件工具（法阿-elastic）,lawa基于法律语料的文本分词工具（法阿-python）,基于法律问答知识的RoBERTa微调语言模型,CAIL2020司法摘要赛道总结,CAIL2020论辩挖掘赛道总结,人工智能架构漫谈,基于TPU的合同分类模型训练,CAIL2020论辩挖掘ATTENTION模型,CAIL2020司法考试新基线,CAIL2020司法考试模型中BERT预训练语言模型的作用分析,个人发展与组织发展,两篇NIPS2020会议论文arxiv公布,BAAI2020会议参加总结,CAIL2020阅读理解新基线,CAIL2020论辩挖掘总结,基于BERT+CNN及GRU语言模型的司法考试问答模型,基于BERT+CNN语言模型的司法考试问答模型,基于BERT语言模型的司法考试问答模型,表示学习：社交网络最短路径表征,社交网络所有对最短路径矩阵距离积收敛率下限,基于Bigram的（1987-2019）NeurIPS录取论文标题的上下文联想模型,SERS:基于稀疏矩阵乘法(SpMM)的ERS社交网络测量/图最短路径计算方法,JERS：基于OpenBLAS/CuBLAS社交网络测量/图最短路径计算方法,ESR：社交网络测量/图最短路径计算方法,天授Tianshou在Windows10+CPU下的尝试,Pubseg:一种单双字串的BiLSTM中文分词工具,斯坦福Stanza分词在ICWS2005PKU数据集上的测评,基于预训练字Unigram和Bigram字向量的BiLSTM情感分类模型,基于CNN和BiLSTM的文档二分类模型,计图Jittor在Centos上的安装尝试,BiLSTM中文分词模型的多维特征分析,预训练词向量和Ngram对BiLSTM中文分词模型的影响,基于Pretrained-UnigramBigram的中文分词模型,基于预训练字模型的BiLSTM中文分词模型,LSTM中文分词模型中神经网络层分析,基于LSTM的中文分词模型,基于自定义词典和Viterbi解码的中文分词方法,基于马尔可夫链的MBA联考2020年国家分数线预测,Conditional Random Field迁移学习,HMM、CRF、JIEBA以及IK的在ICWS2005-PKU训练集上中文分词效果的评价对比,Conditional Random Field中文分词,隐马尔可夫模型中文分词测试结果"
+zhihuurlstr='https://www.zhihu.com/zvideo/1318971493880004608,https://zhuanlan.zhihu.com/p/332251719,https://zhuanlan.zhihu.com/p/269429576,https://zhuanlan.zhihu.com/p/268779443,https://zhuanlan.zhihu.com/p/257939614,https://zhuanlan.zhihu.com/p/257029909,https://zhuanlan.zhihu.com/p/242778463,https://zhuanlan.zhihu.com/p/222344456,https://zhuanlan.zhihu.com/p/199195813,https://zhuanlan.zhihu.com/p/183720882,https://zhuanlan.zhihu.com/p/183078658,https://zhuanlan.zhihu.com/p/163706734,https://zhuanlan.zhihu.com/p/159735923,https://zhuanlan.zhihu.com/p/154116994,https://zhuanlan.zhihu.com/p/151210221,https://zhuanlan.zhihu.com/p/151008799,https://zhuanlan.zhihu.com/p/150657041,https://zhuanlan.zhihu.com/p/150553110,https://zhuanlan.zhihu.com/p/150518933,https://zhuanlan.zhihu.com/p/150048263,https://zhuanlan.zhihu.com/p/147157462,https://zhuanlan.zhihu.com/p/146845331,https://zhuanlan.zhihu.com/p/146574544,https://zhuanlan.zhihu.com/p/141446301,https://zhuanlan.zhihu.com/p/139051161,https://zhuanlan.zhihu.com/p/133468295,https://zhuanlan.zhihu.com/p/132453830,https://zhuanlan.zhihu.com/p/126637444,https://zhuanlan.zhihu.com/p/125450644,https://zhuanlan.zhihu.com/p/121701700,https://zhuanlan.zhihu.com/p/117377082,https://zhuanlan.zhihu.com/p/115844694,https://zhuanlan.zhihu.com/p/115491853,https://zhuanlan.zhihu.com/p/115335759,https://zhuanlan.zhihu.com/p/115011521,https://zhuanlan.zhihu.com/p/112243414,https://zhuanlan.zhihu.com/p/112023014,https://zhuanlan.zhihu.com/p/111681404,https://zhuanlan.zhihu.com/p/111102569,https://zhuanlan.zhihu.com/p/110756802,https://zhuanlan.zhihu.com/p/110182149,https://zhuanlan.zhihu.com/p/108908389,https://zhuanlan.zhihu.com/p/108513845,https://zhuanlan.zhihu.com/p/108198690,https://zhuanlan.zhihu.com/p/107964523,https://zhuanlan.zhihu.com/p/107593308,https://zhuanlan.zhihu.com/p/106562090'
+zhihu = zhihustr.split(',')
+zhuhuurl = zhihuurlstr.split(',')
 for i in range(len(zhihu)):
     non_acdemic_news.append({
       "title":'2020',
       "content":zhihu[i],
-      "href":zhihuurl[i]
+      "href":zhuhuurl[i]
     })
 
 # 3
@@ -131,6 +142,10 @@ model_pretrained = [
   {"type":"NLP", "title": '2020', "content": '2020年，发布了中文BERT预训练大型语言模型：robert_wwm_large_ext_qa第二版。',
    'href': 'https://drive.google.com/drive/folders/11Pd5sy2jRePz5AVlOdImRYNDSbCtwtAS?usp=sharing',
    'cite': 'qabert-24layers-v2'},
+  {"type": "NLP", "title": '2021', "content": '2021年，发布了中文轻量XLNet预训练大型语言模型：xlnet_tiny。',
+   'href': 'https://drive.google.com/drive/folders/1-3RteqvOeyE3qvmRADq2P7ifYNHsO7Kt/usp=sharing',
+   'cite': 'xlnet-6layers'},
+
 
     {"type": "CV", "title": '2021', "content": '2021年，发布了COVID-19肺部CT图像分类数据集及划分方法。',
      'href': 'https://drive.google.com/drive/folders/1-8wcO9iy9FKuX9EN77Gu_SR1ZdLxC9dZ?usp=sharing',
@@ -334,8 +349,7 @@ class StateResource:
         resp.set_header('Access-Control-Allow-Credentials', 'true')
         now = time.time()
         self.df = self.df.append({'time':now},ignore_index=True)
-        if len(self.df) % 10:
-            self.df.to_csv('state.csv',index=False)
+        self.df.to_csv('state.csv',index=False)
         resp.media = len(self.df)
         logger.info("###")
 
