@@ -46,14 +46,14 @@ acdemic_news = [
   {"title": "2020", "content": '2020年，本人的图像分类论文《Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models》在researchsquare.com发布', "href":'https://www.researchsquare.com/article/rs-93060/latest.pdf', 'cite':"Shen, D. (2020). Enhance Image Classification Performance Via Unsupervised Pre-trained Transformers Language Models."},
   {"title": "2020", "content": "2020年，本人的图像分类论文《Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach》在researchsquare.com发布，并被europepmc.org索引。", "href":"https://europepmc.org/article/ppr/ppr240245", "cite":"Shen, D. (2020). Unify Language and Vision: An Efficient COVID-19 Tomography Image Classification Approach."},
   {"title": "2020", "content": "2020年，本人的图像检测与识别论文《Text Detection and Chinese Character Recognition in Natural Scene Images via Pre-trained Vision and Language Models》投递CVPR2021."},
-  {"title": "2020", "content": "2020年，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》向中国国家知识产权局递交申请."},
   {"title": "2021",
    "content": "2021年，本人的自然语言处理论文《A Transformer-based Pretrained Language Model for Automatic Document Summarization》向ACL2021投递."},
   {"title": "2021",
    "content": "2021年，本人的自然语言处理论文《Transformer based Reading Comprehension model for China Court Cases》向ACL2021投递."},
   {"title": "2021",
    "content": "2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》在researchsquare.com发布.", "href":'https://www.researchsquare.com/article/rs-149338/v1.pdf', 'cite':"Shen, D. (2021). Extra Large Sequence Transformer Model for Chinese Word Segment."},
-
+  {"title": "2021", "content": "2021年03月26日，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》，在中国国家知识产权局2021年03月26日登记公布。"},
+  {"title": "2021", "content": "2021年04月15日，本人的计算机视觉论文《Enhance Image Classification Performance》向CICAI2021投递。"}
 ]
 # 2
 competetional_news = [
