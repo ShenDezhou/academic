@@ -61,7 +61,8 @@ competetional_news = [
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法摘要赛道，最终成绩第二十七名。'},
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法考试赛道，最终成绩第十三名。'},
   {'title': '2020', 'content': '2020年5月15日-2020年12月12日，本人参加的2020中国‘法研杯’司法人工智能挑战赛（CAIL2020）司法论辩挖掘赛道，最终成绩第十八名。'},
-  {'title': '2021', 'content': '2020年12月28日-2021年02月02日，本人参加的2021智源-水利知识图谱构建挑战赛抽取水利实体、实体类别比赛，最终成绩第一百一十八名。'}
+  {'title': '2021', 'content': '2020年12月28日-2021年2月2日，本人参加的2021智源-水利知识图谱构建挑战赛抽取水利实体、实体类别比赛，最终成绩第一百一十八名。'},
+  {'title': '2021', 'content': '2021年1月22日-2021年4月22日，本人参加的2021第一届“计图”人工智能算法挑战赛-狗细分类比赛，最终成绩第二十一名。'}
 ]
 # 3
 zhihu=["面向中文的BERT预训练模型", "基于中文XLNET-tiny语言模型", "面向中文的XLNet预训练模型", "深度学习回顾", "基于Transformer的开源语言预训练模型应用展示系统", "谷歌AI体系组织建设方法"]
@@ -255,10 +256,10 @@ model_presentation = [
 # 7
 cooperation_inviting = [
   {
-    'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者与本人开展计算机视觉、文本处理方面的科研、项目合作。email: tsinghua9boy@sina.com"
+    'title': '2020-2021', 'content':"科研合作邀请，诚邀各位专家学者开展计算机视觉、自然语言处理方面的科研合作。email: tsinghua9boy@sina.com。Twitter:https://twitter.com/dezhou。微博：http://weibo.com/3815756378。知乎：https://www.zhihu.com/people/tsinghuaboy。"
   },
   {
-    'title': '2020-2021', 'content':"Scientific research cooperation invitation: sincerely invite all experts and scholars to cooperate with me in scientific research and project cooperation in computer vision and text processing. Email: tsinghua9boy@sina.com"
+    'title': '2020-2021', 'content':"Scientific research cooperation invitation: sincerely invite all experts and scholars to cooperate in scientific research and project cooperation in computer vision and text processing. Email: tsinghua9boy@sina.com.Twitter:https://twitter.com/dezhou。Weibo：http://weibo.com/3815756378。Zhihu：https://www.zhihu.com/people/tsinghuaboy。"
   }
 ]
 
