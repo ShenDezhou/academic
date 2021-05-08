@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
+    <backtop>
+      <router-view />
+    </backtop>
   </div>
 </template>
 
 <script>
+import BackTop from '@/components/BackTop'
+
 export default {
   name: "App",
+  components: {
+    'backtop': BackTop
+  },
   data() {
     return {
       cookies:'',
