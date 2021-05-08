@@ -394,7 +394,7 @@ class TorchResource:
 
     def on_get(self, req, resp):
         logger.info("...")
-        resp.set_header('Access-Control-Allow-Origin', '*')
+        resp.set_header('Access-Control-Allow-Origin', 'http://www.tsinghuaboy.com')
         resp.set_header('Access-Control-Allow-Methods', '*')
         resp.set_header('Access-Control-Allow-Headers', '*')
         resp.set_header('Access-Control-Allow-Credentials', 'true')
@@ -432,7 +432,7 @@ class StateResource:
 
     def on_get(self, req, resp):
         logger.info("...")
-        resp.set_header('Access-Control-Allow-Origin', '*')
+        resp.set_header('Access-Control-Allow-Origin', 'http://www.tsinghuaboy.com')
         resp.set_header('Access-Control-Allow-Methods', '*')
         resp.set_header('Access-Control-Allow-Headers', '*')
         resp.set_header('Access-Control-Allow-Credentials', 'true')
@@ -446,6 +446,6 @@ class StateResource:
 if __name__ == "__main__":
     api = falcon.API(middleware=[cors_allow_all.middleware])
     api.req_options.auto_parse_form_urlencoded = True
-    api.add_route('/z', TorchResource())
-    api.add_route('/a', StateResource())
+    api.add_route('/api1/z', TorchResource())
+    api.add_route('/api1/a', StateResource())
     waitress.serve(api, port=args.port, threads=48, url_scheme='http')

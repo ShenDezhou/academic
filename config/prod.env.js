@@ -1,5 +1,5 @@
 'use strict'
 module.exports = {
   NODE_ENV: '"production"',
-  API_HOST:'"http://localhost:8081/search/csb-broker/fb"'
+  API_HOST:'"http://192.168.1.15:58080/api1"'
 }
