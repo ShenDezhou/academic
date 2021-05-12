@@ -12,7 +12,7 @@ import axios from 'axios'
 Vue.prototype.axios = axios
 //生产环境的打包的方式
 if(process.env.NODE_ENV == "production"){
-  axios.defaults.baseURL = "http://www.tsinghuaboy.com:58080/";
+  axios.defaults.baseURL = "";
 }else{
   axios.defaults.baseURL = '';
 }
