@@ -42,31 +42,11 @@
             <span slot="title">Presentation</span>
           </a>
         </el-menu-item>
-        <el-menu-item index="works">
-          <a :href="works">
-            <span slot="title">Call</span>
-          </a>
-        </el-menu-item>
         <el-menu-item index="summary">
           <a :href="summary">
             <span slot="title">Summary</span>
           </a>
         </el-menu-item>
-<!--				<el-menu-item index="lawsNew">-->
-<!--					<a :href="lawsNew">-->
-<!--						<span slot="title">法律法规</span>-->
-<!--					</a>-->
-<!--				</el-menu-item>-->
-<!--				<el-menu-item index="example">-->
-<!--					<a :href="example">-->
-<!--						<span slot="title">司法案例</span>-->
-<!--					</a>-->
-<!--				</el-menu-item>-->
-<!--				<el-menu-item index="journalLaw">-->
-<!--					<a :href="journalLaw">-->
-<!--						<span slot="title">法学期刊</span>-->
-<!--					</a>-->
-<!--				</el-menu-item>-->
 			</el-menu>
 		</el-col>
 	</el-row>
