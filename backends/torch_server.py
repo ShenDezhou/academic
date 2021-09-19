@@ -259,6 +259,30 @@ cooperation_inviting = [
 ]
 
 #8
+zhiyuan_data = [
+  {'a':'https://hub.baai.ac.cn/view/7525','t':'《预训练周刊》第4期：智源「悟道1.0」发布、GPT-3对新一代APP的赋能路径'},
+  {'a':'https://hub.baai.ac.cn/view/7609','t':'《预训练周刊》第5期：智源等研究力证：GPT语言理解能力不输BERT、盘点NLP预训练「兵器谱」'},
+  {'a':'https://hub.baai.ac.cn/view/7731','t':'《预训练周刊》第6期：GAN人脸预训练模型、通过深度生成模型进行蛋白序列设计'},
+  {'a':'https://hub.baai.ac.cn/view/7917','t':'《预训练周刊》第7期：傅立叶图像变换器解析、阿里达摩院发布最大中文预训练语言模型PLUG'},
+  {'a':'https://hub.baai.ac.cn/view/7999','t':'《预训练周刊》第8期：首个千亿中文大模型「盘古」问世、谷歌等提出视频音频文本转换器VATT'},
+  {'a':'https://hub.baai.ac.cn/view/8105','t':'《预训练周刊》第9期：TABBIE：表格数据的预训练表示、「视觉预训练神作」：不用图片却训出图像识别SOTA？'},
+  {'a':'https://hub.baai.ac.cn/view/8206','t':'《预训练周刊》第10期：基于Swin变换器的自监督学习、基于锐度感知最小化的泛化性提升'},
+  {'a':'https://hub.baai.ac.cn/view/8396','t':'《预训练周刊》第11期：全球最大智能模型“悟道2.0”重磅发布、谷歌KELM：将知识图与语言模型预训练语料库集成'},
+  {'a':'https://hub.baai.ac.cn/view/8476','t':'《预训练周刊》第12期：无注意力变换器、借蛋白质语言模型论进化速度'},
+  {'a':'https://hub.baai.ac.cn/view/8523','t':'《预训练周刊》第13期：CPM-2：大规模经济高效的预训练语言模型、变换器作为编程语言'},
+  {'a':'https://hub.baai.ac.cn/view/8715','t':'《预训练周刊》第14期：World-GAN：Minecraft 世界的生成模型、CMU博士论文探究可控文本生成'},
+  {'a':'https://hub.baai.ac.cn/view/8812','t':'《预训练周刊》第15期：Bengio, Lecun, Hinton | 人工智能深度学习、用于图像分类的全局过滤网络'},
+  {'a':'https://hub.baai.ac.cn/view/8896','t':'《预训练周刊》第16期：中科院推出全球首个图文音三模态预训练模型、顶会论文探索100层序列推荐模型的加速训练'},
+  {'a':'https://hub.baai.ac.cn/view/8978','t':'《预训练周刊》第17期：深度迁移学习与数据增强改善2型糖尿病预测、钢琴补谱应用'},
+  {'a':'https://hub.baai.ac.cn/view/9024','t':'《预训练周刊》第18期：多流变换器、Query2Label：多标签分类的简单变换器方法'},
+  {'a':'https://hub.baai.ac.cn/view/9126','t':'《预训练周刊》第19期：歧义短语的类量子语境性研究、自然语言处理中prompt方法的系统综述'},
+  {'a':'https://hub.baai.ac.cn/view/9230','t':'《预训练周刊》第20期：EVA：包含28亿参数的中文预训练对话模型、基于知识融入提示词的文本分类'},
+  {'a':'https://hub.baai.ac.cn/view/9337','t':'《预训练周刊》第21期：FlipDA：有效且稳健的数据增强小样本学习、开放域低资源适应的生成式聊天机器人'},
+  {'a':'https://hub.baai.ac.cn/view/9599','t':'《预训练周刊》第22期：Fastformer：加法注意力就是你所需要的、用于蛋白建模的大规模预训练语言模型'},
+  {'a':'https://hub.baai.ac.cn/view/9818','t':'《预训练周刊》第23期：Smart Bird：解决变换器性能瓶颈的新方法、Prompt：如何提升预训练模型的迁移效果'},
+  {'a':'https://hub.baai.ac.cn/view/10091','t':'《预训练周刊》第24期：Infinite-former：无限记忆变换器、2500万悟道科研基金开始申请'}
+]
+
 xiaoy_data21 = [
 [{"a":"https://www.zhihu.com/zvideo/1342763644543844352","t":"2v2最强拆迁队 魔兽争霸xiaoy解说fly 小凯 sok lawliet"},{"a":"https://www.zhihu.com/zvideo/1342761316583489536","t":"剑圣被推倒在树林边上 魔兽争霸xiaoy解说focus lawliet"},{"a":"https://www.zhihu.com/zvideo/1342762495266832384","t":"魔兽又有新地图 魔兽争霸xiaoy解说tod ceron"},{"a":"https://www.zhihu.com/zvideo/1342420931264851969","t":"皇冠之火山爆发 魔兽争霸xiaoy解说lawliet sok"},{"a":"https://www.zhihu.com/zvideo/1342416183979679744","t":"感谢这12年的陪伴 魔兽争霸xiaoy解说lyn sok"},{"a":"https://www.zhihu.com/zvideo/1342418298462625792","t":"4v4对抗很少见 魔兽争霸xiaoy解说 仿佛看到了xiaoy自己"},{"a":"https://www.zhihu.com/zvideo/1342047286214520834","t":"2v2 空难刺激 魔兽争霸xiaoy解说fly 小凯 lawliet sok"},{"a":"https://www.zhihu.com/zvideo/1342046556388855811","t":"嗜血大战重生 魔兽争霸xiaoy解说hitman soin"},{"a":"https://www.zhihu.com/zvideo/1342037878046625792","t":"GG流蔓延了 魔兽争霸xiaoy解说120 chaemiko"},{"a":"https://www.zhihu.com/zvideo/1341680894260801536","t":"皇冠之力斩双英雄 魔兽争霸xiaoy解说soin lawliet"},{"a":"https://www.zhihu.com/zvideo/1341670459792855040","t":"2v2 寻找突破点 魔兽争霸xiaoy解说fly 小凯 路西法 thunder"},{"a":"https://www.zhihu.com/zvideo/1341328702815256576","t":"科多吃了山岭巨人 魔兽争霸xiaoy解说lyn sini"},{"a":"https://www.zhihu.com/zvideo/1341327596047560704","t":"激烈对抗到死 魔兽争霸xiaoy解说浪漫 hitman"},{"a":"https://www.zhihu.com/zvideo/1341328304473972736","t":"80人口top2 魔兽争霸xiaoy解说happy lucifer"},{"a":"https://www.zhihu.com/zvideo/1340942886989488128","t":"守望者首发打兽族 魔兽争霸xiaoy解说lawliet focus"},{"a":"https://www.zhihu.com/zvideo/1340947809089130496","t":"三大极品光环助阵 魔兽争霸xiaoy解说sonik lucifer"},{"a":"https://www.zhihu.com/zvideo/1340947920519127040","t":"超级完美的双控 魔兽争霸xiaoy解说syde lyn"},{"a":"https://www.zhihu.com/zvideo/1340603991584223232","t":"一直锤到死 魔兽争霸xiaoy解说grubby hawk"},{"a":"https://www.zhihu.com/zvideo/1340606054800093184","t":"开局出了大问题 魔兽争霸xiaoy解说happy thunder"},{"a":"https://www.zhihu.com/zvideo/1340607761986560000","t":"皇冠之数次强攻 魔兽争霸xiaoy解说focus lawliet"}]
 ,[{"a":"https://www.zhihu.com/zvideo/1340233792297074688","t":"皇冠之极限大招 魔兽争霸xiaoy解说focus lawliet"},{"a":"https://www.zhihu.com/zvideo/1340231606469017603","t":"高风险高收益 魔兽争霸xiaoy解说lucifer hitman"},{"a":"https://www.zhihu.com/zvideo/1340231339719725058","t":"打的出不了门 魔兽争霸xiaoy解说grubby saide"},{"a":"https://www.zhihu.com/zvideo/1339898876472532992","t":"一切战术都在计划中 魔兽争霸xiaoy解说moon lawliet"},{"a":"https://www.zhihu.com/zvideo/1339901564807471104","t":"燃烧蝙蝠归来 魔兽争霸xiaoy解说wfz focus 3"},{"a":"https://www.zhihu.com/zvideo/1339901342651928577","t":"开局各秀一次围杀 魔兽争霸xiaoy解说grubby sonik"},{"a":"https://www.zhihu.com/zvideo/1339538571884449793","t":"10年解说没见过这样的开局 魔兽争霸xiaoy解说grubby sonik"},{"a":"https://www.zhihu.com/zvideo/1339539444543246337","t":"吹风流来了 魔兽争霸xiaoy解说focus lyn随机"},{"a":"https://www.zhihu.com/zvideo/1339540157449031680","t":"高敏捷剑圣对抗大黑牛 魔兽争霸xiaoy解说focus hitman"},{"a":"https://www.zhihu.com/zvideo/1339487564446289920","t":"一个小精灵拯救了彩色 完成翻盘 魔兽争霸xiaoy解说"},{"a":"https://www.zhihu.com/zvideo/1339487648374255616","t":"女妖战术 你的就是我的 魔兽争霸xiaoy解说"},{"a":"https://www.zhihu.com/zvideo/1339487560339034112","t":"魔兽最强光环 其他种族都需要 魔兽争霸xiaoy解说"},{"a":"https://www.zhihu.com/zvideo/1339132757189427200","t":"战术取胜 魔兽争霸xiaoy解说focus lyn亡灵"},{"a":"https://www.zhihu.com/zvideo/1339132598347034624","t":"拼熊最强光环 魔兽争霸xiaoy解说lawliet 彩色 3"},{"a":"https://www.zhihu.com/zvideo/1339133785095991296","t":"惊险的最后一刻 魔兽争霸xiaoy解说彩色 lawliet 2"},{"a":"https://www.zhihu.com/zvideo/1338789711444869120","t":"魔兽真功夫 魔兽争霸xiaoy解说moon lucifer 1"},{"a":"https://www.zhihu.com/zvideo/1338789468186873856","t":"敏捷加12 vs 攻击之爪12 魔兽争霸xiaoy解说focus wfz 2"},{"a":"https://www.zhihu.com/zvideo/1338773638133706752","t":"惨叫声此起彼伏 魔兽争霸xiaoy解说infi th000 3"},{"a":"https://www.zhihu.com/zvideo/1338420386686783488","t":"小小奇美拉 魔兽争霸xiaoy解说th000 infi 2"},{"a":"https://www.zhihu.com/zvideo/1338454487108349952","t":"两个攻击之爪+12 魔兽争霸xiaoy解说th000 林瓜瓜"}]
@@ -312,24 +336,24 @@ xiaoy_data = [
 ]
 xiaoy_data_t = []
 
-for ls in xiaoy_data21:
-    for item in ls:
-        xiaoy_data_t.append(
-            {
-                "title":"2021",
-                "href":item['a'],
-                "content":item['t']
-            }
-        )
-for ls in xiaoy_data:
-    for item in ls:
-        xiaoy_data_t.append(
-            {
-                "title":"2020",
-                "href":item['a'],
-                "content":item['t']
-            }
-        )
+# for ls in xiaoy_data21:
+#     for item in ls:
+#         xiaoy_data_t.append(
+#             {
+#                 "title":"2021",
+#                 "href":item['a'],
+#                 "content":item['t']
+#             }
+#         )
+# for ls in xiaoy_data:
+#     for item in ls:
+#         xiaoy_data_t.append(
+#             {
+#                 "title":"2020",
+#                 "href":item['a'],
+#                 "content":item['t']
+#             }
+#         )
 
 
 nature_dl_2020_2021 = [
@@ -383,7 +407,7 @@ class TorchResource:
             lines = competetional_news
 
         if type == '3':
-            lines = non_acdemic_news + nature_dl_t + xiaoy_data_t
+            lines = non_acdemic_news + nature_dl_t# + xiaoy_data_t
 
         if type == '4':
             lines = code_news
@@ -444,7 +468,7 @@ class StateResource:
     def on_get(self, req, resp):
         logger.info("...")
         origin = req.headers.get('Origin','http://www.tsinghuaboy.com')
-        print(origin)
+        # print(origin)
         resp.set_header('Access-Control-Allow-Origin', origin)
         resp.set_header('Access-Control-Allow-Methods', '*')
         resp.set_header('Access-Control-Allow-Headers', '*')
