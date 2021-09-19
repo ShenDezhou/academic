@@ -89,7 +89,7 @@ for i in range(len(zhihu)):
 
 # 3
 githuburls= [
-  ["https://github.com/ShenDezhou/Acdemic", "https://github.com/ShenDezhou/CAIL2021", "https://github.com/ShenDezhou/CAIL", "https://github.com/ShenDezhou/Machine-Reading-Comprehension", "https://github.com/ShenDezhou/Chinese-PreTrained-BERT", "https://github.com/ShenDezhou/Chinese-PreTrained-XLNet", "https://github.com/ShenDezhou/AI_arch", "https://github.com/ShenDezhou/EXLNet", "https://github.com/ShenDezhou/elasticsearchdocker", "https://github.com/ShenDezhou/LSTM", "https://github.com/ShenDezhou/lawrouge", "https://github.com/ShenDezhou/lawa", "https://github.com/ShenDezhou/powerlawapsp", "https://github.com/ShenDezhou/lawaplugin", "https://github.com/ShenDezhou/APSP", "https://github.com/ShenDezhou/CBLSTM", "https://github.com/ShenDezhou/INF", "https://github.com/ShenDezhou/TFV", "https://github.com/ShenDezhou/FGC", "https://github.com/ShenDezhou/WISE", "https://github.com/ShenDezhou/LSTM2", "https://github.com/ShenDezhou/ShenDezhou.github.io", "https://github.com/ShenDezhou/CASE", "https://github.com/ShenDezhou/NIPS", "https://github.com/ShenDezhou/CRF", "https://github.com/ShenDezhou/icme2019", "https://github.com/ShenDezhou/GCN", "https://github.com/ShenDezhou/HMM", "https://github.com/ShenDezhou/CommonServiceBroker", "https://github.com/ShenDezhou/deploy_shadowsocks"]
+  ["https://github.com/ShenDezhou/Academic", "https://github.com/ShenDezhou/CAIL2021", "https://github.com/ShenDezhou/CAIL", "https://github.com/ShenDezhou/Machine-Reading-Comprehension", "https://github.com/ShenDezhou/Chinese-PreTrained-BERT", "https://github.com/ShenDezhou/Chinese-PreTrained-XLNet", "https://github.com/ShenDezhou/AI_arch", "https://github.com/ShenDezhou/EXLNet", "https://github.com/ShenDezhou/elasticsearchdocker", "https://github.com/ShenDezhou/LSTM", "https://github.com/ShenDezhou/lawrouge", "https://github.com/ShenDezhou/lawa", "https://github.com/ShenDezhou/powerlawapsp", "https://github.com/ShenDezhou/lawaplugin", "https://github.com/ShenDezhou/APSP", "https://github.com/ShenDezhou/CBLSTM", "https://github.com/ShenDezhou/INF", "https://github.com/ShenDezhou/TFV", "https://github.com/ShenDezhou/FGC", "https://github.com/ShenDezhou/WISE", "https://github.com/ShenDezhou/LSTM2", "https://github.com/ShenDezhou/ShenDezhou.github.io", "https://github.com/ShenDezhou/CASE", "https://github.com/ShenDezhou/NIPS", "https://github.com/ShenDezhou/CRF", "https://github.com/ShenDezhou/icme2019", "https://github.com/ShenDezhou/GCN", "https://github.com/ShenDezhou/HMM", "https://github.com/ShenDezhou/CommonServiceBroker", "https://github.com/ShenDezhou/deploy_shadowsocks"]
   ,["https://github.com/ShenDezhou/CaseClassification", "https://github.com/ShenDezhou/UnigroupAI", "https://github.com/ShenDezhou/PyCRM", "https://github.com/ShenDezhou/deploy_ocr", "https://github.com/ShenDezhou/es2csv", "https://github.com/ShenDezhou/ctrmodel", "https://github.com/ShenDezhou/multi-criteria-cws", "https://github.com/ShenDezhou/modelfactoryentry", "https://github.com/ShenDezhou/DeepCTR", "https://github.com/ShenDezhou/Word2Vector", "https://github.com/ShenDezhou/AutoModel", "https://github.com/ShenDezhou/UnigroupAI_Confluence", "https://github.com/ShenDezhou/LinearSpace", "https://github.com/ShenDezhou/deploy_aliyun", "https://github.com/ShenDezhou/jneuralnetwork", "https://github.com/ShenDezhou/tensorflow-forcast", "https://github.com/ShenDezhou/wordio", "https://github.com/ShenDezhou/pdfio", "https://github.com/ShenDezhou/CudaConcurrentHashmap", "https://github.com/ShenDezhou/WarCastle", "https://github.com/ShenDezhou/TechnicNotes", "https://github.com/ShenDezhou/leetcode", "https://github.com/ShenDezhou/wolframsearch", "https://github.com/ShenDezhou/Apriori", "https://github.com/ShenDezhou/LevelDBInRedisProtocol", "https://github.com/ShenDezhou/arch", "https://github.com/ShenDezhou/kmeans", "https://github.com/ShenDezhou/gsearch", "https://github.com/ShenDezhou/teomasearch"]
   ,["https://github.com/ShenDezhou/mbaidusearch", "https://github.com/ShenDezhou/msogosearch", "https://github.com/ShenDezhou/daumsearch", "https://github.com/ShenDezhou/naversearch", "https://github.com/ShenDezhou/yahoosearch", "https://github.com/ShenDezhou/yandexsearch", "https://github.com/ShenDezhou/bingsearch", "https://github.com/ShenDezhou/smsearch", "https://github.com/ShenDezhou/baidusearch", "https://github.com/ShenDezhou/360search", "https://github.com/ShenDezhou/googlesearch", "https://github.com/ShenDezhou/algorithm", "https://github.com/ShenDezhou/uproxy", "https://github.com/ShenDezhou/dezhoukv-cpp", "https://github.com/ShenDezhou/sogou-qdb-redis", "https://github.com/ShenDezhou/Lanton", "https://github.com/ShenDezhou/hyperloglog", "https://github.com/ShenDezhou/boost-bloom-filters", "https://github.com/ShenDezhou/dezhoukv", "https://github.com/ShenDezhou/instantlz4", "https://github.com/ShenDezhou/trading_okcoin", "https://github.com/ShenDezhou/lifeservice", "https://github.com/ShenDezhou/CPP", "https://github.com/ShenDezhou/iOS", "https://github.com/ShenDezhou/distribute", "https://github.com/ShenDezhou/courtpy", "https://github.com/ShenDezhou/DuoHero", "https://github.com/ShenDezhou/android"]
   ,["https://github.com/taraslayshchuk/es2csv", "https://github.com/Jittor/TrafficSignDetection", "https://github.com/Jittor/TsinghuaDogBaseline", "https://github.com/huminghao16/thesis", "https://github.com/LogicJake/competition_baselines", "https://github.com/microsoft/unilm", "https://github.com/SVAIGBA/WMSeg", "https://github.com/loujie0822/DeepIE", "https://github.com/visionshao/LSTM-CRF", "https://github.com/THUMNLab/AutoGL", "https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling", "https://github.com/liuhuanyong/CrimeKgAssitant", "https://github.com/lwcolton/falcon-cors", "https://github.com/15Dkatz/beat-cors-server", "https://github.com/axios/axios", "https://github.com/ymcui/Chinese-XLNet", "https://github.com/zihangdai/xlnet", "https://github.com/google/sentencepiece", "https://github.com/tensorflow/hub", "https://github.com/google-research/google-research", "https://github.com/handong1587/handong1587.github.io", "https://github.com/houtianze/bypy", "https://github.com/docker/awesome-compose", "https://github.com/docker/compose", "https://github.com/fonttools/pyclipper", "https://github.com/aleju/imgaug", "https://github.com/ztane/python-Levenshtein", "https://github.com/WenmuZhou/OCR_DataSet", "https://github.com/WenmuZhou/PytorchOCR", "https://github.com/tianzhi0549/CTPN"]
@@ -144,21 +144,6 @@ githubtext = [
   ,["HTTP Server/Client/Proxy Server", "Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible API", "Ligra: A Lightweight Graph Processing Framework for Shared Memory", "log rotation software", "Apache Thrift", "memcached development tree", "Read-only mirror of https://gitlab.gnome.org/GNOME/libxml2", "Minimalistic C client for Redis >= 1.2", "https://github.com/json-c/json-c is the official c…load. API docs at http://json-c.github.io/json-c/", "net-snmp repository with ocfs & ocfs2 support.", "ACE and TAO", "Implementation of \"Continuous Influence Maximization\" (SIGMOD 2016)", "A computation-centric distributed graph processing system.", "Gluster Filesystem : Build your distributed storage in minutes", "ucore arm9 porting", "Out-of-core graph processing on a single machine.", "Apereo CAS - Enterprise Single Sign On for all earthlings and beyond.", "proxy spider with scrapy", "User friendly, visual JSON editor built as an Angular 1 directive.", "A simple JSON parser in C#", "Force-directed graph layout using velocity Verlet integration.", "Force Directed Edge Bundling (FDEB) in Javascript;…is1/home/dholten/papers/forcebundles_eurovis.pdf)", "Playground and showcase of some alternative/fast interaction between Javascript and C#", "[Deprecated] Svelto IoC - lightweight Inversion Of Control container for Unity"]
 ]
 
-for i in range(len(githuburls)):
-    for j in range(len(githuburls[i])):
-        if j < len(githubtext[i]):
-            non_academic_news.append({
-              "title" : '2021',
-              "content" : githubtext[i][j]+":"+githuburls[i][j],
-              "href" : githuburls[i][j]
-            })
-        else:
-            non_academic_news.append({
-              "title": '2021',
-              "content": githuburls[i][j],
-              "href": githuburls[i][j]
-            })
-
 # 4
 code_news = [
   {"title": '2020', "content": '2020年，发布了中文词法分析模块lawa。',
@@ -166,6 +151,21 @@ code_news = [
   {"title": '2020', "content": '2020年，发布了中英文字面匹配方法lawrouge，可用于中英文的摘要、问答评价。',
   'href':'https://pypi.org/project/lawrouge/', 'cite':'lawrouge: A Multilingual Literal match method used on evaluation summary and question answering, et al.'}
 ]
+
+for i in range(len(githuburls)):
+    for j in range(len(githuburls[i])):
+        if j < len(githubtext[i]):
+            code_news.append({
+              "title" : '2021',
+              "content" : githubtext[i][j]+":"+githuburls[i][j],
+              "href" : githuburls[i][j]
+            })
+        else:
+            code_news.append({
+              "title": '2021',
+              "content": githuburls[i][j],
+              "href": githuburls[i][j]
+            })
 
 # 5
 model_pretrained = [
@@ -416,7 +416,7 @@ class TorchResource:
             lines = competetional_news
 
         if type == '3':
-            lines = non_academic_news + nature_dl_t + zhiyuan_data_2021# + xiaoy_data_t
+            lines = non_academic_news + zhiyuan_data_2021#nature_dl_t + # + xiaoy_data_t
 
         if type == '4':
             lines = code_news
