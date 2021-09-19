@@ -1,0 +1,17 @@
+services:
+  nginx:
+    image: axizdkr/tengine
+    container_name: tianlong-nginx
+    volumes:
+      - "./nginx.conf:/etc/nginx/conf.d/nginx.conf"
+      - "/usr/share/zoneinfo/Asia/Shanghai:/usr/share/zoneinfo/Asia/Shanghai"
+      - "/etc/localtime:/etc/localtime:ro"
+    depends_on:
+    ports:
+      - mode: host
+        protocol: tcp
+        published: 80
+        target: 80
+    environment:
+      TZ: 'Asia/Shanghai'
+    restart: always
