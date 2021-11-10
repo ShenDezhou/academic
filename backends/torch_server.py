@@ -53,7 +53,8 @@ acdemic_news = [
   {"title": "2021",
    "content": "2021年，本人的自然语言处理论文《Extra Large Sequence Transformer Model for Chinese Word Segment》在researchsquare.com发布.", "href":'https://www.researchsquare.com/article/rs-149338/v1.pdf', 'cite':"Shen, D. (2021). Extra Large Sequence Transformer Model for Chinese Word Segment."},
   {"title": "2021", "content": "2021年03月26日，本人的文本摘要专利《一种基于层次多维变压器模型的文档摘要计算方法》，在中国国家知识产权局2021年03月26日登记公布。"},
-  {"title": "2021", "content": "2021年04月15日，本人的计算机视觉论文《Enhance Image Classification Performance》向CICAI2021投递。"}
+  {"title": "2021", "content": "2021年04月15日，本人的计算机视觉论文《Enhance Image Classification Performance》向CICAI2021投递。"},
+  {"title": "2021", "content": "2021年11月10日，本人的自然语言处理论文《FPM: A Collection of Large-scale Foundation Pre-trained Language Models》在arxiv.org发布。", "href":'https://arxiv.org/pdf/2111.04909', 'cite':"Shen, D. (2021). FPM: A Collection of Large-scale Foundation Pre-trained Language Models."}
 ]
 # 2
 competetional_news = [
