@@ -49,10 +49,10 @@ export default new Router({
       component: ()=>import('@/view/model')
     },
     {
-      path: '/2020',//
-      name: '2020',
-      meta:{title:'2020'},
-      component: ()=>import('@/view/2020')
+      path: '/2021',//
+      name: '2021',
+      meta:{title:'2021'},
+      component: ()=>import('@/view/contributions')
     },
     {
       path: '/presentation',//

@@ -34,35 +34,19 @@
                   <el-timeline-item color="#4084f0" id="0">
                     2020年科学技术总结
                   </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="0">
-                    专利2项
-                  </el-timeline-item>
                   <el-timeline-item color="#4084f0" id="1">
-                    论文14篇
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="2">
-                    竞赛5项
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="3">
-                    模型8个
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="4">
-                    数据集2个
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="5">
-                    代码2个
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="6">
-                    展现1个
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="7">
-                    计算设备1种
+                     2021年科学技术总结
                   </el-timeline-item>
                 </el-timeline>
               </div>
             </el-aside>
             <el-main class="onstopmain">
-              <div v-html="inner_content"></div>
+              <div class="content_main_wrap">
+                <div v-html="inner_content_2020"></div>
+              </div>
+              <div class="content_main_wrap">
+                <div v-html="inner_content_2021"></div>
+              </div>
             </el-main>
           </el-container>
         </div>
@@ -205,7 +189,9 @@ export default {
       total_bankruptcy: 0,
       total_pal: 0,
       total_atr: 0,
-      inner_content:""
+      inner_content_2020:"",
+      inner_content_2021:""
+
     }
   },
   created: function () {
@@ -264,7 +250,17 @@ export default {
       params: {}
     }).then(res => {
       console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
-      this.inner_content = res.data
+      this.inner_content_2020 = res.data
+      // this.navbarVal = res.data.navbar;
+      // this.lawsNavbar = res.data.navbar;
+    });
+    this.axios({
+      method: 'GET',
+      url: '../../static/2021.html',
+      params: {}
+    }).then(res => {
+      console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
+      this.inner_content_2021 = res.data
       // this.navbarVal = res.data.navbar;
       // this.lawsNavbar = res.data.navbar;
     });
