@@ -17,6 +17,11 @@
 						<span slot="title">Academic</span>
 					</a>
 				</el-menu-item>
+        <el-menu-item index="videos">
+          <a :href="videos">
+            <span slot="title">videos</span>
+          </a>
+        </el-menu-item>
         <el-menu-item index="competition">
           <a :href="competition">
             <span slot="title">Competition</span>
@@ -58,6 +63,7 @@
 		data() {
 			return {
         academic:'#/academic',
+        videos:'#/videos',
         competition:'#/competition',
         nonacademic:'#/books',
         codes:'#/codes',

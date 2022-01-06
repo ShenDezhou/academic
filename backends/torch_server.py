@@ -153,6 +153,8 @@ code_news = [
   'href':'https://pypi.org/project/lawrouge/', 'cite':'lawrouge: A Multilingual Literal match method used on evaluation summary and question answering, et al.'}
 ]
 
+from xiaoy_war3_video_index import xiaoy_data_video
+
 for i in range(len(githuburls)):
     for j in range(len(githuburls[i])):
         if j < len(githubtext[i]):
@@ -384,6 +386,9 @@ class TorchResource:
 
         if type == '1':
             lines = acdemic_news
+
+        if type == '1b':
+            lines = xiaoy_data_video
 
         if type == '2':
             lines = competetional_news
