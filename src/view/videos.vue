@@ -30,7 +30,7 @@
                         </span>
               <span>
                             <i>></i>
-                            <a href="#/videos">xiaoy解说</a>
+                            <a href="#/videos">Videos</a>
                         </span>
             </div>
           </el-row>
