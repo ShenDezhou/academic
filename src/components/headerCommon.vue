@@ -19,7 +19,7 @@
 				</el-menu-item>
         <el-menu-item index="videos">
           <a :href="videos">
-            <span slot="title">videos</span>
+            <span slot="title">Videos</span>
           </a>
         </el-menu-item>
         <el-menu-item index="competition">
