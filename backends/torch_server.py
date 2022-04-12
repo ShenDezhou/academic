@@ -333,6 +333,17 @@ zhiyuan_data = [
   {'a':'https://hub.baai.ac.cn/view/12917','t':'《预训练周刊》第30期：谷歌首次展示新版语言模型BERT，参数达4810亿个'},
   {'a':'https://hub.baai.ac.cn/view/13430','t':'《预训练周刊》第31期：OpenAI发表可定制版GPT3、谷歌提出精简自注意力算法'},
   {'a': 'https://hub.baai.ac.cn/view/13597', 't': '《预训练周刊》第32期：2021年是超大AI模型年、百度发布最大中文密集型预训练模型'},
+  {'a': 'https://hub.baai.ac.cn/view/13947', 't': '《预训练周刊》第33期：预训练语言模型的高效分层域适应、GPT-3、基础模型和人工智能民族主义'},
+  {'a': 'https://hub.baai.ac.cn/view/14149', 't': '《预训练周刊》第34期：使用图像级监督检测两万个类别、BigScience，寻求建立强大的开放语言模型'},
+  {'a': 'https://hub.baai.ac.cn/view/14462', 't': '《预训练周刊》第35期：为智能体提取可操作的知识、LaMDA：对话应用的语言模型'},
+  {'a': 'https://hub.baai.ac.cn/view/14877', 't': '《预训练周刊》第36期：谷歌提出梯度最大化增长方法GradMax'},
+  {'a': 'https://hub.baai.ac.cn/view/15055', 't': '《预训练周刊》第37期：文本和代码嵌入、自然语言Prompt存储库'},
+  {'a': 'https://hub.baai.ac.cn/view/15234', 't': '《预训练周刊》第38期：Transformer、BERT结构优化'},
+  {'a': 'https://hub.baai.ac.cn/view/15744', 't': '《预训练周刊》第39期：深度模型、提示学习'},
+  {'a': 'https://hub.baai.ac.cn/view/15819', 't': '《预训练周刊》第40期：量子预训练、千层BERT与GPT'},
+  {'a': 'https://hub.baai.ac.cn/view/16101', 't': '《预训练周刊》第41期：知识型对话生成、语境学习、通用控制器学习'},
+  {'a': 'https://hub.baai.ac.cn/view/16346', 't': '《预训练周刊》第42期：通用模型、训练计算优化、多模态训练'},
+
 ]
 zhiyuan_data_2021 = []
 for item in zhiyuan_data:
