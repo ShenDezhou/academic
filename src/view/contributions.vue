@@ -42,10 +42,7 @@
             </el-aside>
             <el-main class="onstopmain">
               <div class="content_main_wrap">
-                <div v-html="inner_content_2020"></div>
-              </div>
-              <div class="content_main_wrap">
-                <div v-html="inner_content_2021"></div>
+                <div v-html="inner_content_2022"></div>
               </div>
             </el-main>
           </el-container>
@@ -189,8 +186,7 @@ export default {
       total_bankruptcy: 0,
       total_pal: 0,
       total_atr: 0,
-      inner_content_2020:"",
-      inner_content_2021:""
+      inner_content_2022:""
 
     }
   },
@@ -246,21 +242,11 @@ export default {
     // }
     this.axios({
       method: 'GET',
-      url: '../../static/2020.html',
+      url: '../../static/2022.html',
       params: {}
     }).then(res => {
       console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
       this.inner_content_2020 = res.data
-      // this.navbarVal = res.data.navbar;
-      // this.lawsNavbar = res.data.navbar;
-    });
-    this.axios({
-      method: 'GET',
-      url: '../../static/2021.html',
-      params: {}
-    }).then(res => {
-      console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
-      this.inner_content_2021 = res.data
       // this.navbarVal = res.data.navbar;
       // this.lawsNavbar = res.data.navbar;
     });
