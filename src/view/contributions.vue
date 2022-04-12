@@ -32,10 +32,7 @@
                 <div data-v-21e53028 id="label_daohang">导航</div>
                 <el-timeline>
                   <el-timeline-item color="#4084f0" id="0">
-                    2020年科学技术总结
-                  </el-timeline-item>
-                  <el-timeline-item color="#4084f0" id="1">
-                     2021年科学技术总结
+                    2022年科学技术总结
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -246,7 +243,7 @@ export default {
       params: {}
     }).then(res => {
       console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
-      this.inner_content_2020 = res.data
+      this.inner_content_2022 = res.data
       // this.navbarVal = res.data.navbar;
       // this.lawsNavbar = res.data.navbar;
     });

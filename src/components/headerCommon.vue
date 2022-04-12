@@ -69,7 +69,7 @@
         codes:'#/codes',
         works:'#/works',
         models:'#/models',
-        summary: '#/2021',
+        summary: '#/2022',
         presentation: '#/presentation',
 				onestopUrl:'#/oneStopSearch',
 				journalLaw:'#/journalLaw',

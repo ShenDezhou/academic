@@ -54,9 +54,9 @@ export default new Router({
       component: ()=>import('@/view/model')
     },
     {
-      path: '/2021',//
-      name: '2021',
-      meta:{title:'2021'},
+      path: '/2022',//
+      name: '2022',
+      meta:{title:'2022'},
       component: ()=>import('@/view/contributions')
     },
     {
