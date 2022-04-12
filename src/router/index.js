@@ -17,6 +17,11 @@ export default new Router({
       name: 'academic',
       meta:{title:'academic'},
       component: ()=>import('@/view/academic')
+    },{
+      path: '/videos',//
+      name: 'videos',
+      meta:{title:'videos'},
+      component: ()=>import('@/view/videos')
     },
     {
       path: '/competition',//Competition works
