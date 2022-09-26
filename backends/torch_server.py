@@ -58,7 +58,11 @@ acdemic_news = [
   {"title": "2022",
    "content": "2022年4月12日，本人的自然语言处理论文《FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers》在arxiv.org发布。",
    "href": 'https://arxiv.org/pdf/2204.04477.pdf',
-   'cite': "Shen, D. (2022). FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers."}
+   'cite': "Shen, D. (2022). FoundationLayerNorm: Scaling BERT and GPT to 1,000 Layers."},
+  {"title": "2022",
+   "content": "2022年9月26日，本人的中文图书《深度学习Deep Learning》在Web发布。",
+   "href": 'http://foundation.transformers.science/f/1715ffab19cc4f0ab768/?dl=1',
+   'cite': "Shen, D. (2022). Deep Learning."}
 
 ]
 # 2
