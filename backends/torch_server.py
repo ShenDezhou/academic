@@ -62,6 +62,10 @@ acdemic_news = [
   {"title": "2022",
    "content": "2022年9月26日，本人的中文图书《深度学习Deep Learning》在Web发布。",
    "href": 'http://foundation.transformers.science/f/1715ffab19cc4f0ab768/?dl=1',
+   'cite': "Shen, D. (2022). Deep Learning."},
+  {"title": "2022",
+   "content": "2022年9月29日，本人的中文图书《深度学习Deep Learning》(英文版)在Web发布。",
+   "href": 'http://foundation.transformers.science/f/e2df01aaa16e481cbecb/?dl=1',
    'cite': "Shen, D. (2022). Deep Learning."}
 
 ]
