@@ -52,6 +52,11 @@
             <span slot="title">Summary</span>
           </a>
         </el-menu-item>
+        <el-menu-item index="gpt3">
+          <a :href="gpt3">
+            <span slot="title">GPT3</span>
+          </a>
+        </el-menu-item>
 			</el-menu>
 		</el-col>
 	</el-row>
@@ -75,6 +80,7 @@
 				journalLaw:'#/journalLaw',
 				example:'#/example',
 				lawsNew:'#/lawsNew',
+				gpt3: '#/gpt3',
 			};
 		},
 		methods: {

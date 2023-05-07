@@ -491,9 +491,55 @@ class StateResource:
         logger.info("###")
 
 
+class GPTResource:
+
+  def __init__(self):
+    logger.info("...")
+    logger.info("###")
+
+  def on_option(self, req, resp):
+    logger.info("...")
+    resp.set_header('Access-Control-Allow-Origin', 'http://www.tsinghuaoby.com')
+    resp.set_header('Access-Control-Allow-Methods', '*')
+    resp.set_header('Access-Control-Allow-Headers', '*')
+    resp.set_header('Access-Control-Allow-Credentials', 'true')
+
+  def on_get(self, req, resp):
+    logger.info("...")
+    origin = req.headers.get('Origin', 'http://www.tsinghuaboy.com')
+    resp.set_header('Access-Control-Allow-Origin', origin)
+    resp.set_header('Access-Control-Allow-Methods', '*')
+    resp.set_header('Access-Control-Allow-Headers', '*')
+    resp.set_header('Access-Control-Allow-Credentials', 'true')
+    line = req.get_param('text', True)
+    lines = [{"title": line,
+              "content": "asdfasdfasdf"}]
+    resp.media = lines
+    logger.info("###")
+
+  def on_post(self, req, resp):
+    """Handles POST requests"""
+    origin = req.headers.get('Origin', 'http://www.tsinghuaboy.com')
+    resp.set_header('Access-Control-Allow-Origin', origin)
+    resp.set_header('Access-Control-Allow-Methods', '*')
+    resp.set_header('Access-Control-Allow-Headers', '*')
+    resp.set_header('Access-Control-Allow-Credentials', 'true')
+    resp.set_header("Cache-Control", "no-cache")
+    start = ft()
+    jsondata = json.loads(req.stream.read(req.content_length))
+    line = jsondata['text']
+    lines = [{"title":line,
+             "content":"asdfasdfasdf"}]
+    resp.media = lines
+    logger.info("tot:{}ns".format(ft() - start))
+    logger.info("###")
+
+
+
 if __name__ == "__main__":
     api = falcon.API(middleware=[cors_allow_all.middleware])
     api.req_options.auto_parse_form_urlencoded = True
     api.add_route('/z', TorchResource())
     api.add_route('/a', StateResource())
+    api.add_route('/gpt', GPTResource())
     waitress.serve(api, port=args.port, threads=1, url_scheme='http')

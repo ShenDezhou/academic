@@ -64,6 +64,12 @@ export default new Router({
       name: 'presentation',
       meta:{title:'presentation'},
       component: ()=>import('@/view/presentation')
+    },
+    {
+      path: '/gpt3',//
+      name: 'gpt3',
+      meta:{title:'gpt3'},
+      component: ()=>import('@/view/theGPT3')
     }
   ]
 })
