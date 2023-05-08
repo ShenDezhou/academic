@@ -45,14 +45,15 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Ask Me ANYTHING About Learning!]</div>
+                    <div id="textExample">I Am 'Brian'. Ask Me ANYTHING With My Name 'Brian' To Give You My Thought.</div>
+                    <div id="textExample">E.g. Summarize the latest progress in language modeling, Brian.</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
                         <div class="content_mian_wrap_one">
                           <div class="contentTitle_onestop">
                             <el-button type="primary" class="primary-btn-main_kai" @click="ToggleMic">
                             <template v-if="isRecording">
-                              <span>停止</span>
+                              <span>录音中/停止</span>
                             </template>
                             <template v-if="!isRecording">
                               <span>开始</span>
@@ -61,10 +62,14 @@
                           </div>
                           <br/>
                           <div class="contentCon">
-                            <div class="transcript" v-text="transcript">
-                            E.g. Summarize the latest progress in language modeling. 'Brian'.
-                            (You have to say 'Brian'. For this triggers the AI to start giving thought of your speech).
-                            </div>
+                            <el-input
+                                clearable
+                                v-model="transcript"
+                                class="input-with-select search_input_wrap"
+                                prefix-icon="el-icon-search"
+                            >
+                            </el-input>
+
                           </div>
                         </div>
 
@@ -180,7 +185,7 @@ export default {
       lawsNavbar: {},
       exampleNavbar: {},
 
-      transcript: '',
+      transcript: "",
       isRecording: false,
       sr: {},
 
@@ -307,7 +312,15 @@ export default {
       const t = result[0].transcript;
       if (t.includes('stop recording')) {
         this.sr.stop()
+        this.getList()
       } else if (
+        t.includes('Aria') ||
+        t.includes('Brian') ||
+        t.includes('Olivia')
+      ) {
+        this.sr.stop()
+        this.getList()
+      }else if (
         t.includes('what is the time') ||
         t.includes('what\'s the time') ||
         t.includes('what time is it')
@@ -315,20 +328,12 @@ export default {
         this.sr.stop()
         alert(new Date().toLocaleTimeString())
         setTimeout(() => this.sr.start(), 100)
-      } else if (
-        t.includes('Brian') ||
-        t.includes('Shen') ||
-        t.includes('Dezhou')
-      ) {
-        this.sr.stop()
-        this.getList()
-        setTimeout(() => this.sr.start(), 100)
       }
-
     },
     ToggleMic() {
       if (this.isRecording) {
         this.sr.stop()
+        this.getList()
       } else {
         this.sr.start()
       }
@@ -359,19 +364,37 @@ export default {
     //搜索范围更改
     titleChange(val, trpe) {
     },
+    clearSpeech(){
+      this.transcript = null
+    },
     //搜索
     getList() {
+      const t = this.transcript;
+      let gpt_model = ''
+      let speech = ''
+      if (t.includes('Aria')){
+        gpt_model = 'Arya'
+        speech = t.replace("Aria","")
+      } else if (t.includes('Brian')){
+        gpt_model = 'Brian'
+        speech = t.replace("Brian","")
+      } else {
+        gpt_model = 'Olivia'
+        speech = t.replace("Olivia","")
+      }
+
+      if (speech.length > 0) {
         this.axios({
         method: 'POST',
         url: '/api1/gpt',
-        data: {text: this.transcript.replace('Brian','')}
+        data: {model: gpt_model, text: speech}
       }).then(res => {
         console.log('-----------------01返回数据-------------------', JSON.stringify(res.data));
         this.lawsShowLoad = false;
         this.newslist.push(...res.data)
-
         return this.newslist;
       });
+      }
     },
     //头补选中
     handleSelect(queryData) {

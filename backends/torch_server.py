@@ -9,6 +9,10 @@ import pandas
 from falcon_cors import CORS
 import json
 import waitress
+import os
+import openai
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 if sys.hexversion < 0x02080000:
     ft = time.time
@@ -527,9 +531,58 @@ class GPTResource:
     resp.set_header("Cache-Control", "no-cache")
     start = ft()
     jsondata = json.loads(req.stream.read(req.content_length))
+    model = jsondata['model']
+    if model == 'Arya':
+      gpt_model = "text-curie-001"
+      max_tokens = 2000
+    elif model == 'Brian':
+      gpt_model = "text-davinci-003"
+      max_tokens = 3000
+    else:
+      gpt_model = "text-ada-001"
+      max_tokens = 1000
+
     line = jsondata['text']
+
+    # {
+    #   "id": "cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7",
+    #   "object": "text_completion",
+    #   "created": 1589478378,
+    #   "model": "text-ada-001",
+    #   "choices": [
+    #     {
+    #       "text": "\n\nThis is indeed a test",
+    #       "index": 0,
+    #       "logprobs": null,
+    #       "finish_reason": "length"
+    #     }
+    #   ],
+    #   "usage": {
+    #     "prompt_tokens": 5,
+    #     "completion_tokens": 7,
+    #     "total_tokens": 12
+    #   }
+    # }
+    try:
+      response = openai.Completion.create(
+        model=gpt_model,#"text-davinci-003",
+        prompt=line,
+        temperature=1,
+        max_tokens=max_tokens,#1000,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+      )
+      cherry_pick_text = response["choices"][0]["text"]
+      total_cost = response["usage"]["total_tokens"]
+      logger.info("total_cost:{}".format(total_cost))
+    except Exception as ex:
+      if model == 'Olivia':
+        cherry_pick_text = "{}".format(ex)
+      else:
+        cherry_pick_text = "Sorry, I am not able to answer that for now."
     lines = [{"title":line,
-             "content":"asdfasdfasdf"}]
+             "content":cherry_pick_text}]
     resp.media = lines
     logger.info("tot:{}ns".format(ft() - start))
     logger.info("###")
