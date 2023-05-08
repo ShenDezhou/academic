@@ -29,10 +29,10 @@
               <div class="nav_left_wrap onstopSearch_left_nav"
                    :style="navBarFixed ? 'position: fixed;top: 150px;z-index: 666;' : ''"
                    @click="goToAim($event)">
-                <div data-v-21e53028 id="label_daohang">导航</div>
+                <div data-v-21e53028 id="label_daohang">Navigation</div>
                 <el-timeline>
                   <el-timeline-item color="#4084f0" id="0">
-                    学习助手(English)
+                    Learning Helper(English)
                   </el-timeline-item>
                 </el-timeline>
               </div>
@@ -53,10 +53,10 @@
                           <div class="contentTitle_onestop">
                             <el-button type="primary" class="primary-btn-main_kai" @click="ToggleMic">
                             <template v-if="isRecording">
-                              <span>录音中/停止</span>
+                              <span>Recording/Stop|录音中/停止</span>
                             </template>
                             <template v-if="!isRecording">
-                              <span>开始</span>
+                              <span>Record|开始</span>
                             </template>
                             </el-button>
                           </div>
