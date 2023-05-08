@@ -11,6 +11,7 @@ import json
 import waitress
 import os
 import openai
+import tiktoken
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -532,17 +533,24 @@ class GPTResource:
     start = ft()
     jsondata = json.loads(req.stream.read(req.content_length))
     model = jsondata['model']
+    line = jsondata['text']
+    def num_tokens_from_string(string: str, model: str) -> int:
+      """Returns the number of tokens in a text string."""
+      encoding = tiktoken.encoding_for_model(model)
+      num_tokens = len(encoding.encode(string))
+      return num_tokens
+
     if model == 'Arya':
-      gpt_model = "text-curie-001"
-      max_tokens = 2000
+      gpt_model = "text-davinci-002"
+      max_tokens = 4000 - num_tokens_from_string(line, gpt_model)
     elif model == 'Brian':
       gpt_model = "text-davinci-003"
-      max_tokens = 3000
+      max_tokens = 4000 - num_tokens_from_string(line, gpt_model)
     else:
-      gpt_model = "text-ada-001"
-      max_tokens = 1000
+      gpt_model = "text-davinci-001"
+      max_tokens = 2000 - num_tokens_from_string(line, gpt_model)
 
-    line = jsondata['text']
+
 
     # {
     #   "id": "cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7",
@@ -573,11 +581,12 @@ class GPTResource:
         frequency_penalty=0,
         presence_penalty=0
       )
-      cherry_pick_text = response["choices"][0]["text"]
+      cherry_pick_text = response["choices"][0]["text"].lstrip('\n')
+      logger.info("text:{}".format(cherry_pick_text))
       total_cost = response["usage"]["total_tokens"]
       logger.info("total_cost:{}".format(total_cost))
     except Exception as ex:
-      if model == 'Olivia':
+      if model != 'Brian':
         cherry_pick_text = "{}".format(ex)
       else:
         cherry_pick_text = "Sorry, I am not able to answer that for now."

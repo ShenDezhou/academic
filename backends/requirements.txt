@@ -2,3 +2,5 @@ falcon>=2.0.0
 falcon-cors>=1.1.7
 waitress==1.4.4
 pandas
+openai
+tiktoken

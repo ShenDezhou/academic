@@ -113,7 +113,7 @@
                        element-loading-text="拼命加载中"
                        element-loading-spinner="el-icon-loading"
                        element-loading-background="rgba(0, 0, 0, 0)">
-                    <div id="textExample">[Response History]</div>
+                    <div id="textExample">[Response History(Cleared After Refreshing Page, you need to save on your own.)]</div>
                     <div class="nerong_wrap">
                       <div class="list_wrap_main">
                         <div v-for="(item,index) in newslist" :key="index">
@@ -123,9 +123,13 @@
                               <div class="contentTitle_onestop">
                                 {{ item.title }}
                               </div>
-                              <div class="contentCon">
-                                {{ item.content }}
-                                <br/>
+                              <div class="contentCon" v-if="item.content.length < 70 && item.content.includes('1.') && item.content.includes('2.') && item.content.includes('3.')">
+                                <span style="white-space: pre;">
+                                  {{ item.content }}
+                                </span>
+                              </div>
+                              <div class="contentCon" v-else>
+                                {{ item.content}}
                               </div>
                             </div>
                           </template>
